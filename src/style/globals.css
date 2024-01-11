@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("../font/Poppins/style.css");
+
+* {
+  @apply p-0 m-0 box-border;
+}
+body {
+  @apply font-Poppins text-sm md:text-base text-gray-300/50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-width {
+  @apply container max-w-[1700px] mx-auto;
+}
+
+.text-lenear {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animation-light-skew-one {
+  animation-name: movement;
+  animation-duration: 10s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+.animation-light-skew-two {
+  animation-name: movement;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.animation-light-skew-three {
+  animation-name: movement;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.animation-light {
+  animation-name: movements;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movements {
+  0% {
+    transform: translatex(-1000px);
+  }
+  50% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translatex(-1000px);
+  }
+}

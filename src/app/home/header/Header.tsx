@@ -2,10 +2,11 @@
 import Buttons from "@/components/common/Buttons";
 import React from "react";
 import KarllesTabs from "./KarllesTabs";
+import CommerceCretificate from "./CommerceCretificate";
 
 function Header() {
   return (
-    <section className="bg-header-bg bg-cover bg-no-repeat pt-44">
+    <section className="bg-header-bg bg-contain bg-no-repeat bg-top pt-44 mb-40">
       <div className="container-width">
         <div className="flex gap-12 justify-between mb-36">
           <div className="w-[40%] mt-14">
@@ -42,6 +43,9 @@ function Header() {
           <div className="max-w-[884px] w-[60%]">
             <KarllesTabs />
           </div>
+        </div>
+        <div>
+          <CommerceCretificate />
         </div>
       </div>
     </section>

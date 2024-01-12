@@ -10,7 +10,7 @@ function Layout(props: layoutProps) {
   const {children} = props;
 
   return (
-    <main>
+    <main className="bg-black">
       <Offer />
       <Navbar />
       {children}

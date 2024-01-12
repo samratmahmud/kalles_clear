@@ -1,6 +1,7 @@
+"use client";
 import Buttons from "@/components/common/Buttons";
 import Link from "next/link";
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 const navLink = [
   {
@@ -32,8 +33,29 @@ const navLink = [
 ];
 
 function Navbar() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 150) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+    handleScroll();
+
+    window.addEventListener("scroll", () => {
+      handleScroll();
+    });
+  });
+
   return (
-    <nav className="bg-black sticky top-0 z-[1040]">
+    <nav
+      className={`sticky top-0 z-[1040] ${
+        !visible ? "bg-black" : "bg-black/80 backdrop-blur-md"
+      }`}
+    >
       <div className="container flex items-center justify-between gap-3 py-6">
         <Link
           href="/"

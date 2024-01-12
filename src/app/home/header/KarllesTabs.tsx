@@ -42,7 +42,7 @@ function KarllesTabs() {
   const [change, setChange] = useState(0);
 
   return (
-    <div className="bg-gray-100 p-3 rounded-3xl">
+    <div className="bg-[rgba(32,_32,_32,_0.32)] backdrop-blur-md p-3 rounded-3xl  duration-500">
       <div className="flex gap-1.5 ml-3 mb-3">
         {[...Array(3)].map((_, index) => (
           <span
@@ -52,7 +52,7 @@ function KarllesTabs() {
         ))}
       </div>
       <div
-        className="p-5 border border-gray-300/20 rounded-2xl backdrop:blur-3xl"
+        className="p-5 border border-[rgba(255,_255,_255,_0.06)] rounded-2xl backdrop:blur-3xl"
         style={{
           backgroundImage:
             "linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%)",

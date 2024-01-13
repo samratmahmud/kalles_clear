@@ -3,7 +3,7 @@ import Header from "./home/header/Header";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pb-20">
       <Header />
       <PremiumFeatures />
     </main>

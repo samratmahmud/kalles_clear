@@ -34,7 +34,7 @@ function Offer() {
                   src="/images/open-icon.svg"
                   alt=""
                 />
-                <p className="text-white font-medium duration-300 hover:text-blue-700">
+                <p className="text-white font-medium duration-300 hover:text-blue-700 underline">
                   Open a Store Now
                 </p>
               </div>
@@ -45,7 +45,7 @@ function Offer() {
               <div className="font-medium">
                 <Link
                   href="/"
-                  className="text-white duration-300 hover:text-blue-700"
+                  className="text-white duration-300 underline hover:text-blue-700"
                 >
                   Start a free trial and enjoy 3 months
                 </Link>

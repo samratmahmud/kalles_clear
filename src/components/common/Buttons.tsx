@@ -2,14 +2,15 @@ import Link from "next/link";
 import React from "react";
 
 interface buttonProps {
-  icon: string;
+  icon?: string;
   name: string;
   varient?: "contained" | "outlined";
+  size?: "small" | "medium";
   href: string;
 }
 
 function Buttons(props: buttonProps) {
-  const {name, icon, varient = "contained", href} = props;
+  const {name, icon, varient = "contained", size = "medium", href} = props;
 
   let varientClasses: string[] = [];
   if (varient === "contained") {
@@ -17,8 +18,8 @@ function Buttons(props: buttonProps) {
       "border",
       "border-slate-300/20",
       "text-white hover:text-primary",
-      "py-4",
-      "px-6",
+      `${size === "medium" ? "py-4" : "py-[5px]"}`,
+      `${size === "medium" ? "px-6" : "pl-1.5 pr-4"}`,
       "bg-slate-600/30",
     ];
   }
@@ -36,16 +37,24 @@ function Buttons(props: buttonProps) {
   return (
     <BtnComp
       role="Button"
-      className={`flex items-center justify-center duration-300 gap-2 rounded-lg relative z-0 overflow-hidden ${varientClasses.join(
-        " "
-      )}`}
+      className={`flex items-center justify-center duration-300 gap-2 ${
+        size === "medium" ? "rounded-lg" : "rounded-full"
+      } relative z-0 overflow-hidden ${varientClasses.join(" ")}`}
       tabindex={-1}
       {...(href ? {href} : {})}
     >
-      <div>
-        <img className="w-5 h-5" src={icon} alt="" />
+      <div className={`${size === "medium" ? "" : "bg-black rounded-full"}`}>
+        <img
+          className={`${
+            size === "medium" ? "w-5 h-5" : "w-8 aspect-square p-1.5"
+          }`}
+          src={icon}
+          alt=""
+        />
       </div>
-      <div className="font-medium">{name}</div>
+      <div className={`font-medium ${size === "medium" ? "" : "text-md"}`}>
+        {name}
+      </div>
       {varient === "contained" && (
         <div className="absolute top-0 left-0 -z-10">
           <div className="bg-buttonS1 w-7 h-9 blur-md animation-light-skew-one absolute top-2" />

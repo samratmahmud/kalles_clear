@@ -12,12 +12,16 @@ const config: Config = {
       colors: {
         primary: "#00BAD4",
         blue: {"500": "#007aff", "600": "#0d6efd", "700": "#0d6efd"},
-        gray: {"100": "#6c757d47", "400": "rgba(255, 255, 255, 0.47)"},
+        gray: {
+          "100": "#6c757d47",
+          "400": "rgba(255, 255, 255, 0.47)",
+          "800": "#101010",
+        },
         slate: {
           "300": "rgba(255, 255, 255)",
           "600": "rgba(32, 32, 32)",
         },
-        green: {"400": "#35E6CC"},
+        green: {"400": "#35E6CC", "600": "#35E6CC"},
       },
     },
     fontSize: {
@@ -31,8 +35,8 @@ const config: Config = {
       "3xl": ["24px", {lineHeight: "43px", letterSpacing: ".3px"}],
       "4xl": ["30px", {lineHeight: "1.2", letterSpacing: ""}],
       "5xl": ["32px", {lineHeight: "1.2", letterSpacing: "-0.32px"}],
-      "6xl": ["38px", {lineHeight: "1.1", letterSpacing: "-0.96px"}],
-      "7xl": ["36px", {lineHeight: "43", letterSpacing: ".3px"}],
+      "6xl": ["36px", {lineHeight: "43px", letterSpacing: ".3px"}],
+      "7xl": ["38px", {lineHeight: "1.1", letterSpacing: "-0.96px"}],
       "8xl": ["40px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
       "9xl": ["44px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
       "10xl": ["48px", {lineHeight: "1.1", letterSpacing: "-0.96px"}],
@@ -42,7 +46,8 @@ const config: Config = {
       "14xl": ["70px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
       "15xl": ["72px", {lineHeight: "1.25", letterSpacing: "-2.16px"}],
       "16xl": ["80px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
-      "17xl": ["128px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
+      "17xl": ["120px", {lineHeight: "144px", letterSpacing: "-6px"}],
+      "18xl": ["128px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
     },
     fontFamily: {
       Poppins: ["Poppins", ...fontFamily.sans],
@@ -57,6 +62,8 @@ const config: Config = {
       "btn-mb": "linear-gradient(90deg, transparent, #00BAD4, transparent)",
       "one-stop": "linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%)",
       "top-marque": "linear-gradient(110deg, #202020 0%, #101010 100%)",
+      "50+":
+        "linear-gradient(81deg, #5C39B2 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%)",
     },
     container: {
       center: true,

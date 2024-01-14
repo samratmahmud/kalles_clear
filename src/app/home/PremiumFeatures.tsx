@@ -61,14 +61,14 @@ function PremiumFeatures() {
               <div className="flex gap-3 justify-center">
                 <Buttons
                   href="/"
-                  className="rounded-full"
+                  className="rounded-full py-[5px]"
                   size="small"
                   name="32.000+ Sales"
                   icon="/images/power.svg"
                 />
                 <Buttons
                   href="/"
-                  className="rounded-full"
+                  className="rounded-full py-[5px]"
                   size="small"
                   name="5.0 Stars Ratings"
                   icon="/images/icons8-star-90.png"

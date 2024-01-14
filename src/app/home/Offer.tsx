@@ -64,7 +64,11 @@ function Offer() {
             visible ? "block" : "hidden"
           }`}
         >
-          <img className="rotate-90" src="/images/icons8-arrow-24.png" alt="" />
+          <img
+            className="-rotate-90"
+            src="/images/icons8-arrow-24.png"
+            alt=""
+          />
         </Link>
       )}
     </section>

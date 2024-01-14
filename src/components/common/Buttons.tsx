@@ -26,7 +26,7 @@ function Buttons(props: buttonProps) {
       "border",
       "border-slate-300/20",
       "text-white hover:text-primary",
-      `${size === "medium" ? "py-4" : "py-[5px]"}`,
+      `${size === "medium" ? "py-4" : `{${className}}`}`,
       `${size === "medium" ? "px-6" : "pl-1.5 pr-4"}`,
       "bg-slate-600/30",
     ];

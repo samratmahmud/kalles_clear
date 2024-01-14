@@ -67,6 +67,8 @@ const config: Config = {
       "pink-primary": "linear-gradient(173deg, #CE1BFB 10.86%, #35E6CC 89.96%)",
       "gray-black":
         "linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%)",
+      "demos-card":
+        "linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%)",
     },
     container: {
       center: true,

@@ -7,10 +7,18 @@ interface buttonProps {
   varient?: "contained" | "outlined";
   size?: "small" | "medium";
   href: string;
+  className?: string;
 }
 
 function Buttons(props: buttonProps) {
-  const {name, icon, varient = "contained", size = "medium", href} = props;
+  const {
+    name,
+    icon,
+    className,
+    varient = "contained",
+    size = "medium",
+    href,
+  } = props;
 
   let varientClasses: string[] = [];
   if (varient === "contained") {
@@ -38,20 +46,22 @@ function Buttons(props: buttonProps) {
     <BtnComp
       role="Button"
       className={`flex items-center justify-center duration-300 gap-2 ${
-        size === "medium" ? "rounded-lg" : "rounded-full"
+        size === "medium" ? "rounded-lg" : `${className}`
       } relative z-0 overflow-hidden ${varientClasses.join(" ")}`}
       tabindex={-1}
       {...(href ? {href} : {})}
     >
-      <div className={`${size === "medium" ? "" : "bg-black rounded-full"}`}>
-        <img
-          className={`${
-            size === "medium" ? "w-5 h-5" : "w-8 aspect-square p-1.5"
-          }`}
-          src={icon}
-          alt=""
-        />
-      </div>
+      {icon && (
+        <div className={`${size === "medium" ? "" : "bg-black rounded-full"}`}>
+          <img
+            className={`${
+              size === "medium" ? "w-5 h-5" : "w-8 aspect-square p-1.5"
+            }`}
+            src={icon}
+            alt=""
+          />
+        </div>
+      )}
       <div className={`font-medium ${size === "medium" ? "" : "text-md"}`}>
         {name}
       </div>

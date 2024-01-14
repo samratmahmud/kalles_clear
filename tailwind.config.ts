@@ -64,6 +64,9 @@ const config: Config = {
       "top-marque": "linear-gradient(110deg, #202020 0%, #101010 100%)",
       "50+":
         "linear-gradient(81deg, #5C39B2 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%)",
+      "pink-primary": "linear-gradient(173deg, #CE1BFB 10.86%, #35E6CC 89.96%)",
+      "gray-black":
+        "linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%)",
     },
     container: {
       center: true,
@@ -78,7 +81,8 @@ const config: Config = {
       xl: "1150px",
       "2xl": "1365px",
       "3xl": "1550px",
-      "4xl": "1860px",
+      "4xl": "1700px",
+      "5xl": "1860px",
     },
   },
   plugins: [],

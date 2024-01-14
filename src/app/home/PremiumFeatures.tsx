@@ -4,8 +4,8 @@ import React from "react";
 
 function PremiumFeatures() {
   return (
-    <section className="max-w-[1600px] mx-auto">
-      <div className="container">
+    <section className="mb-32">
+      <div className="container-width">
         <div className="flex justify-between items-end mb-16">
           <div>
             <h3 className="flex items-center gap-3 mb-6">
@@ -23,7 +23,7 @@ function PremiumFeatures() {
             joyful moment. All in one theme!
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-6 mb-16">
           <div className="flex gap-7 py-20 pl-14 pr-10 bg-gray-800 rounded-2xl col-span-2 relative z-0 justify-between">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-one-stop max-w-[300px] aspect-square w-full rounded-full -z-10 blur-3xl" />
             <div>
@@ -61,12 +61,14 @@ function PremiumFeatures() {
               <div className="flex gap-3 justify-center">
                 <Buttons
                   href="/"
+                  className="rounded-full"
                   size="small"
                   name="32.000+ Sales"
                   icon="/images/power.svg"
                 />
                 <Buttons
                   href="/"
+                  className="rounded-full"
                   size="small"
                   name="5.0 Stars Ratings"
                   icon="/images/icons8-star-90.png"
@@ -133,6 +135,26 @@ function PremiumFeatures() {
                 <span className="h-[0.5px] w-full bg-one-stop absolute bottom-0.5 left-0" />
               </p>
             </span>
+          </div>
+        </div>
+        <div className="max-w-[860px] mx-auto bg-gray-black bg-contain rounded-2xl relative min-h-[88px]">
+          <div className="flex items-center gap-6 p-6 bg-gray-800 absolute inset-[1px] rounded-2xl">
+            <div>
+              <img src="/images/shopify_brands (1).png" alt="" />
+            </div>
+            <div>
+              <span className="text-white">Enjoy 3 months</span> of shopify for
+              <span className="text-lenear bg-pink-primary"> $1/month </span> -
+              Start your free trial
+            </div>
+            <div>
+              <Buttons
+                className="rounded-lg py-2.5"
+                href="/"
+                name="Start Free Trial"
+                size="small"
+              />
+            </div>
           </div>
         </div>
       </div>

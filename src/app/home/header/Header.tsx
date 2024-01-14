@@ -6,7 +6,10 @@ import CommerceCretificate from "./CommerceCretificate";
 
 function Header() {
   return (
-    <section className="bg-header-bg bg-contain bg-no-repeat bg-top pt-44 mb-40">
+    <section className="pt-44 mb-40 relative z-0">
+      <span className="absolute -z-10 top-0 left-0 right-0 bottom-0">
+        <img className="w-full" src="/images/bg.jpeg" alt="" />
+      </span>
       <div className="container-width">
         <div className="flex gap-12 justify-between mb-36">
           <div className="w-[40%] mt-14">

@@ -42,7 +42,7 @@ function CommerceCretificate() {
       className="max-w-[1240px] mx-auto rounded-3xl flex flex-col items-center pt-20 px-[15px] pb-32"
       style={{
         backgroundImage:
-          "linear-gradient(180deg, #151515 0%, rgba(26, 26, 26, 0.00) 80%)",
+          "linear-gradient(180deg, #151515 0%, rgba(0, 0, 0, 100) 80%)",
       }}
     >
       <div className="relative inline-block overflow-hidden rounded-xl mb-6">

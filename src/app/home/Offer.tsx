@@ -57,19 +57,21 @@ function Offer() {
         ))}
       </Marquee>
       {visible && (
-        <Link
-          aria-label="Back-top"
-          href="#top"
-          className={`w-10 h-10 rounded bg-primary fixed flex items-center justify-center bottom-7 right-5 ${
-            visible ? "block" : "hidden"
-          }`}
-        >
-          <img
-            className="-rotate-90"
-            src="/images/icons8-arrow-24.png"
-            alt=""
-          />
-        </Link>
+        <div className="relative z-50">
+          <Link
+            aria-label="Back-top"
+            href="#top"
+            className={`w-10 h-10 rounded bg-primary fixed flex items-center justify-center bottom-7 right-5 ${
+              visible ? "block" : "hidden"
+            }`}
+          >
+            <img
+              className="-rotate-90"
+              src="/images/icons8-arrow-24.png"
+              alt=""
+            />
+          </Link>
+        </div>
       )}
     </section>
   );

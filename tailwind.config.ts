@@ -74,6 +74,7 @@ const config: Config = {
         "linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0.22) 100%)",
       "primary-pink-gradient":
         "linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%)",
+      "pages-bg": "url('/images/pages_bg.png')",
     },
     container: {
       center: true,

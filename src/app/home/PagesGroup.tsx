@@ -285,7 +285,7 @@ function PagesGroup() {
 
   return (
     <section>
-      <div className="container-width flex gap-3 justify-between ">
+      <div className="container-width flex gap-3 justify-between mb-64">
         <div className="w-[30%] flex flex-col gap-6">
           {pagesItems.map(({name, path}, index) => (
             <Link
@@ -311,15 +311,31 @@ function PagesGroup() {
             </Link>
           ))}
         </div>
+
         <div className="w-[65%]">
           <div className="bg-primary-pink-gradient z-0 relative h-full rounded-3xl border-r-4 border-transparent overflow-hidden">
-            <div className="p-8 pt-0 max-h-[900px] overflow-hidden overflow-y-scroll scroll-smooth bg-black -mr-9 rounded-3xl relative">
-              <span className="w-full h-8 bg-black block sticky top-0" />
-              <div className="flex flex-col gap-6">
+            <div className="absolute top-0 z-10 w-full">
+              <img src="/images/pages_bg.svg" alt="" />
+            </div>
+            <div className="p-8 pt-0 max-h-[850px] overflow-hidden overflow-y-scroll scroll-smooth bg-black -mr-9 rounded-3xl relative">
+              <span className="w-full h-8 bg-black block sticky top-0 z-50" />
+              <div className="flex flex-col gap-6 relative z-40">
                 {pagesCards.map(({cards, id}, index) => (
                   <div key={index} id={id} className="grid grid-cols-2 gap-6">
                     {cards.map(({thumbnail, title, href}, index) => (
-                      <Link key={index} href={href}>
+                      <Link
+                        key={index}
+                        href={href}
+                        className="px-4 pt-4 border-t border-x border-gray-700 rounded-2xl"
+                      >
+                        <div className="flex gap-1 mb-3">
+                          {[...Array(3)].map((_, index) => (
+                            <span
+                              className="w-1.5 aspect-square bg-gray-200 rounded-full opacity-30"
+                              key={index}
+                            ></span>
+                          ))}
+                        </div>
                         <img
                           className="rounded-lg mb-6"
                           src={thumbnail}

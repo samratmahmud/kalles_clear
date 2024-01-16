@@ -17,6 +17,7 @@ const config: Config = {
           "400": "rgba(255, 255, 255, 0.47)",
           "800": "#101010",
         },
+        fuchsia: {"500": "#A05DFE"},
         slate: {
           "300": "rgba(255, 255, 255)",
           "600": "rgba(32, 32, 32)",
@@ -69,6 +70,10 @@ const config: Config = {
         "linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 30.42%, rgba(255, 255, 255, 0) 69.5%, rgba(255, 255, 255, 0.24) 100%)",
       "demos-card":
         "linear-gradient(180deg, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%)",
+      "black-gray":
+        "linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0.22) 100%)",
+      "primary-pink-gradient":
+        "linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%)",
     },
     container: {
       center: true,

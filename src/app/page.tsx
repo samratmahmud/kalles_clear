@@ -1,4 +1,5 @@
 import Demos from "./home/Demos";
+import PagesGroup from "./home/PagesGroup";
 import PremiumFeatures from "./home/PremiumFeatures";
 import Header from "./home/header/Header";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <PremiumFeatures />
       <Demos />
+      <PagesGroup />
     </main>
   );
 }

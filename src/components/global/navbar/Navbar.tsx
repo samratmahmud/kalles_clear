@@ -6,7 +6,7 @@ import React, {useEffect, useState} from "react";
 const navLink = [
   {
     name: "Demos",
-    path: "/",
+    path: "#Demos",
   },
   {
     name: "Special Deal",

@@ -42,7 +42,7 @@ function KarllesTabs() {
   const [change, setChange] = useState(0);
 
   return (
-    <div className="bg-gray-100 backdrop-blur-md p-3 rounded-3xl  duration-500">
+    <div className="bg-gray-100 backdrop-blur-md p-3 rounded-3xl  duration-500 -skew-y-3 hover:-skew-y-0">
       <div className="flex gap-1.5 ml-3 mb-3">
         {[...Array(3)].map((_, index) => (
           <span

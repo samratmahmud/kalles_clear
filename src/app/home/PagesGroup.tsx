@@ -326,7 +326,7 @@ function PagesGroup() {
                       <Link
                         key={index}
                         href={href}
-                        className="px-4 pt-4 border-t border-x border-gray-700 rounded-2xl"
+                        className="px-4 pt-4 border-t border-x border-slate-800 rounded-2xl"
                       >
                         <div className="flex gap-1 mb-3">
                           {[...Array(3)].map((_, index) => (

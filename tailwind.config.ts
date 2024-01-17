@@ -11,7 +11,12 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#00BAD4",
-        blue: {"500": "#007aff", "600": "#0d6efd", "700": "#0d6efd"},
+        blue: {
+          "200": "rgb(245, 193, 255)",
+          "500": "#007aff",
+          "600": "#0d6efd",
+          "700": "#0d6efd",
+        },
         gray: {
           "100": "#6c757d47",
           "400": "rgba(255, 255, 255, 0.47)",
@@ -22,7 +27,12 @@ const config: Config = {
           "300": "rgba(255, 255, 255)",
           "600": "rgba(32, 32, 32)",
         },
-        green: {"400": "#35E6CC", "600": "#35E6CC"},
+        orange: {"300": "rgb(255, 255, 222)"},
+        green: {
+          "200": "rgb(159, 209, 255)",
+          "400": "#35E6CC",
+          "600": "#35E6CC",
+        },
       },
     },
     fontSize: {
@@ -49,6 +59,7 @@ const config: Config = {
       "16xl": ["80px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
       "17xl": ["120px", {lineHeight: "144px", letterSpacing: "-6px"}],
       "18xl": ["128px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
+      "19xl": ["240px", {lineHeight: "1.2", letterSpacing: ""}],
     },
     fontFamily: {
       Poppins: ["Poppins", ...fontFamily.sans],
@@ -75,6 +86,8 @@ const config: Config = {
       "primary-pink-gradient":
         "linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%)",
       "pages-bg": "url('/images/pages_bg.png')",
+      "clean-bg":
+        "-webkit-linear-gradient(81.01deg, #5C39B3 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%)",
     },
     container: {
       center: true,

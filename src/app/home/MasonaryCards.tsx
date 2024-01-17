@@ -37,8 +37,8 @@ function MasonaryCards() {
     <section>
       <div className="container-width mb-44">
         <div className="sticky top-28 flex justify-center">
-          <div className="backdrop-blur-md inline-block  rounded-3xl bg-black/60 px-14 mb-56">
-            <h2 className="flex gap-8 items-center text-10xl text-white font-medium justify-center">
+          <div className="backdrop-blur-md inline-block  rounded-3xl bg-black/65 mb-56">
+            <h2 className="flex gap-8 items-center text-10xl text-white font-medium justify-center px-24">
               <span className="text-18xl font-medium tracking-[-6.4px] bg-50+ text-lenear">
                 25+
               </span>

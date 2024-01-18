@@ -153,7 +153,7 @@ const featuresImagesGroup = [
 
 function Features() {
   return (
-    <section>
+    <section id="features">
       <div className="container-width mb-[200px]">
         <div className="flex gap-3 items-end justify-between mb-16">
           <div className="flex items-center gap-8">

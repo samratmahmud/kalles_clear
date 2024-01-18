@@ -10,21 +10,21 @@ const navLink = [
   },
   {
     name: "Special Deal",
-    path: "/",
+    path: "#specialDeal",
     badgeNew: "New",
   },
   {
     name: "Features",
-    path: "/",
+    path: "#features",
   },
   {
     name: "Performance",
-    path: "/",
+    path: "#performance",
     badgeHot: "Hot",
   },
   {
     name: "Support",
-    path: "/",
+    path: "#support",
   },
   {
     name: "Open Store Free",

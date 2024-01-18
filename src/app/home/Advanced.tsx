@@ -5,7 +5,7 @@ function Advanced() {
   return (
     <section className="mb-[200px]">
       <div className="relative z-0 mb-32">
-        <span className="bg-primary w-full h-1/5 absolute top-1/4 -z-10 blur-[200px]" />
+        <span className="bg-primary w-full h-1/5 absolute 4xl:top-[20%] top-1/4 -z-10 blur-[200px]" />
         <h2 className="text-17xl leading-[1.2] text-center font-medium text-lenear bg-Advanced xl:px-12 lg:px-8 px-4">
           Advanced Mega Menu
         </h2>

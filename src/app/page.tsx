@@ -1,6 +1,7 @@
 import Advanced from "./home/Advanced";
 import Demos from "./home/Demos";
 import Features from "./home/Features";
+import FeaturesCards from "./home/FeaturesCards";
 import MasonaryCards from "./home/MasonaryCards";
 import PagesGroup from "./home/PagesGroup";
 import PremiumFeatures from "./home/PremiumFeatures";
@@ -18,6 +19,7 @@ export default function Home() {
       <Responsive />
       <Features />
       <Advanced />
+      <FeaturesCards />
     </main>
   );
 }

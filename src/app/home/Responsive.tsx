@@ -11,8 +11,8 @@ function Responsive() {
             <h2 className="text-19xl bg-clean-bg font-medium stroke-text">
               Clean
             </h2>
-            <div className="border-[10px] rounded-full border-dotted border-blue-600 animate-spin relative z-0">
-              <span className="bg-blue-600 w-64 aspect-square rounded-full absolute -top-[15%] -left-[15%] blur-[50px] -z-10" />
+            <div className="border-[10px] rounded-full border-dotted border-red-800 animate-spin relative z-0">
+              <span className="bg-one-stop w-64 aspect-square rounded-full absolute -top-[15%] -left-[15%] blur-[50px] -z-10" />
               <img
                 className="w-48 rounded-full aspect-square"
                 src="/images/purple-osteospermum-daisy-flower_1373-16.jpg"

@@ -1,3 +1,4 @@
+import Advanced from "./home/Advanced";
 import Demos from "./home/Demos";
 import Features from "./home/Features";
 import MasonaryCards from "./home/MasonaryCards";
@@ -16,6 +17,7 @@ export default function Home() {
       <MasonaryCards />
       <Responsive />
       <Features />
+      <Advanced />
     </main>
   );
 }

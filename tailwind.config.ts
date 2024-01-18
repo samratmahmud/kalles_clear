@@ -88,6 +88,8 @@ const config: Config = {
       "pages-bg": "url('/images/pages_bg.png')",
       "clean-bg":
         "-webkit-linear-gradient(81.01deg, #5C39B3 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%)",
+      Advanced:
+        "linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.03) 100%)",
     },
     container: {
       center: true,

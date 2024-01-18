@@ -56,7 +56,8 @@ const featuresImagesGroup = [
     describtiton: `Swatch products with multiple attributes
       at once in products, collections,
       homepage, etc.`,
-    className: "max-w-[300px] bottom-8 left-8",
+    className:
+      "max-w-[300px] mx-auto bottom-8 text-center left-0 right-0 w-full",
     classNames: "col-span-4",
   },
   {
@@ -65,7 +66,7 @@ const featuresImagesGroup = [
     describtiton: `Improve shopping convenience & sales with
     mini cart showing free shipping notification,
       homepage, etc.`,
-    className: "max-w-[300px] top-8 left-8",
+    className: "max-w-[300px] mx-auto top-8 text-center left-0 right-0 w-full",
     classNames: "col-span-4",
   },
   {
@@ -74,7 +75,8 @@ const featuresImagesGroup = [
     describtiton: `Encourage average order value by showing
     frequently bought together products,
       homepage, etc.`,
-    className: "max-w-[300px] bottom-8 left-8",
+    className:
+      "max-w-[300px] mx-auto bottom-8 text-center left-0 right-0 w-full",
     classNames: "col-span-4",
   },
 ];
@@ -110,41 +112,43 @@ function Features() {
               <div key={index} className={`${classNames}`}>
                 <div className="relative">
                   <img src={thumbnail} alt="" />
-                  <div className={`absolute ${className}`}>
-                    <h3 className="text-lg font-medium text-white mb-4">
-                      {title}
-                    </h3>
-                    <p className="text-md tracking-normal">{describtiton}</p>
-                    {size && (
-                      <div className="py-5">
-                        {size.map(({colorBg, sizes}, index) => (
-                          <div key={index}>
-                            <div className="flex gap-3 mb-3">
-                              {colorBg.map(({color}) => (
-                                <div
-                                  key={index}
-                                  className="first:border border-primary rounded-full p-1"
-                                >
+                  <div className={`absolute  ${className}`}>
+                    <div className="w-full">
+                      <h3 className="text-lg font-medium text-white mb-4">
+                        {title}
+                      </h3>
+                      <p className="text-md tracking-normal">{describtiton}</p>
+                      {size && (
+                        <div className="py-5">
+                          {size.map(({colorBg, sizes}, index) => (
+                            <div key={index}>
+                              <div className="flex gap-3 mb-3">
+                                {colorBg.map(({color}) => (
                                   <div
-                                    className={`w-7 aspect-square ${color} rounded-full`}
-                                  />
-                                </div>
-                              ))}
+                                    key={index}
+                                    className="first:border border-primary rounded-full p-1"
+                                  >
+                                    <div
+                                      className={`w-7 aspect-square ${color} rounded-full`}
+                                    />
+                                  </div>
+                                ))}
+                              </div>
+                              <div className="flex gap-3">
+                                {sizes.map(({sized, className}, index) => (
+                                  <div
+                                    key={index}
+                                    className={`text-sm uppercase ${className}`}
+                                  >
+                                    {sized}
+                                  </div>
+                                ))}
+                              </div>
                             </div>
-                            <div className="flex gap-3">
-                              {sizes.map(({sized, className}, index) => (
-                                <div
-                                  key={index}
-                                  className={`text-sm uppercase ${className}`}
-                                >
-                                  {sized}
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

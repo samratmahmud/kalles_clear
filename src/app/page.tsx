@@ -1,8 +1,10 @@
 import Advanced from "./home/Advanced";
 import Demos from "./home/Demos";
+import EcomRise from "./home/EcomRise";
 import Features from "./home/Features";
 import FeaturesCards from "./home/FeaturesCards";
 import MasonaryCards from "./home/MasonaryCards";
+import PackageBuilt from "./home/PackageBuilt";
 import PagesGroup from "./home/PagesGroup";
 import PremiumFeatures from "./home/PremiumFeatures";
 import Responsive from "./home/Responsive";
@@ -20,6 +22,8 @@ export default function Home() {
          {/* <Features /> */}
          <Advanced />
          <FeaturesCards />
+         <EcomRise />
+         <PackageBuilt />
       </main>
    );
 }

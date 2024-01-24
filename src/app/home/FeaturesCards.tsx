@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import Masonry from "react-responsive-masonry";
 
 const cardsGroup = [
    {
@@ -18,7 +20,7 @@ const cardsGroup = [
       thumbnail: "/images/2.png",
       describtiton: `Dynamic ways to filter a product, enhance shopping convenience`,
       className: "top-10 left-0 right-0 text-center",
-      classNames: "col-span-8",
+      classNames: "col-span-8 bg-gray-800 rounded-2xl",
    },
    {
       title: "Stunning Lookbook",
@@ -51,7 +53,7 @@ const cardsGroup = [
          </>
       ),
       className: "bottom-0 left-0 right-0 text-center",
-      classNames: "col-span-6 h-[70%]",
+      classNames: "col-span-6 bg-gray-950 rounded-2xl",
    },
    {
       title: "Exit Intent Popup",
@@ -63,31 +65,93 @@ const cardsGroup = [
          </>
       ),
       className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-6",
+      classNames: "col-span-6 bg-gray-950 rounded-2xl",
    },
    {
-      title: "Image Focal Point",
-      thumbnail: "/images/7.png",
-      describtiton: (
+      title: (
          <>
-            Select the most important part of your images that must be visible
-            in any screens
+            Multiple Currencies <br /> & Languages
          </>
       ),
-      className: "top-0 left-0 right-0 text-center",
-      classNames: "col-span-6 absolute",
+      thumbnail: "/images/18.jpeg",
+      describtiton: (
+         <>
+            Allow shoppers to view product info right on home or collection
+            pages
+         </>
+      ),
+      className: "bottom-8 left-0 right-0 text-center",
+      classNames: "col-span-4 bg-gray-950 rounded-2xl",
    },
+   {
+      title: "Google Fonts & Custom Fonts",
+      thumbnail: "/images/5.png",
+      describtiton: <>Freely use any fonts with Kalles huge font library</>,
+      btn: "Font Install Service by Fontify",
+      className: "bottom-8 left-0 right-0 text-center",
+      classNames: "col-span-4 bg-gray-950 rounded-2xl",
+   },
+   {
+      title: "Size Chart",
+      thumbnail: "/images/11.png",
+      describtiton: (
+         <>Clean size chart helps customers purchase with confidence</>
+      ),
+      className: "bottom-8 left-0 right-0 text-center",
+      classNames: "col-span-4 bg-gray-950 rounded-2xl",
+   },
+   {
+      title: "Stunning Lookbook",
+      thumbnail: "/images/3.png",
+      describtiton: (
+         <>Showcase your items in the most eye-catching way with Lookbook</>
+      ),
+      className: "bottom-8 left-0 right-0 text-center",
+      classNames: "col-span-6 bg-gray-950 rounded-2xl",
+   },
+   {
+      title: "Quickview",
+      thumbnail: "/images/4.png",
+      describtiton: (
+         <>
+            Allow shoppers to view product info right on home or collection
+            pages
+         </>
+      ),
+      className: "bottom-8 left-0 right-0 text-center",
+      classNames: "col-span-6",
+   },
+];
+
+const ImagesGroup = [
+   "/images/1 (1).png",
+   "/images/2.png",
+   "/images/4.png",
+   "/images/3.png",
+   "/images/5.png",
+   "/images/4.png",
+   "/images/2.png",
+   "/images/3.png",
+   "/images/5.png",
 ];
 
 function FeaturesCards() {
    return (
       <section>
-         <div className="container-width">
+         <div className="container-width mb-56 relative">
+            <span className="bg-primary w-80 aspect-square absolute -bottom-60 left-1/4 -translate-x-1/4 blur-[250px]" />
             <div className="grid grid-cols-12 gap-7 relative">
                <span className="bg-primary w-96 aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[220px]" />
                {cardsGroup.map(
                   (
-                     {title, thumbnail, describtiton, className, classNames},
+                     {
+                        title,
+                        thumbnail,
+                        describtiton,
+                        className,
+                        classNames,
+                        btn,
+                     },
                      index
                   ) => (
                      <div
@@ -103,6 +167,11 @@ function FeaturesCards() {
                               <p className="text-base tracking-normal">
                                  {describtiton}
                               </p>
+                              {btn && (
+                                 <div className="text-md bg-features-btn inline-block py-2 px-10 mt-6 rounded-lg text-white font-medium">
+                                    {btn}
+                                 </div>
+                              )}
                            </div>
                         </div>
                         <div className="absolute top-7 right-[5%] border border-gray-700 border-opacity-50 px-1 py-2 rounded-md opacity-0 group-hover:opacity-100 duration-300">

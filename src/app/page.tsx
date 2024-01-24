@@ -12,12 +12,12 @@ export default function Home() {
    return (
       <main className="pb-20">
          <Header />
-         <PremiumFeatures />
+         {/* <PremiumFeatures /> */}
          {/* <Demos /> */}
-         <PagesGroup />
-         <MasonaryCards />
-         <Responsive />
-         <Features />
+         {/* <PagesGroup /> */}
+         {/* <MasonaryCards /> */}
+         {/* <Responsive /> */}
+         {/* <Features /> */}
          <Advanced />
          <FeaturesCards />
       </main>

@@ -54,27 +54,27 @@ const cardsGroup = [
       classNames: "col-span-6 h-[70%]",
    },
    {
-      title: "Quickview",
-      thumbnail: "/images/4.png",
+      title: "Exit Intent Popup",
+      thumbnail: "/images/6.png",
       describtiton: (
          <>
-            Allow shoppers to view product info right on home or collection
-            pages
+            Win back customers with exit intent popup showing <br />
+            discounts & recommend products
          </>
       ),
       className: "bottom-8 left-0 right-0 text-center",
       classNames: "col-span-6",
    },
    {
-      title: "Compare, Wishlist",
-      thumbnail: "/images/5.png",
+      title: "Image Focal Point",
+      thumbnail: "/images/7.png",
       describtiton: (
          <>
-            Make shopping experience more fun & informative with Compare &
-            Wishlist
+            Select the most important part of your images that must be visible
+            in any screens
          </>
       ),
-      className: "bottom-0 left-0 right-0 text-center",
+      className: "top-0 left-0 right-0 text-center",
       classNames: "col-span-6 absolute",
    },
 ];

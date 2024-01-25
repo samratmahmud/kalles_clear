@@ -132,8 +132,8 @@ function PackageBuilt() {
                   with Kalles built-in features
                </h2>
             </div>
-            <div className="bg-features-build rounded-t-3xl w-full h-[2200px] relative">
-               <div className="bg-black rounded-t-3xl px-12 pt-12 absolute top-0.5 left-0.5 right-0.5 bottom-0">
+            <div className="bg-features-build rounded-t-3xl w-full border-t border-transparent">
+               <div className="bg-black rounded-t-3xl px-12 pt-12 mx-[1px] mt-[2px]">
                   <div className="grid grid-cols-4">
                      {builsPackages.map(
                         ({title, content, className}, index) => (

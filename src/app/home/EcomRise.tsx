@@ -38,7 +38,7 @@ function EcomRise() {
    return (
       <section>
          <div className="container mb-56 relative z-0">
-            <span className="max-w-[732px] aspect-square w-full bg-one-stop absolute top-1/2 -translate-y-1/4 left-0 4xl:left-[45%] rounded-full blur-[250px] -z-10" />
+            <span className="max-w-[732px] aspect-square w-full bg-one-stop absolute top-1/2 -translate-y-1/3 left-0 4xl:left-[45%] rounded-full blur-[250px] -z-10" />
             <div className="pl-[8%] grid 4xl:grid-cols-5 grid-cols-4">
                <div className="col-span-2 mt-12">
                   <h3 className="text-10xl font-medium bg-one-stop text-lenear inline-block">

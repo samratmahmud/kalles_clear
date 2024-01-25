@@ -52,7 +52,7 @@ const cardsGroup = [
             Wishlist
          </>
       ),
-      className: "bottom-0 left-0 right-0 text-center",
+      className: "bottom-8 left-0 right-0 text-center",
       classNames: "col-span-6 bg-gray-950 rounded-2xl",
    },
    {
@@ -76,16 +76,16 @@ const cardsGroup = [
       thumbnail: "/images/18.jpeg",
       describtiton: (
          <>
-            Allow shoppers to view product info right on home or collection
-            pages
+            Smoothly switching between multiple <br /> currencies and languages
          </>
       ),
       className: "bottom-8 left-0 right-0 text-center",
       classNames: "col-span-4 bg-gray-950 rounded-2xl",
    },
    {
+      fontsA: "500+",
       title: "Google Fonts & Custom Fonts",
-      thumbnail: "/images/5.png",
+      thumbnail: "/images/10.png",
       describtiton: <>Freely use any fonts with Kalles huge font library</>,
       btn: "Font Install Service by Fontify",
       className: "bottom-8 left-0 right-0 text-center",
@@ -123,18 +123,6 @@ const cardsGroup = [
    },
 ];
 
-const ImagesGroup = [
-   "/images/1 (1).png",
-   "/images/2.png",
-   "/images/4.png",
-   "/images/3.png",
-   "/images/5.png",
-   "/images/4.png",
-   "/images/2.png",
-   "/images/3.png",
-   "/images/5.png",
-];
-
 function FeaturesCards() {
    return (
       <section>
@@ -151,6 +139,7 @@ function FeaturesCards() {
                         className,
                         classNames,
                         btn,
+                        fontsA,
                      },
                      index
                   ) => (
@@ -160,7 +149,12 @@ function FeaturesCards() {
                      >
                         <img className="opacity-50" src={thumbnail} alt="" />
                         <div className={`absolute ${className}`}>
-                           <div className="w-full">
+                           <div className="w-full px-12">
+                              {fontsA && (
+                                 <div className="text-13xl text-lenear bg-one-stop inline-block font-medium">
+                                    {fontsA}
+                                 </div>
+                              )}
                               <h3 className="text-3xl font-medium text-white mb-2">
                                  {title}
                               </h3>

@@ -16,7 +16,7 @@ export default function Home() {
          <Header />
          {/* <PremiumFeatures /> */}
          {/* <Demos /> */}
-         {/* <PagesGroup /> */}
+         <PagesGroup />
          {/* <MasonaryCards /> */}
          {/* <Responsive /> */}
          {/* <Features /> */}

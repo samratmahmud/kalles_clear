@@ -95,6 +95,8 @@ const config: Config = {
          "features-build":
             "linear-gradient(180deg, #36E6CC 0%, #C32BF8 69.39%, rgba(0, 0, 0, 0) 100%)",
          free: "linear-gradient(100deg, #00D426 7.72%, #21FFF2 118.76%)",
+         "feature-btn":
+            "linear-gradient(110deg, #202020 0%, #101010 100%), linear-gradient(136.74deg, rgba(255, 255, 255, 0.16) 4.33%, rgba(255, 255, 255, 0) 38.36%)",
       },
       container: {
          center: true,

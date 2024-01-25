@@ -29,6 +29,12 @@ const builsPackages = [
          "Pickup Availability",
          "Pre Orde",
       ],
+      btn: [
+         {
+            value: "Total",
+            titleB: "",
+         },
+      ],
    },
    {
       title: "Shopify App Cost",
@@ -58,6 +64,16 @@ const builsPackages = [
          "$30",
          "$45",
       ],
+      btn: [
+         {
+            titleB: "Extra cost",
+            value: (
+               <>
+                  <p className="text-lenear bg-hotP">$2358/year</p>
+               </>
+            ),
+         },
+      ],
    },
    {
       title: "Conversion Increase",
@@ -86,6 +102,16 @@ const builsPackages = [
          "0.23%",
          "0.12%",
          "0.21%",
+      ],
+      btn: [
+         {
+            titleB: "Expected CR increase",
+            value: (
+               <>
+                  <p className="text-lenear bg-hotP">8.05%</p>
+               </>
+            ),
+         },
       ],
    },
    {
@@ -117,6 +143,17 @@ const builsPackages = [
          "Free",
          "Free",
       ],
+      btn: [
+         {
+            titleB: "One time payment",
+            value: (
+               <>
+                  <p className="text-lenear bg-free">Only $89</p>
+               </>
+            ),
+            background: "",
+         },
+      ],
    },
 ];
 
@@ -132,34 +169,55 @@ function PackageBuilt() {
                   with Kalles built-in features
                </h2>
             </div>
-            <div className="bg-features-build rounded-t-3xl w-full border-t border-transparent">
+            <div className="bg-features-build rounded-t-3xl w-full border-t border-transparent mb-8">
                <div className="bg-black rounded-t-3xl px-12 pt-12 mx-[1px] mt-[2px]">
                   <div className="grid grid-cols-4">
                      {builsPackages.map(
-                        ({title, content, className}, index) => (
-                           <div key={index} className="group">
+                        ({title, content, className, btn}, index) => (
+                           <table key={index} className="group">
                               <div className="mb-12 flex justify-center">
                                  <thead className="text-3xl font-medium text-white pb-12">
                                     {title}
                                  </thead>
                               </div>
-                              <tr className="flex flex-col group-even:bg-gray-800 rounded-2xl py-8">
+                              <tbody className="flex flex-col group-even:bg-gray-800 rounded-2xl py-8">
                                  {content.map((items, index) => (
-                                    <td className="py-6 border-b border-gray-400/20 last:border-b-0 flex flex-col items-center justify-center  group-first:items-start mx-8 h-[86px]">
-                                       <span
+                                    <tr className="py-6 border-b border-gray-400/20 last:border-b-0 flex flex-col items-center justify-center  group-first:items-start mx-8 h-[86px]">
+                                       <td
                                           key={index}
                                           className={`text-gray-400 group-first:text-white ${className}`}
                                        >
                                           {items}
-                                       </span>
-                                    </td>
+                                       </td>
+                                    </tr>
                                  ))}
-                              </tr>
-                           </div>
+                              </tbody>
+                              <div className="py-8 mx-5">
+                                 {btn.map(({titleB, value}, index) => (
+                                    <div
+                                       key={index}
+                                       className=" flex flex-col gap-2 items-center justify-center bg-feature-btn rounded-2xl h-24 py-4 px-10"
+                                    >
+                                       <div className="text-3xl text-white leading-[1.4] font-medium">
+                                          {value}
+                                       </div>
+                                       <div className="text-white font-medium">
+                                          {titleB}
+                                       </div>
+                                    </div>
+                                 ))}
+                              </div>
+                           </table>
                         )
                      )}
                   </div>
                </div>
+            </div>
+            <div className="text-md tracking-normal text-center text-gray-400">
+               *Note: These features on Kalles meet the standard needs of a
+               store. <br />
+               If merchants want advanced solutions, we recommend you install
+               the apps.
             </div>
          </div>
       </section>

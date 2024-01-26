@@ -20,7 +20,6 @@ const config: Config = {
             gray: {
                "100": "#6c757d47",
                "200": "#00C9FF",
-               "300": "rgba(255, 255, 255, 0.48)",
                "400": "rgba(255, 255, 255, 0.47)",
                "800": "#101010",
             },
@@ -76,6 +75,8 @@ const config: Config = {
          "btn-mb": "linear-gradient(90deg, transparent, #00BAD4, transparent)",
          get: "linear-gradient(81deg, #CE1BFB 10.86%, #4AA5DF 89.96%)",
          "one-stop": "linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%)",
+         shopify:
+            "linear-gradient(81deg, #F253BA 10%, #FF6C80 99.96%, #FFF94F 63.99%)",
          "top-marque": "linear-gradient(110deg, #202020 0%, #101010 100%)",
          "50+": "linear-gradient(81deg, #5C39B2 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%)",
          "pink-primary":
@@ -100,6 +101,8 @@ const config: Config = {
          free: "linear-gradient(100deg, #00D426 7.72%, #21FFF2 118.76%)",
          "feature-btn":
             "linear-gradient(110deg, #202020 0%, #101010 100%), linear-gradient(136.74deg, rgba(255, 255, 255, 0.16) 4.33%, rgba(255, 255, 255, 0) 38.36%)",
+         skleton:
+            "linear-gradient(to right,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(125, 185, 232, 0) 100%)",
       },
       container: {
          center: true,

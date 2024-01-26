@@ -9,8 +9,8 @@ import PagesGroup from "./home/PagesGroup";
 import PremiumFeatures from "./home/PremiumFeatures";
 import Responsive from "./home/Responsive";
 import SpecialDeal from "./home/SpecialDeal";
-import SpeedSeo from "./home/SpeedSeo";
 import Header from "./home/header/Header";
+import Performance from "./home/Performance";
 
 export default function Home() {
    return (
@@ -27,7 +27,7 @@ export default function Home() {
          <EcomRise />
          <PackageBuilt />
          <SpecialDeal />
-         <SpeedSeo />
+         <Performance />
       </main>
    );
 }

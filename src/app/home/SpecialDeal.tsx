@@ -3,7 +3,7 @@ import React from "react";
 
 function SpecialDeal() {
    return (
-      <section>
+      <section id="specialDeal">
          <div className="grid grid-cols-2 gap-6 mb-44 relative z-0">
             <span className="bg-primary max-w-[432px] aspect-square w-full absolute top-[70%] left-[35%] rounded-full -z-10 blur-[300px]" />
             <div className="pl-[7%] mt-10">

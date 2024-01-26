@@ -4,8 +4,9 @@ import React from "react";
 function SpecialDeal() {
    return (
       <section>
-         <div className="container mb-36">
-            <div>
+         <div className="grid grid-cols-2 gap-6 mb-44 relative z-0">
+            <span className="bg-primary max-w-[432px] aspect-square w-full absolute top-[70%] left-[35%] rounded-full -z-10 blur-[300px]" />
+            <div className="pl-[7%] mt-10">
                <h2 className="text-10xl leading-[1.2] tracking-normal text-white font-medium mb-6">
                   Buy Kalles to{" "}
                   <span className="text-lenear bg-newP relative">
@@ -25,7 +26,7 @@ function SpecialDeal() {
                   integrated with Kalles. Want to design your pages with a
                   powerful drag-drop editor?
                </p>
-               <div className="flex gap-6">
+               <div className="flex gap-6 mb-14">
                   <Buttons
                      href="/"
                      name="Try Live Demo"
@@ -38,6 +39,23 @@ function SpecialDeal() {
                      varient="outlined"
                   />
                </div>
+               <div className="bg-gray-black border border-transparent rounded-2xl max-w-[455px]">
+                  <div className="flex items-center gap-6 p-6 bg-black rounded-2xl">
+                     <img
+                        className="w-6 h-6"
+                        src="/images/icons8-pallet-50.png"
+                        alt=""
+                     />
+                     <div className="text-md tracking-normal">
+                        <span className="text-white">How to claim:</span> Buy
+                        Kalles &gt; Install EComposer <br /> then chat with
+                        support in-app to claim your deal.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <img src="/images/1 (2).png" alt="" />
             </div>
          </div>
       </section>

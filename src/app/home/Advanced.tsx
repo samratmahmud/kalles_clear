@@ -16,8 +16,8 @@ function Advanced() {
                <img className="w-full" src="/images/1.png" alt="" />
             </div>
          </div>
-         <div className="max-w-[830px] mx-auto bg-gray-black bg-contain rounded-2xl relative min-h-20">
-            <div className="text-xl font-medium p-6 bg-gray-800 absolute inset-[1px] rounded-2xl">
+         <div className="max-w-[830px] mx-auto bg-gray-black border border-transparent rounded-2xl">
+            <div className="text-xl font-medium p-6 bg-gray-800 rounded-2xl">
                <span className="text-lenear bg-one-stop">
                   Dynamic & informative mega menu
                </span>{" "}

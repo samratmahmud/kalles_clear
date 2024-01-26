@@ -19,6 +19,7 @@ const config: Config = {
             },
             gray: {
                "100": "#6c757d47",
+               "300": "rgba(255, 255, 255, 0.48)",
                "400": "rgba(255, 255, 255, 0.47)",
                "800": "#101010",
             },
@@ -72,6 +73,7 @@ const config: Config = {
          buttonS2: "linear-gradient(99.68deg, #00BAD4 7.72%, #2194FF 118.76%)",
          buttonS3: "linear-gradient(80.57deg, #CE1BFB 10.86%, #35E6CC 89.96%)",
          "btn-mb": "linear-gradient(90deg, transparent, #00BAD4, transparent)",
+         get: "linear-gradient(81deg, #CE1BFB 10.86%, #4AA5DF 89.96%)",
          "one-stop": "linear-gradient(81deg, #CE1BFB 10.86%, #35E6CC 89.96%)",
          "top-marque": "linear-gradient(110deg, #202020 0%, #101010 100%)",
          "50+": "linear-gradient(81deg, #5C39B2 -1.5%, #BB4190 44.74%, #DE6475 71.64%, #F9B05E 111.84%)",

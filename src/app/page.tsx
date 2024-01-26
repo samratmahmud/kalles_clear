@@ -8,22 +8,24 @@ import PackageBuilt from "./home/PackageBuilt";
 import PagesGroup from "./home/PagesGroup";
 import PremiumFeatures from "./home/PremiumFeatures";
 import Responsive from "./home/Responsive";
+import SpecialDeal from "./home/SpecialDeal";
 import Header from "./home/header/Header";
 
 export default function Home() {
    return (
       <main className="pb-20">
          <Header />
-         {/* <PremiumFeatures /> */}
-         {/* <Demos /> */}
+         <PremiumFeatures />
+         <Demos />
          <PagesGroup />
-         {/* <MasonaryCards /> */}
-         {/* <Responsive /> */}
-         {/* <Features /> */}
+         <MasonaryCards />
+         <Responsive />
+         <Features />
          <Advanced />
          <FeaturesCards />
          <EcomRise />
          <PackageBuilt />
+         <SpecialDeal />
       </main>
    );
 }

@@ -16,7 +16,7 @@ function Header() {
                   <h3 className="text-xl bg-one-stop inline-block text-lenear mb-3">
                      One-stop Shopify Theme
                   </h3>
-                  <h1 className="text-8xl font-medium mb-6 text-white">
+                  <h1 className="text-9xl tracking-[-2.16px] font-medium mb-6 text-white">
                      Prime Quality <br /> Premium Design
                   </h1>
                   <p className="mb-7">

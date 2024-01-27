@@ -7,7 +7,7 @@ function Performance() {
       <section id="performance">
          <div className="container mb-44">
             <div className="grid grid-cols-3 gap-6">
-               <div className=" flex flex-col gap-6">
+               <div className="flex flex-col gap-6">
                   <div className="bg-gray-black border border-transparent rounded-2xl">
                      <div className="bg-black py-9 px-12 rounded-2xl relative z-10">
                         <h3 className="text-white text-3xl tracking-normal font-medium text-center mb-4">
@@ -29,7 +29,7 @@ function Performance() {
                      <img src="/images/2 (2).png" alt="" />
                   </div>
                   <div className="bg-gray-black border border-transparent rounded-2xl">
-                     <div className="bg-black py-9 px-12 rounded-2xl relative z-10">
+                     <div className="bg-black py-9 px-12 rounded-2xl">
                         <h3 className="text-white text-3xl tracking-normal font-medium text-center mb-4">
                            Lightning-fast Loading Speed
                         </h3>
@@ -53,7 +53,7 @@ function Performance() {
                      </p>
                   </div>
                   <div className="relative z-0">
-                     <span className="bg-clean-bg blur-[200px] rounded-t-full absolute w-full h-full left-0 right-0 bottom-0 -z-10" />
+                     <span className="bg-clean-bg blur-[130px] rounded-t-full absolute w-full h-full top-[15%] left-0 right-0 bottom-0 -z-10" />
                      <div className="flex justify-center mb-10">
                         <img src="/images/google.svg" alt="" />
                      </div>

@@ -11,6 +11,7 @@ import Responsive from "./home/Responsive";
 import SpecialDeal from "./home/SpecialDeal";
 import Header from "./home/header/Header";
 import Performance from "./home/Performance";
+import Experience from "./home/Experience";
 
 export default function Home() {
    return (
@@ -28,6 +29,7 @@ export default function Home() {
          <PackageBuilt />
          <SpecialDeal />
          <Performance />
+         <Experience />
       </main>
    );
 }

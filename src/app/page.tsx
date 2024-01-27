@@ -17,19 +17,19 @@ export default function Home() {
    return (
       <main className="pb-20">
          <Header />
-         <PremiumFeatures />
-         <Demos />
-         <PagesGroup />
-         <MasonaryCards />
-         <Responsive />
-         <Features />
-         <Advanced />
-         <FeaturesCards />
-         <EcomRise />
-         <PackageBuilt />
-         <SpecialDeal />
-         <Performance />
-         <Experience />
+         {/* <PremiumFeatures /> */}
+         {/* <Demos /> */}
+         {/* <PagesGroup /> */}
+         {/* <MasonaryCards /> */}
+         {/* <Responsive /> */}
+         {/* <Features /> */}
+         {/* <Advanced /> */}
+         {/* <FeaturesCards /> */}
+         {/* <EcomRise /> */}
+         {/* <PackageBuilt /> */}
+         {/* <SpecialDeal /> */}
+         {/* <Performance /> */}
+         {/* <Experience /> */}
       </main>
    );
 }

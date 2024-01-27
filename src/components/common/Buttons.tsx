@@ -26,7 +26,7 @@ function Buttons(props: buttonProps) {
          "border",
          "border-slate-300/20",
          "text-white hover:text-primary",
-         `${size === "medium" ? "py-4" : `{${className}}`}`,
+         `${size === "medium" ? "md:py-4 py-2.5" : `{${className}}`}`,
          `${size === "medium" ? "px-6" : `{${className}}`}`,
          "bg-slate-600/30",
       ];
@@ -45,7 +45,7 @@ function Buttons(props: buttonProps) {
    return (
       <BtnComp
          role="Button"
-         className={`flex items-center justify-center duration-300 gap-2 ${
+         className={`flex items-center justify-center duration-300 gap-3 ${
             size === "medium" ? "rounded-lg" : `${className}`
          } relative z-0 overflow-hidden ${varientClasses.join(" ")}`}
          tabindex={-1}
@@ -64,7 +64,11 @@ function Buttons(props: buttonProps) {
                />
             </div>
          )}
-         <div className={`font-medium ${size === "medium" ? "" : "text-md"}`}>
+         <div
+            className={`font-medium leading-[22px] ${
+               size === "medium" ? "" : "text-md"
+            }`}
+         >
             {name}
          </div>
          {varient === "contained" && (

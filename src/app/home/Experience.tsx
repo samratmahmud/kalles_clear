@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Experience() {
@@ -19,9 +20,7 @@ function Experience() {
                   smooth designs.
                </p>
             </div>
-            <div>
-               <video src="/images/menu_mobile.mp4"></video>
-            </div>
+            <div></div>
          </div>
       </section>
    );

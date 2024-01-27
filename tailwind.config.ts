@@ -115,7 +115,7 @@ const config: Config = {
          md: "768px",
          lg: "992px",
          xl: "1150px",
-         "2xl": "1365px",
+         "2xl": "1400px",
          "3xl": "1550px",
          "4xl": "1700px",
          "5xl": "1860px",

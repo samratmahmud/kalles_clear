@@ -50,7 +50,7 @@ const config: Config = {
          "6xl": ["36px", {lineHeight: "43px", letterSpacing: ".3px"}],
          "7xl": ["38px", {lineHeight: "1.1", letterSpacing: "-0.96px"}],
          "8xl": ["40px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
-         "9xl": ["44px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
+         "9xl": ["44px", {lineHeight: "1.25", letterSpacing: ""}],
          "10xl": ["48px", {lineHeight: "1.1", letterSpacing: "-0.96px"}],
          "11xl": ["50px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
          "12xl": ["60px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
@@ -67,6 +67,8 @@ const config: Config = {
       },
       backgroundImage: {
          "header-bg": "url('/images/bg.jpeg')",
+         "commerce-bg":
+            "linear-gradient(180deg, #151515 0%, rgba(0, 0, 0, 100) 80%)",
          newP: "linear-gradient(100deg, #00BAD4 7.72%, #2194FF 118.76%)",
          hotP: "linear-gradient(113deg, #EA1D62 5.37%, #F2944F 108.05%)",
          buttonS1: "linear-gradient(80.57deg, #5128E3 10.86%, #AA3BF2 89.96%)",

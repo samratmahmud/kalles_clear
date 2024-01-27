@@ -15,9 +15,9 @@ import Experience from "./home/Experience";
 
 export default function Home() {
    return (
-      <main className="pb-20">
+      <main className="pb-0.5">
          <Header />
-         {/* <PremiumFeatures /> */}
+         <PremiumFeatures />
          {/* <Demos /> */}
          {/* <PagesGroup /> */}
          {/* <MasonaryCards /> */}

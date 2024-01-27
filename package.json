@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "next": "14.0.4",
     "react": "^18",
     "react-collapse": "^5.1.1",
@@ -22,6 +23,7 @@
     "simplebar-react": "^3.2.4"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-collapse": "^5.0.4",

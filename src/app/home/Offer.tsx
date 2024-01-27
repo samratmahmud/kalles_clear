@@ -5,8 +5,8 @@ import Marquee from "react-fast-marquee";
 
 function Offer() {
    return (
-      <section className="bg-top-marque">
-         <Marquee speed={60} pauseOnHover={true}>
+      <section className="bg-top-marque hidden md:block">
+         <Marquee speed={50} pauseOnHover={true}>
             {[...Array(10)].map((_, index) => (
                <div key={index} className="flex items-center">
                   <div className="flex items-center">

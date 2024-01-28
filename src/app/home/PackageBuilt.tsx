@@ -177,53 +177,60 @@ function PackageBuilt() {
             </div>
             <div className="bg-features-build rounded-t-3xl w-full border-t border-transparent mb-8 relative">
                <div className="bg-black rounded-t-3xl px-12 pt-12 mx-[1px] mt-[2px]">
-                  <Collapse isOpened={open} className="scroll-smooth">
-                     <div className="grid grid-cols-4">
-                        {builsPackages.map(
-                           ({title, content, className, btn}, index) => (
-                              <table key={index} className="group">
-                                 <div className="mb-12 flex justify-center">
-                                    <thead className="text-3xl font-medium text-white pb-12">
-                                       {title}
-                                    </thead>
-                                 </div>
-                                 <tbody className="flex flex-col group-even:bg-gray-800 rounded-2xl py-8">
-                                    {content.map((items, index) => (
-                                       <tr className="py-6 border-b border-gray-400/20 last:border-b-0 flex flex-col items-center justify-center  group-first:items-start mx-8 h-[70px]">
-                                          <td
+                  <div className="grid grid-cols-4 overflow-hidden">
+                     {builsPackages.map(
+                        ({title, content, className, btn}, index) => (
+                           <div key={index} className="group">
+                              <div className="text-3xl font-medium text-white flex justify-center mb-12">
+                                 {title}
+                              </div>
+                              <div className="flex flex-col group-even:bg-gray-800 rounded-2xl py-8">
+                                 {content.slice(0, 9).map((items, index) => (
+                                    <div className="py-6 border-b border-gray-400/20 last:border-b-0 flex flex-col items-center justify-center  group-first:items-start mx-8 h-[70px]">
+                                       <div
+                                          key={index}
+                                          className={`text-gray-400 group-first:text-white ${className}`}
+                                       >
+                                          {items}
+                                       </div>
+                                    </div>
+                                 ))}
+                                 {open &&
+                                    content.slice(9).map((items, index) => (
+                                       <div className="py-6 border-b border-gray-400/20 last:border-b-0 flex flex-col items-center justify-center  group-first:items-start mx-8 h-[70px]">
+                                          <div
                                              key={index}
                                              className={`text-gray-400 group-first:text-white ${className}`}
                                           >
                                              {items}
-                                          </td>
-                                       </tr>
-                                    ))}
-                                 </tbody>
-                                 <div className="py-8 mx-5">
-                                    {btn.map(({titleB, value}, index) => (
-                                       <div
-                                          key={index}
-                                          className=" flex flex-col gap-2 items-center justify-center bg-feature-btn rounded-2xl h-24 py-4 px-10"
-                                       >
-                                          <div className="text-3xl text-white leading-[1.4] font-medium">
-                                             {value}
-                                          </div>
-                                          <div className="text-white font-medium">
-                                             {titleB}
                                           </div>
                                        </div>
                                     ))}
-                                 </div>
-                              </table>
-                           )
-                        )}
-                     </div>
-                  </Collapse>
-                  <div className="flex justify-center absolute bottom-5 left-1/2 -translate-x-1/2">
-                     <button onClick={toggle}>
-                        {open ? "Hidden" : "View More"}
-                     </button>
+                              </div>
+                              <div className="py-8 mx-5">
+                                 {btn.map(({titleB, value}, index) => (
+                                    <div
+                                       key={index}
+                                       className=" flex flex-col gap-2 items-center justify-center bg-feature-btn rounded-2xl h-24 py-4 px-10"
+                                    >
+                                       <div className="text-3xl text-white leading-[1.4] font-medium">
+                                          {value}
+                                       </div>
+                                       <div className="text-white font-medium">
+                                          {titleB}
+                                       </div>
+                                    </div>
+                                 ))}
+                              </div>
+                           </div>
+                        )
+                     )}
                   </div>
+                  {!open && (
+                     <div className="flex justify-center absolute bottom-[15%] left-1/2 -translate-x-1/2 text-white font-medium underline hover:text-primary duration-300 w-full pb-8 pt-28 bg-black/40">
+                        <button onClick={toggle}>View More</button>
+                     </div>
+                  )}
                </div>
             </div>
             <div className="text-md tracking-normal text-center text-gray-400">

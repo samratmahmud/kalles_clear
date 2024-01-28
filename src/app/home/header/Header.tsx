@@ -42,6 +42,7 @@ function Header() {
                            href="/"
                            icon="/images/icons8-multiple-stars-24.png"
                            name="Explore Demos"
+                           target="_blank"
                         />
                      </div>
                      <div data-aos="fade-up-left" data-aos-delay="200">
@@ -50,6 +51,7 @@ function Header() {
                            href="/"
                            icon="/images/icons8-shopify-50.png"
                            name="Open Store Free"
+                           target="_blank"
                         />
                      </div>
                   </div>

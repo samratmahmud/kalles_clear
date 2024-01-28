@@ -6,11 +6,11 @@ function PremiumFeatures() {
    return (
       <section className="mb-32">
          <div className="container-width">
-            <div className="flex justify-between items-end mb-16">
-               <div>
+            <div className="flex lg:flex-row flex-col justify-between lg:items-end mb-16">
+               <div className="mb-2.5">
                   <h3
                      data-aos="fade-up"
-                     className="flex items-center gap-3 mb-6"
+                     className="flex items-center justify-center lg:justify-start gap-3 mb-6"
                   >
                      <img src="/images/linearplus.svg" alt="" />
                      <span className="xl:text-xl text-lg font-medium bg-one-stop text-lenear">
@@ -19,50 +19,50 @@ function PremiumFeatures() {
                   </h3>
                   <h2
                      data-aos="fade-down-right"
-                     className="2xl:text-10xl text-7xl text-white leading-[1.2] font-medium mb-2"
+                     className="2xl:text-10xl md:text-7xl sm:text-4xl text-3xl text-white leading-normal font-medium text-center lg:text-left"
                   >
-                     Stand Out From The Crowd <br /> With Premium Features
+                     Stand Out From The Crowd With Premium Features
                   </h2>
                </div>
                <p
                   data-aos="fade-up"
                   data-aos-delay="300"
-                  className="max-w-[432px] text-xl mb-4"
+                  className="lg:max-w-[432px] lg:mx-auto lg:text-xl text-base text-center lg:text-left mb-4"
                >
                   Enjoy the exclusive features that make building your web pages
                   a joyful moment. All in one theme!
                </p>
             </div>
-            <div className="grid grid-cols-3 gap-6 mb-16">
-               <div className="flex gap-7 py-20 pl-14 pr-10 bg-gray-800 rounded-2xl col-span-2 relative z-0 justify-between">
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-one-stop max-w-[300px] aspect-square w-full rounded-full -z-10 blur-3xl" />
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mb-16">
+               <div className="flex md:flex-row flex-col gap-7 p-[15px] md:p-6 xl:py-20 xl:pl-14 xl:pr-10 bg-gray-800 rounded-2xl md:col-span-2 relative z-0 justify-between">
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-one-stop max-w-[300px] aspect-square w-full rounded-full -z-10 blur-3xl md:block hidden" />
                   <div>
                      <div
                         data-aos="fade-up"
-                        className="text-17xl font-medium text-lenear bg-50+ inline-block mt-5"
+                        className="text-10xl sm:text-13xl md:text-[90px] lg:text-[96px] xl:text-17xl leading-normal font-medium text-lenear bg-50+ inline-block mt-5"
                      >
                         50+
                      </div>
                      <h2
                         data-aos="fade-right"
-                        className="text-6xl text-white font-medium mb-12"
+                        className="lg:text-6xl text-3xl text-white font-medium mb-5"
                      >
-                        High -quality <br /> demos
+                        High -quality demos
                      </h2>
                      <div data-aos="fade-right" className="flex">
                         <Buttons
-                           href="/"
+                           href="#Demos"
                            name="Explore Demo"
                            icon="/images/icons8-menu-32.png"
                         />
                      </div>
                   </div>
                   <div data-aos="fade-up">
-                     <img src="/images/item1.png" alt="" />
+                     <img className="w-full" src="/images/item1.png" alt="" />
                   </div>
                </div>
                <div
-                  className="bg-cover bg-center w-full bg-no-repeat relative rounded-2xl flex flex-col justify-end pb-14"
+                  className="bg-cover bg-center w-full bg-no-repeat relative rounded-2xl flex flex-col justify-end pb-14 min-h-[350px] md:min-h-[400px] xl:min-h-[496px]"
                   style={{backgroundImage: "url(/images/item2.png)"}}
                >
                   <div className="max-h-[50%] flex justify-center items-center absolute top-1/4 left-0 right-0">
@@ -73,7 +73,7 @@ function PremiumFeatures() {
                         data-aos="fade-up"
                         className="text-center text-white text-3xl font-medium mb-10"
                      >
-                        Developed by Power Elite{" "}
+                        Developed by{" "}
                         <span className="bg-one-stop text-lenear">
                            Power Elite
                         </span>{" "}
@@ -83,7 +83,7 @@ function PremiumFeatures() {
                         <div data-aos="fade-right">
                            <Buttons
                               href="/"
-                              className="rounded-full py-[5px] pl-1.5 pr-4"
+                              className="rounded-full lg:py-[5px] py-[7px] lg:pl-1.5 pl-1 lg:pr-4 pr-2"
                               size="small"
                               name="32.000+ Sales"
                               icon="/images/power.svg"
@@ -92,7 +92,7 @@ function PremiumFeatures() {
                         <div data-aos="fade-up">
                            <Buttons
                               href="/"
-                              className="rounded-full py-[5px] pl-1.5 pr-4"
+                              className="rounded-full lg:py-[5px] py-[7px] lg:pl-1.5 pl-1 lg:pr-4 pr-2"
                               size="small"
                               name="5.0 Stars Ratings"
                               icon="/images/icons8-star-90.png"
@@ -103,7 +103,7 @@ function PremiumFeatures() {
                </div>
                <Link
                   href="/"
-                  className="rounded-2xl bg-cover bg-no-repeat bg-center w-full flex flex-col justify-end min-h-[500px] p-14 relative group"
+                  className="rounded-2xl bg-no-repeat w-full flex flex-col justify-end p-14 relative group min-h-[350px] md:min-h-[400px] xl:min-h-[496px] bg-cover bg-center"
                   style={{backgroundImage: "url(/images/item3.png)"}}
                >
                   <div className="absolute top-10 right-10">
@@ -134,7 +134,7 @@ function PremiumFeatures() {
                </Link>
                <Link
                   href="/"
-                  className="flex flex-col items-center p-14 relative group"
+                  className="flex flex-col items-center p-14 relative group min-h-[350px] md:min-h-[400px] xl:min-h-[496px] bg-cover bg-center"
                   style={{backgroundImage: "url(/images/item4.png)"}}
                >
                   <div className="absolute top-10 right-10">
@@ -175,7 +175,7 @@ function PremiumFeatures() {
                   </span>
                </div>
             </div>
-            <div className="max-w-[860px] mx-auto bg-gray-black bg-contain rounded-2xl relative min-h-[88px]">
+            <div className="max-w-[860px] mx-auto bg-gray-black bg-contain rounded-2xl relative min-h-[88px] hidden">
                <div className="flex items-center gap-6 p-6 bg-gray-800 absolute inset-[1px] rounded-2xl overflow-hidden">
                   <div data-aos="fade-up">
                      <img src="/images/shopify_brands (1).png" alt="" />

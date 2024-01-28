@@ -8,7 +8,7 @@ interface buttonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
    size?: "small" | "medium";
    href: string;
    className?: string;
-   target?: "_blank";
+   target?: string;
 }
 
 function Buttons(props: buttonProps) {
@@ -19,7 +19,7 @@ function Buttons(props: buttonProps) {
       varient = "contained",
       size = "medium",
       href,
-      target = "_blank",
+      target,
    } = props;
 
    let varientClasses: string[] = [];
@@ -60,7 +60,9 @@ function Buttons(props: buttonProps) {
             >
                <img
                   className={`${
-                     size === "medium" ? "w-5 h-5" : "w-8 aspect-square p-1.5"
+                     size === "medium"
+                        ? "w-5 h-5"
+                        : "lg:w-8 w-7 aspect-square lg:p-1.5 p-0.5"
                   }`}
                   src={icon}
                   alt=""

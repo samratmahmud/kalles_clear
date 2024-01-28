@@ -71,7 +71,7 @@ function Buttons(props: buttonProps) {
          )}
          <div
             className={`font-medium leading-[22px] ${
-               size === "medium" ? "" : "text-md"
+               size === "medium" ? "" : "md:text-md text-sm"
             }`}
          >
             {name}

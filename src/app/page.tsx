@@ -18,7 +18,7 @@ export default function Home() {
       <main className="pb-0.5">
          <Header />
          <PremiumFeatures />
-         {/* <Demos /> */}
+         <Demos />
          {/* <PagesGroup /> */}
          {/* <MasonaryCards /> */}
          {/* <Responsive /> */}

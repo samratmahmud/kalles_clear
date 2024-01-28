@@ -7,7 +7,7 @@ import CommerceCretificate from "./CommerceCretificate";
 function Header() {
    return (
       <section className="2xl:pt-[180px] xl:pt-32 lg:pt-24 md:pt-16 sm:pt-12 pt-10 xl:mb-40 lg:mb-36 md:mb-28 mb-20 relative z-0">
-         <span className="absolute -z-10 top-0 left-0 right-0 bottom-0">
+         <span className="absolute -z-10 2xl:top-0 -xl:top-10 -lg:top-16 -md:top-20 -top-24 left-0 right-0 bottom-0">
             <img className="w-full h-full" src="/images/bg.jpeg" alt="" />
          </span>
          <div className="container-width">
@@ -16,14 +16,14 @@ function Header() {
                   <div className="flex justify-center 2xl:justify-start">
                      <h3
                         data-aos="fade-up"
-                        className="text-xl md:text-5xl 2xl:text-xl bg-one-stop inline-block text-lenear mb-3"
+                        className="text-xl md:text-5xl 2xl:text-xl 4xl:text-5xl bg-one-stop font-medium inline-block text-lenear mb-3"
                      >
                         One-stop Shopify Theme
                      </h3>
                   </div>
                   <h1
                      data-aos="fade-down-right"
-                     className="text-8xl md:text-11xl lg:text-15xl 2xl:text-9xl lg:tracking-[-2.16px] font-medium 2xl:mb-6 md:mb-10 mb-5 text-white text-center 2xl:text-left"
+                     className="text-8xl md:text-11xl lg:text-16xl 2xl:text-9xl 4xl:text-15xl lg:tracking-[-2.16px] font-medium 2xl:mb-6 md:mb-10 mb-5 text-white text-center 2xl:text-left"
                   >
                      Prime Quality <br className="hidden lg:block" /> Premium
                      Design

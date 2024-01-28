@@ -8,7 +8,7 @@ function Header() {
    return (
       <section className="2xl:pt-[180px] xl:pt-32 lg:pt-24 md:pt-16 sm:pt-12 pt-10 xl:mb-40 lg:mb-36 md:mb-28 mb-20 relative z-0">
          <span className="absolute -z-10 top-0 left-0 right-0 bottom-0">
-            <img className="w-full" src="/images/bg.jpeg" alt="" />
+            <img className="w-full h-full" src="/images/bg.jpeg" alt="" />
          </span>
          <div className="container-width">
             <div className="flex 2xl:flex-row flex-col 2xl:gap-12 gap-7 justify-between 2xl:mb-36 xl:mb-32 lg:mb-24 md:mb-20 sm:mb-12 mb-8">

@@ -8,6 +8,7 @@ interface buttonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
    size?: "small" | "medium";
    href: string;
    className?: string;
+   target?: "_blank";
 }
 
 function Buttons(props: buttonProps) {
@@ -18,6 +19,7 @@ function Buttons(props: buttonProps) {
       varient = "contained",
       size = "medium",
       href,
+      target = "_blank",
    } = props;
 
    let varientClasses: string[] = [];
@@ -50,6 +52,7 @@ function Buttons(props: buttonProps) {
          } relative z-0 overflow-hidden ${varientClasses.join(" ")}`}
          tabindex={-1}
          {...(href ? {href} : {})}
+         target={target}
       >
          {icon && (
             <div

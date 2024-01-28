@@ -68,7 +68,7 @@ function CommerceCretificate() {
          >
             Learn more
          </Link>
-         <div className="flex flex-wrap justify-center gap-6 xl:pb-28 lg:pb-20 md:pb-16 sm:pb-10 pb-5">
+         <div className="flex flex-wrap justify-center gap-6 xl:pb-24 lg:pb-20 md:pb-16 sm:pb-10 pb-5">
             {logoGroup.map(({name, logo}, index) => (
                <div
                   data-aos="fade-up"

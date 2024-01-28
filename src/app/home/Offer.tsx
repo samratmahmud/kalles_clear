@@ -17,9 +17,13 @@ function Offer() {
                            src="/images/open-icon.svg"
                            alt=""
                         />
-                        <p className="text-white font-medium duration-300 hover:text-blue-700 underline">
+                        <Link
+                           href="/"
+                           className="text-white font-medium duration-300 hover:text-primary underline"
+                           target="_blank"
+                        >
                            Open a Store Now
-                        </p>
+                        </Link>
                      </div>
                      <span className="w-2 h-2 bg-white rounded-full" />
                   </div>
@@ -32,7 +36,8 @@ function Offer() {
                      <div className="font-medium">
                         <Link
                            href="/"
-                           className="text-white duration-300 underline hover:text-blue-700"
+                           className="text-white duration-300 underline hover:text-primary"
+                           target="_blank"
                         >
                            Start a free trial and enjoy 3 months
                         </Link>

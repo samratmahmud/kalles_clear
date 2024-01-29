@@ -54,7 +54,7 @@ const config: Config = {
          "10xl": ["48px", {lineHeight: "1.1", letterSpacing: "-0.96px"}],
          "11xl": ["50px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
          "12xl": ["60px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
-         "13xl": ["64px", {lineHeight: "1.25", letterSpacing: "0.4px"}],
+         "13xl": ["64px", {lineHeight: "1.1", letterSpacing: "0.4px"}],
          "14xl": ["70px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
          "15xl": ["72px", {lineHeight: "1.25", letterSpacing: "-2.16px"}],
          "16xl": ["80px", {lineHeight: "1.25", letterSpacing: "0.4px"}],

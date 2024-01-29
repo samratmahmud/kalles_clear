@@ -19,7 +19,7 @@ function PremiumFeatures() {
                   </h3>
                   <h2
                      data-aos="fade-down-right"
-                     className="2xl:text-10xl md:text-7xl sm:text-4xl text-3xl text-white leading-normal font-medium text-center lg:text-left"
+                     className="2xl:text-10xl md:text-7xl sm:text-4xl text-3xl text-white leading-normal font-medium text-center lg:text-left max-w-[630px]"
                   >
                      Stand Out From The Crowd With Premium Features
                   </h2>
@@ -27,7 +27,7 @@ function PremiumFeatures() {
                <p
                   data-aos="fade-up"
                   data-aos-delay="300"
-                  className="lg:max-w-[432px] lg:mx-auto lg:text-xl text-base text-center lg:text-left mb-4"
+                  className="lg:max-w-[432px] mx-auto lg:mx-0 lg:text-xl text-base text-center lg:text-left mb-4"
                >
                   Enjoy the exclusive features that make building your web pages
                   a joyful moment. All in one theme!

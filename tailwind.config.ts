@@ -105,6 +105,8 @@ const config: Config = {
             "linear-gradient(110deg, #202020 0%, #101010 100%), linear-gradient(136.74deg, rgba(255, 255, 255, 0.16) 4.33%, rgba(255, 255, 255, 0) 38.36%)",
          skleton:
             "linear-gradient(to right,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(125, 185, 232, 0) 100%)",
+         "demos-btn":
+            "linear-gradient(41deg, #00BAD4 7.72%, #2194FF 55.76%,#A05DFE 93.63%)",
       },
       container: {
          center: true,
@@ -113,7 +115,7 @@ const config: Config = {
          },
       },
       screens: {
-         sm: "525px",
+         sm: "575px",
          md: "768px",
          lg: "992px",
          xl: "1150px",

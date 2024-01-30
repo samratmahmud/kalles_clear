@@ -285,7 +285,7 @@ function PagesGroup() {
 
    return (
       <section>
-         <div className="container-width mb-64">
+         <div className="container-width mb-6">
             <div className="flex xl:flex-row flex-col gap-7 justify-between">
                <div className="xl:w-[30%] md:flex flex-row xl:flex-col gap-6 overflow-x-scroll lg:overflow-clip pb-4 hidden">
                   {pagesItems.map(({name, path}, index) => (
@@ -321,14 +321,14 @@ function PagesGroup() {
                      <div className="absolute top-0 z-10 w-full">
                         <img src="/images/pages_bg.svg" alt="" />
                      </div>
-                     <div className="p-8 pt-0 max-h-[850px] overflow-hidden overflow-y-scroll scroll-smooth bg-black -mr-9 rounded-3xl relative mt-0.5">
+                     <div className="md:px-8 pt-0 lg:max-h-[915px] max-h-[730px] overflow-hidden overflow-y-scroll scroll-smooth bg-black -mr-8 rounded-3xl relative mt-0.5 w-full md:w-auto">
                         <span className="w-full h-8 bg-black block sticky top-0 z-50" />
                         <div className="flex flex-col gap-6 relative z-40">
                            {pagesCards.map(({cards, id}, index) => (
                               <div
                                  key={index}
                                  id={id}
-                                 className="grid grid-cols-2 gap-6"
+                                 className="grid md:grid-cols-2 gap-x-6 md:gap-y-10 gap-y-6"
                               >
                                  {cards.map(
                                     ({thumbnail, title, href}, index) => (
@@ -346,11 +346,11 @@ function PagesGroup() {
                                              ))}
                                           </div>
                                           <img
-                                             className="rounded-lg mb-6"
+                                             className="w-full rounded-lg mb-6"
                                              src={thumbnail}
                                              alt=""
                                           />
-                                          <h3 className="text-white font-medium text-center hover:text-primary duration-300">
+                                          <h3 className="text-white text-base font-medium text-center hover:text-primary duration-300">
                                              {title}
                                           </h3>
                                        </Link>

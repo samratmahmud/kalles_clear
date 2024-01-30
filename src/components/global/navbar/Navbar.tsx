@@ -56,7 +56,7 @@ function Navbar() {
 
    return (
       <nav
-         className={`sticky top-0 z-[1040] ${
+         className={`sticky top-0 z-[1040] overflow-hidden ${
             !visible ? "bg-black" : "bg-black/80 backdrop-blur-md"
          }`}
       >

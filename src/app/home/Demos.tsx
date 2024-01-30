@@ -1,8 +1,7 @@
 "use client";
 import Buttons from "@/components/common/Buttons";
 import React from "react";
-import SimpleBar from "simplebar-react";
-import "simplebar-react/dist/simplebar.min.css";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 const demosItems = [
    {
@@ -608,27 +607,31 @@ function Demos() {
             <div>
                <div className="mb-16 relative z-0">
                   <div className="min-h-[100px] w-full bg-primary absolute -top-10 blur-[180px] -z-10 hidden md:block" />
-                  <div className="flex justify-center gap-4 overflow">
-                     {demosItems.map(({name, icon}, index) => (
-                        <div
-                           key={index}
-                           onClick={() => setTab(index)}
-                           className={`md:text-base text-md cursor-pointer border-2 md:py-[9px] py-2.5 px-4 bg-gray-600/30 rounded-lg hover:text-primary duration-300 flex items-center flex-shrink-0 mb-5 gap-3 ${
-                              tab === index
-                                 ? "border-primary text-white"
-                                 : "border-gray-300/10"
-                           }`}
-                        >
-                           {icon && (
-                              <img
-                                 className="w-4 aspect-square"
-                                 src={icon}
-                                 alt=""
-                              />
-                           )}
-                           {name}
+                  <div className="flex justify-center">
+                     <ScrollContainer className="scroll-container">
+                        <div className="flex justify-between gap-4">
+                           {demosItems.map(({name, icon}, index) => (
+                              <div
+                                 key={index}
+                                 onClick={() => setTab(index)}
+                                 className={`md:text-base text-md cursor-pointer border-2 md:py-[9px] py-2.5 px-4 bg-gray-600/30 rounded-lg hover:text-primary duration-300 flex items-center flex-shrink-0 mb-5 gap-3 ${
+                                    tab === index
+                                       ? "border-primary text-white"
+                                       : "border-gray-300/10"
+                                 }`}
+                              >
+                                 {icon && (
+                                    <img
+                                       className="w-4 aspect-square"
+                                       src={icon}
+                                       alt=""
+                                    />
+                                 )}
+                                 {name}
+                              </div>
+                           ))}
                         </div>
-                     ))}
+                     </ScrollContainer>
                   </div>
                </div>
                <div className="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-8 gap-4 md:gap-5">

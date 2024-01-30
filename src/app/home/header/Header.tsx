@@ -39,10 +39,9 @@ function Header() {
                   <div className="flex items-center gap-6 2xl:mb-4 mb-6 justify-center 2xl:justify-start">
                      <div data-aos="fade-down-right" data-aos-delay="200">
                         <Buttons
-                           href="/"
+                           href="#Demos"
                            icon="/images/icons8-multiple-stars-24.png"
                            name="Explore Demos"
-                           target="_blank"
                         />
                      </div>
                      <div data-aos="fade-up-left" data-aos-delay="200">

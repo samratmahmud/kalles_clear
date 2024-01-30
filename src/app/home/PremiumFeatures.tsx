@@ -4,7 +4,7 @@ import React from "react";
 
 function PremiumFeatures() {
    return (
-      <section className="2xl:mb-32 xl:mb-24 lg:mb-16 md:mb-12 mb-8">
+      <section className="2xl:mb-32 xl:mb-24 lg:mb-16 md:mb-12 mb-8 overflow-hidden">
          <div className="container-width">
             <div className="flex lg:flex-row flex-col justify-between lg:items-end mb-16">
                <div className="mb-2.5">
@@ -62,7 +62,7 @@ function PremiumFeatures() {
                   </div>
                </div>
                <div
-                  className="bg-cover bg-center w-full bg-no-repeat relative rounded-2xl flex flex-col justify-end pb-14 min-h-[350px] md:min-h-[400px] xl:min-h-[496px]"
+                  className="bg-cover bg-center w-full bg-no-repeat relative rounded-2xl flex flex-col justify-end pb-14 min-h-[350px] md:min-h-[400px] xl:min-h-[496px] overflow-hidden"
                   style={{backgroundImage: "url(/images/item2.png)"}}
                >
                   <div className="max-h-[50%] flex justify-center items-center absolute top-1/4 left-0 right-0">
@@ -101,7 +101,7 @@ function PremiumFeatures() {
                      </div>
                   </div>
                </div>
-               <Link
+               {/* <Link
                   href="/"
                   className="rounded-2xl bg-no-repeat w-full flex flex-col justify-end lg:p-9 md:p-7 p-6 relative group min-h-[350px] md:min-h-[400px] xl:min-h-[496px] bg-cover bg-center"
                   style={{backgroundImage: "url(/images/item3.png)"}}
@@ -129,8 +129,8 @@ function PremiumFeatures() {
                      </span>{" "}
                      customers
                   </span>
-               </Link>
-               <Link
+               </Link> */}
+               {/* <Link
                   href="/"
                   className="flex flex-col items-center p-9 2xl:p-14 relative group min-h-[350px] md:min-h-[400px] xl:min-h-[496px] bg-cover bg-center"
                   style={{backgroundImage: "url(/images/item4.png)"}}
@@ -154,8 +154,8 @@ function PremiumFeatures() {
                      </span>
                      Import demo and more...
                   </h2>
-               </Link>
-               <div
+               </Link> */}
+               {/* <div
                   className="flex flex-col justify-end items-center xl:p-12 p-9 2xl:p-14 min-h-[350px] md:min-h-[400px] xl:min-h-[496px] bg-cover bg-center"
                   style={{backgroundImage: "url(/images/item5.png)"}}
                >
@@ -172,7 +172,7 @@ function PremiumFeatures() {
                         <span className="h-[0.5px] w-full bg-one-stop absolute bottom-0.5 left-0" />
                      </span>
                   </span>
-               </div>
+               </div> */}
             </div>
             <div className="xl:max-w-[860px] mx-auto bg-gray-black bg-contain rounded-2xl border border-transparent">
                <div className="flex lg:flex-row flex-col items-center justify-center lg:gap-6 gap-4 px-6 py-[23px] bg-gray-800 rounded-2xl overflow-hidden">

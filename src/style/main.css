@@ -19,14 +19,6 @@ html {
    @apply container max-w-[1700px] mx-auto;
 }
 
-.overflow {
-   overflow-y: hidden;
-   overflow-x: auto;
-   scroll-snap-type: x mandatory;
-   scroll-snap-align: start;
-   scroll-snap-stop: always;
-}
-
 .animate-spin {
    animation-duration: 10s;
 }

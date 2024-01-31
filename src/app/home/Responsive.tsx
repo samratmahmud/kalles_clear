@@ -15,7 +15,7 @@ function Responsive() {
                      <div className="border-[10px] rounded-full border-dotted border-red-800 animate-spin relative z-0">
                         <span className="bg-one-stop xl:w-64 lg:w-56 md:w-48 sm:w-40 w-28 aspect-square rounded-full absolute -top-[15%] -left-[15%] blur-[50px] -z-10" />
                         <img
-                           className="xl:w-48 lg:w-44 md:w-40 sm:w-32 w-20 p-1 rounded-full aspect-square"
+                           className="xl:w-48 lg:w-44 md:w-40 sm:w-32 w-20 p-2 rounded-full aspect-square"
                            src="/images/purple-osteospermum-daisy-flower_1373-16.jpg"
                            alt=""
                         />

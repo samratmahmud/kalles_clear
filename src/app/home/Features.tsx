@@ -1,30 +1,60 @@
 import React from "react";
 
+const size = [
+   {
+      colorBg: [
+         {
+            color: "bg-orange-300",
+         },
+         {
+            color: "bg-blue-200",
+         },
+         {
+            color: "bg-green-200",
+         },
+      ],
+      sizes: [
+         {
+            sized: "xs",
+         },
+         {
+            sized: "s",
+         },
+         {
+            sized: "m",
+            className: "text-primary",
+         },
+         {
+            sized: "l",
+         },
+         {
+            sized: "xl",
+         },
+      ],
+   },
+];
+
 const featuresImagesGroup = [
    {
       title: "Smart Product Filters",
       thumbnail: "/images/item1 (1).png",
       describtiton: (
          <>
-            Filtering products is fast, convenient <br /> and smart by auto tags
-            entry & <br />
-            multiple product attributes
+            Filtering products is fast, convenient and smart by auto tags entry
+            & multiple product attributes
          </>
       ),
       className: "bottom-14 right-[8%]",
-      classNames: "col-span-5",
+      classNames: "xl:col-span-5 col-span-6",
    },
    {
       title: "Pre-purchase upsell",
       thumbnail: "/images/item2 (1).png",
       describtiton: (
-         <>
-            Upsell and cross-sell easily on product <br /> pages with related
-            items
-         </>
+         <>Upsell and cross-sell easily on product pages with related items</>
       ),
-      className: "top-11 right-[8%]",
-      classNames: "col-span-7",
+      className: "xl:top-11 bottom-0 2xl:right-[8%] right-4 w-full text-center",
+      classNames: "xl:col-span-7 col-span-6",
       size: [
          {
             colorBg: [
@@ -69,7 +99,7 @@ const featuresImagesGroup = [
          </>
       ),
       className: "bottom-10 text-center left-0 right-0 w-full",
-      classNames: "col-span-4",
+      classNames: "xl:col-span-4 col-span-6",
    },
    {
       title: (
@@ -85,7 +115,7 @@ const featuresImagesGroup = [
          </>
       ),
       className: "top-10 text-center left-0 right-0 w-full",
-      classNames: "col-span-4",
+      classNames: "xl:col-span-4 col-span-6",
    },
    {
       title: "Frequently Bought Together",
@@ -97,7 +127,7 @@ const featuresImagesGroup = [
          </>
       ),
       className: "bottom-8 text-center left-0 right-0 w-full",
-      classNames: "col-span-4",
+      classNames: "xl:col-span-4 col-span-6",
    },
    {
       title: "Video Thumbnail & 3D",
@@ -158,10 +188,14 @@ function Features() {
       <section>
          <div id="features" className="container">
             <div className="max-w-[1700px] mx-auto mb-[200px]">
-               <div className="flex lg:flex-row flex-col gap-8 lg:items-end justify-between 2xl:mb-16 lg:mb-12 md:mb-10 mb-8">
+               <div className="flex lg:flex-row flex-col gap-8 lg:gap-2 lg:items-end justify-between 2xl:mb-16 lg:mb-12 md:mb-10 mb-8">
                   <div className="flex justify-center lg:justify-start items-center gap-8">
-                     <img src="/images/features.svg" alt="" />
-                     <h2 className="text-4xl lg:text-6xl xl:text-9xl 2xl:text-10xl font-medium text-white">
+                     <img
+                        className="w-[70px] lg:w-auto"
+                        src="/images/features.svg"
+                        alt=""
+                     />
+                     <h2 className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-10xl font-medium text-white">
                         All{" "}
                         <span className="text-lenear bg-one-stop underline relative">
                            Boost Sales
@@ -171,13 +205,13 @@ function Features() {
                         <br /> in One Theme
                      </h2>
                   </div>
-                  <div className="lg:text-xl text-lg">
+                  <div className="xl:text-xl text-lg xl:leading-[1.4em] leading-[1.4em] text-center lg:text-left">
                      Buy one, get all premium features to level up <br />{" "}
                      customer experience and rocket sales.
                   </div>
                </div>
                <div className="grid grid-cols-12 gap-7">
-                  {featuresImagesGroup.map(
+                  {/* {featuresImagesGroup.map(
                      (
                         {
                            title,
@@ -193,17 +227,19 @@ function Features() {
                            key={index}
                            className={`relative group cursor-pointer ${classNames}`}
                         >
-                           <img src={thumbnail} alt="" />
+                           <img className="w-full" src={thumbnail} alt="" />
                            <div className={`absolute  ${className}`}>
                               <div className="w-full">
-                                 <h3 className="text-3xl font-medium text-white mb-4">
+                                 <h3 className="2xl:text-3xl text-lg font-medium text-white mb-4">
                                     {title}
                                  </h3>
-                                 <p className="text-base tracking-normal">
+                                 <p
+                                    className={`2xl:text-base text-md tracking-normal `}
+                                 >
                                     {describtiton}
                                  </p>
                                  {size && (
-                                    <div className="py-5">
+                                    <div className="py-5 hidden xl:block">
                                        {size.map(({colorBg, sizes}, index) => (
                                           <div key={index}>
                                              <div className="flex gap-3 mb-3">
@@ -248,7 +284,63 @@ function Features() {
                            </div>
                         </div>
                      )
-                  )}
+                  )} */}
+                  <div className="col-span-6 xl:col-span-5 relative">
+                     <img src="/images/item1 (1).png" alt="" />
+                     <div className="absolute bottom-12 right-8">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4">
+                           Smart Product Filters
+                        </h2>
+                        <p className="2xl:text-base text-md tracking-normal max-w-[300px]">
+                           Filtering products is fast, convenient and smart by
+                           auto tags entry & multiple product attributes
+                        </p>
+                     </div>
+                  </div>
+                  <div className="col-span-6 xl:col-span-7 relative">
+                     <img
+                        className="w-full"
+                        src="/images/item2 (1).png"
+                        alt=""
+                     />
+                     <div className="absolute top-12 right-8">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4">
+                           Smart Product Filters
+                        </h2>
+                        <p className="2xl:text-base text-md tracking-normal max-w-[300px]">
+                           Filtering products is fast, convenient and smart by
+                           auto tags entry & multiple product attributes
+                        </p>
+                        <div className="py-5 hidden xl:block">
+                           {size.map(({colorBg, sizes}, index) => (
+                              <div key={index}>
+                                 <div className="flex gap-3 mb-3">
+                                    {colorBg.map(({color}) => (
+                                       <div
+                                          key={index}
+                                          className="first:border border-primary rounded-full p-1"
+                                       >
+                                          <div
+                                             className={`w-7 aspect-square ${color} rounded-full`}
+                                          />
+                                       </div>
+                                    ))}
+                                 </div>
+                                 <div className="flex gap-3">
+                                    {sizes.map(({sized, className}, index) => (
+                                       <div
+                                          key={index}
+                                          className={`text-sm uppercase ${className}`}
+                                       >
+                                          {sized}
+                                       </div>
+                                    ))}
+                                 </div>
+                              </div>
+                           ))}
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>

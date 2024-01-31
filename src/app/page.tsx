@@ -21,7 +21,7 @@ export default function Home() {
          <Demos />
          <PagesGroup />
          <MasonaryCards />
-         {/* <Responsive /> */}
+         <Responsive />
          {/* <Features /> */}
          {/* <Advanced /> */}
          {/* <FeaturesCards /> */}

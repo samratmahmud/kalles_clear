@@ -15,10 +15,6 @@ html {
    scroll-behavior: smooth;
 }
 
-.container-width {
-   @apply container max-w-[1700px] mx-auto;
-}
-
 .animate-spin {
    animation-duration: 10s;
 }

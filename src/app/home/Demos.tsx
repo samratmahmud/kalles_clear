@@ -584,106 +584,105 @@ function Demos() {
 
    return (
       <section>
-         <div
-            id="Demos"
-            className="container-width mb-8 sm:mb-10 md:mb-14 lg:mb-20 xl:mb-28"
-         >
-            <h2 className="text-white font-medium flex md:flex-row flex-col items-center md:gap-8 gap-3 justify-center lg:mb-10 md:mb-8 mb-5">
-               <span className="text-10xl sm:text-13xl md:text-[90px] lg:text-[96px] xl:text-17xl font-medium text-lenear bg-50+ inline-block">
-                  50+
-               </span>
-               <span className="xl:text-15xl md:text-8xl text-4xl tracking-[-2.4px]">
-                  Stunning Demos
-               </span>
-            </h2>
-            <p
-               data-aos="fade-up"
-               className="md:text-base text-md text-center xl:mb-16 lg:mb-12 md:mb-10 mb-8 max-w-[900px] mx-auto"
-            >
-               All home pages, inner pages and elements are included with the
-               purchase. Mix and blend elements from different demos as per your
-               preference and create awesome store with Kalles!
-            </p>
-            <div>
-               <div className="mb-16 relative z-0">
-                  <div className="min-h-[100px] w-full bg-primary absolute -top-10 blur-[180px] -z-10 hidden md:block" />
-                  <div className="flex justify-center">
-                     <ScrollContainer className="scroll-container">
-                        <div className="flex justify-between gap-4">
-                           {demosItems.map(({name, icon}, index) => (
-                              <div
-                                 key={index}
-                                 onClick={() => setTab(index)}
-                                 className={`md:text-base text-md cursor-pointer border-2 md:py-[9px] py-2.5 px-4 bg-gray-600/30 rounded-lg hover:text-primary duration-300 flex items-center flex-shrink-0 mb-5 gap-3 ${
-                                    tab === index
-                                       ? "border-primary text-white"
-                                       : "border-gray-300/10"
-                                 }`}
-                              >
-                                 {icon && (
-                                    <img
-                                       className="w-4 aspect-square"
-                                       src={icon}
-                                       alt=""
-                                    />
-                                 )}
-                                 {name}
-                              </div>
-                           ))}
-                        </div>
-                     </ScrollContainer>
-                  </div>
-               </div>
-               <div className="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-8 gap-4 md:gap-5">
-                  {demosItems[tab].card?.map(
-                     ({thumbnail, path, title, hot, newP}, index) => (
-                        <div
-                           key={index}
-                           className="bg-demos-card rounded-2xl p-[5px] md:p-4 group"
-                        >
-                           <div className="relative z-0 mb-3.5 overflow-hidden">
-                              <img
-                                 className="rounded-2xl w-full"
-                                 src={thumbnail}
-                                 alt=""
-                              />
-
-                              <div className="flex justify-center absolute z-20 left-0 right-0 bottom-14 duration-300 delay-100 xl:-translate-x-3/4 -translate-x-0 group-hover:translate-x-0">
-                                 <div className="inline-block bg-demos-btn sm:[background-image:none] relative z-40 rounded-lg">
-                                    <Buttons
-                                       size="small"
-                                       className="rounded-lg sm:py-2 py-1.5 px-4"
-                                       href={path}
-                                       name="Demo"
-                                    />
+         <div id="Demos" className="container">
+            <div className="max-w-[1700px] mx-auto mb-8 sm:mb-10 md:mb-14 lg:mb-20 xl:mb-28">
+               <h2 className="text-white font-medium flex md:flex-row flex-col items-center md:gap-8 gap-3 justify-center lg:mb-10 md:mb-8 mb-5">
+                  <span className="text-10xl sm:text-13xl md:text-[90px] lg:text-[96px] xl:text-17xl font-medium text-lenear bg-50+ inline-block">
+                     50+
+                  </span>
+                  <span className="xl:text-15xl md:text-8xl text-4xl tracking-[-2.4px]">
+                     Stunning Demos
+                  </span>
+               </h2>
+               <p
+                  data-aos="fade-up"
+                  className="md:text-base text-md text-center xl:mb-16 lg:mb-12 md:mb-10 mb-8 max-w-[900px] mx-auto"
+               >
+                  All home pages, inner pages and elements are included with the
+                  purchase. Mix and blend elements from different demos as per
+                  your preference and create awesome store with Kalles!
+               </p>
+               <div>
+                  <div className="mb-16 relative z-0">
+                     <div className="min-h-[100px] w-full bg-primary absolute -top-10 blur-[180px] -z-10 hidden md:block" />
+                     <div className="flex justify-center">
+                        <ScrollContainer className="scroll-container">
+                           <div className="flex justify-between gap-4">
+                              {demosItems.map(({name, icon}, index) => (
+                                 <div
+                                    key={index}
+                                    onClick={() => setTab(index)}
+                                    className={`md:text-base text-md cursor-pointer border-2 md:py-[9px] py-2.5 px-4 bg-gray-600/30 rounded-lg hover:text-primary duration-300 flex items-center flex-shrink-0 mb-5 gap-3 ${
+                                       tab === index
+                                          ? "border-primary text-white"
+                                          : "border-gray-300/10"
+                                    }`}
+                                 >
+                                    {icon && (
+                                       <img
+                                          className="w-4 aspect-square"
+                                          src={icon}
+                                          alt=""
+                                       />
+                                    )}
+                                    {name}
                                  </div>
+                              ))}
+                           </div>
+                        </ScrollContainer>
+                     </div>
+                  </div>
+                  <div className="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-8 gap-4 md:gap-5">
+                     {demosItems[tab].card?.map(
+                        ({thumbnail, path, title, hot, newP}, index) => (
+                           <div
+                              key={index}
+                              className="bg-demos-card rounded-2xl p-[5px] md:p-4 group"
+                           >
+                              <div className="relative z-0 mb-3.5 overflow-hidden">
+                                 <img
+                                    className="rounded-2xl w-full"
+                                    src={thumbnail}
+                                    alt=""
+                                 />
+
+                                 <div className="flex justify-center absolute z-20 left-0 right-0 bottom-14 duration-300 delay-100 xl:-translate-x-3/4 -translate-x-0 group-hover:translate-x-0">
+                                    <div className="inline-block bg-demos-btn sm:[background-image:none] relative z-40 rounded-lg">
+                                       <Buttons
+                                          size="small"
+                                          className="rounded-lg sm:py-2 py-1.5 px-4"
+                                          href={path}
+                                          name="Demo"
+                                       />
+                                    </div>
+                                 </div>
+                                 <div
+                                    className="absolute z-10 inset-0 xl:translate-y-[600px] group-hover:translate-y-0 duration-300 delay-150"
+                                    style={{
+                                       backgroundImage:
+                                          "linear-gradient(179deg, rgba(24, 24, 24, 0.00) 44.58%, rgba(12, 12, 12, 0.53) 79.19%, #000 99.19%)",
+                                    }}
+                                 />
                               </div>
-                              <div
-                                 className="absolute z-10 inset-0 xl:translate-y-[600px] group-hover:translate-y-0 duration-300 delay-150"
-                                 style={{
-                                    backgroundImage:
-                                       "linear-gradient(179deg, rgba(24, 24, 24, 0.00) 44.58%, rgba(12, 12, 12, 0.53) 79.19%, #000 99.19%)",
-                                 }}
-                              />
+                              <div className="flex justify-between gap-3 items-center">
+                                 <h3 className="text-white text-base md:text-md font-medium hover:text-primary duration-300 cursor-pointer">
+                                    {title}
+                                 </h3>
+                                 {hot && (
+                                    <p className="text-sm font-medium py-0.5 px-2 rounded-full bg-newP text-white">
+                                       {hot}
+                                    </p>
+                                 )}
+                                 {newP && (
+                                    <p className="text-sm font-medium py-0.5 px-2 rounded-full bg-newP text-white">
+                                       {newP}
+                                    </p>
+                                 )}
+                              </div>
                            </div>
-                           <div className="flex justify-between gap-3 items-center">
-                              <h3 className="text-white text-base md:text-md font-medium hover:text-primary duration-300 cursor-pointer">
-                                 {title}
-                              </h3>
-                              {hot && (
-                                 <p className="text-sm font-medium py-0.5 px-2 rounded-full bg-newP text-white">
-                                    {hot}
-                                 </p>
-                              )}
-                              {newP && (
-                                 <p className="text-sm font-medium py-0.5 px-2 rounded-full bg-newP text-white">
-                                    {newP}
-                                 </p>
-                              )}
-                           </div>
-                        </div>
-                     )
-                  )}
+                        )
+                     )}
+                  </div>
                </div>
             </div>
          </div>

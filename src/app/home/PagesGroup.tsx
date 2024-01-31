@@ -285,79 +285,83 @@ function PagesGroup() {
 
    return (
       <section>
-         <div className="container-width mb-6">
-            <div className="flex xl:flex-row flex-col gap-7 justify-between">
-               <div className="xl:w-[30%] md:flex flex-row xl:flex-col gap-6 overflow-x-scroll lg:overflow-clip pb-4 hidden">
-                  {pagesItems.map(({name, path}, index) => (
-                     <Link
-                        href={path}
-                        key={index}
-                        className="flex-shrink-0"
-                        onClick={() => setTab(index)}
-                     >
-                        <h2
-                           className={`text-lenear 4xl:text-13xl 2xl:text-10xl xl:text-8xl text-4xl leading-[1.1] font-medium tracking-[-1.28px] inline-block cursor-pointer ${
-                              tab === index ? "bg-one-stop" : "bg-black-gray"
-                           }`}
+         <div className="container">
+            <div className="max-w-[1700px] mx-auto mb-28 sm:mb-32 md:mb-40 lg:mb-48 xl:mb56 2xl:mb-64">
+               <div className="flex xl:flex-row flex-col gap-7 justify-between">
+                  <div className="xl:w-[30%] md:flex flex-row xl:flex-col gap-6 overflow-x-scroll lg:overflow-clip pb-4 hidden">
+                     {pagesItems.map(({name, path}, index) => (
+                        <Link
+                           href={path}
+                           key={index}
+                           className="flex-shrink-0"
+                           onClick={() => setTab(index)}
                         >
-                           {name}
-                           <p
-                              className={`${
-                                 tab === index ? "opacity-100" : "opacity-0"
+                           <h2
+                              className={`text-lenear 4xl:text-13xl 2xl:text-10xl xl:text-8xl text-4xl leading-[1.1] font-medium tracking-[-1.28px] inline-block cursor-pointer ${
+                                 tab === index ? "bg-one-stop" : "bg-black-gray"
                               }`}
                            >
-                              <img
-                                 className="w-full"
-                                 src="/images/smallunderline.svg"
-                                 alt=""
-                              />
-                           </p>
-                        </h2>
-                     </Link>
-                  ))}
-               </div>
-               <div className="xl:w-[65%]">
-                  <div className="bg-primary-pink-gradient z-0 relative h-full rounded-3xl border-x-2 border-transparent overflow-hidden">
-                     <div className="absolute top-0 z-10 w-full">
-                        <img src="/images/pages_bg.svg" alt="" />
-                     </div>
-                     <div className="md:px-8 pt-0 lg:max-h-[915px] max-h-[730px] overflow-hidden overflow-y-scroll scroll-smooth bg-black -mr-8 rounded-3xl relative mt-0.5 w-full md:w-auto">
-                        <span className="w-full h-8 bg-black block sticky top-0 z-50" />
-                        <div className="flex flex-col gap-6 relative z-40">
-                           {pagesCards.map(({cards, id}, index) => (
-                              <div
-                                 key={index}
-                                 id={id}
-                                 className="grid md:grid-cols-2 gap-x-6 md:gap-y-10 gap-y-6"
+                              {name}
+                              <p
+                                 className={`${
+                                    tab === index ? "opacity-100" : "opacity-0"
+                                 }`}
                               >
-                                 {cards.map(
-                                    ({thumbnail, title, href}, index) => (
-                                       <Link
-                                          key={index}
-                                          href={href}
-                                          className="px-4 pt-4 border-t border-x border-slate-800 rounded-2xl"
-                                       >
-                                          <div className="flex gap-1 mb-3">
-                                             {[...Array(3)].map((_, index) => (
-                                                <span
-                                                   className="w-1.5 aspect-square bg-gray-200 rounded-full opacity-30"
-                                                   key={index}
-                                                ></span>
-                                             ))}
-                                          </div>
-                                          <img
-                                             className="w-full rounded-lg mb-6"
-                                             src={thumbnail}
-                                             alt=""
-                                          />
-                                          <h3 className="text-white text-base font-medium text-center hover:text-primary duration-300">
-                                             {title}
-                                          </h3>
-                                       </Link>
-                                    )
-                                 )}
-                              </div>
-                           ))}
+                                 <img
+                                    className="w-full"
+                                    src="/images/smallunderline.svg"
+                                    alt=""
+                                 />
+                              </p>
+                           </h2>
+                        </Link>
+                     ))}
+                  </div>
+                  <div className="xl:w-[65%]">
+                     <div className="bg-primary-pink-gradient z-0 relative h-full rounded-3xl border-x-2 border-transparent overflow-hidden">
+                        <div className="absolute top-0 z-10 w-full">
+                           <img src="/images/pages_bg.svg" alt="" />
+                        </div>
+                        <div className="md:px-8 pt-0 lg:max-h-[915px] max-h-[700px] overflow-hidden overflow-y-scroll scroll-smooth bg-black -mr-8 rounded-3xl relative mt-0.5 w-full md:w-auto">
+                           <span className="w-full h-8 bg-black block sticky top-0 z-50" />
+                           <div className="flex flex-col gap-6 relative z-40">
+                              {pagesCards.map(({cards, id}, index) => (
+                                 <div
+                                    key={index}
+                                    id={id}
+                                    className="grid md:grid-cols-2 gap-x-6 md:gap-y-10 gap-y-6"
+                                 >
+                                    {cards.map(
+                                       ({thumbnail, title, href}, index) => (
+                                          <Link
+                                             key={index}
+                                             href={href}
+                                             className="px-4 pt-4 border-t border-x border-slate-800 rounded-2xl"
+                                          >
+                                             <div className="flex gap-1 mb-3">
+                                                {[...Array(3)].map(
+                                                   (_, index) => (
+                                                      <span
+                                                         className="w-1.5 aspect-square bg-gray-200 rounded-full opacity-30"
+                                                         key={index}
+                                                      ></span>
+                                                   )
+                                                )}
+                                             </div>
+                                             <img
+                                                className="w-full rounded-lg mb-6"
+                                                src={thumbnail}
+                                                alt=""
+                                             />
+                                             <h3 className="text-white text-base font-medium text-center hover:text-primary duration-300">
+                                                {title}
+                                             </h3>
+                                          </Link>
+                                       )
+                                    )}
+                                 </div>
+                              ))}
+                           </div>
                         </div>
                      </div>
                   </div>

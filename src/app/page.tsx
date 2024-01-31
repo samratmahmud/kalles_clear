@@ -22,7 +22,7 @@ export default function Home() {
          <PagesGroup />
          <MasonaryCards />
          <Responsive />
-         {/* <Features /> */}
+         <Features />
          {/* <Advanced /> */}
          {/* <FeaturesCards /> */}
          {/* <EcomRise /> */}

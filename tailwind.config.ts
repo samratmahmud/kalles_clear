@@ -61,6 +61,8 @@ const config: Config = {
          "17xl": ["120px", {lineHeight: "144px", letterSpacing: "-6px"}],
          "18xl": ["128px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
          "19xl": ["240px", {lineHeight: "1.2", letterSpacing: ""}],
+         "20xl": ["100px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
+         "21xl": ["150px", {lineHeight: "1.2", letterSpacing: "0.5px"}],
       },
       fontFamily: {
          Poppins: ["Poppins", ...fontFamily.sans],

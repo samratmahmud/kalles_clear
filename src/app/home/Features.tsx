@@ -94,24 +94,20 @@ const featuresImagesGroup = [
       thumbnail: "/images/item3 (2).png",
       describtiton: (
          <>
-            Swatch products with multiple attributes <br /> at once in products,
-            collections, <br /> homepage, etc.
+            Swatch products with multiple attributes at once in products,
+            collections, homepage, etc.
          </>
       ),
       className: "bottom-10 text-center left-0 right-0 w-full",
       classNames: "xl:col-span-4 col-span-6",
    },
    {
-      title: (
-         <>
-            Cart Drawer With <br /> Free Shipping Goal
-         </>
-      ),
+      title: <>Cart Drawer With Free Shipping Goal</>,
       thumbnail: "/images/item4 (1).png",
       describtiton: (
          <>
-            Improve shopping convenience & sales with <br /> mini cart showing
-            free shipping notification
+            Improve shopping convenience & sales with mini cart showing free
+            shipping notification
          </>
       ),
       className: "top-10 text-center left-0 right-0 w-full",
@@ -122,8 +118,8 @@ const featuresImagesGroup = [
       thumbnail: "/images/item5 (1).png",
       describtiton: (
          <>
-            Encourage average order value by showing <br /> frequently bought
-            together products
+            Encourage average order value by showing frequently bought together
+            products
          </>
       ),
       className: "bottom-8 text-center left-0 right-0 w-full",
@@ -134,7 +130,7 @@ const featuresImagesGroup = [
       thumbnail: "/images/item6.png",
       describtiton: (
          <>
-            Stunning product multi-media such as video, 3D models <br /> improve
+            Stunning product multi-media such as video, 3D models improve
             conversion rate & reduce returns
          </>
       ),
@@ -161,10 +157,7 @@ const featuresImagesGroup = [
       title: "Sticky Add To Cart",
       thumbnail: "/images/item8.png",
       describtiton: (
-         <>
-            Persistent add-to-cart bar for easy and <br /> quick product
-            purchase
-         </>
+         <>Persistent add-to-cart bar for easy and quick product purchase</>
       ),
       className: "top-12 text-center left-0 right-0 w-full",
       classNames: "col-span-7",
@@ -174,8 +167,7 @@ const featuresImagesGroup = [
       thumbnail: "/images/item9.png",
       describtiton: (
          <>
-            Make it easier for customers to <br />
-            pre-order your coming soon products
+            Make it easier for customers to pre-order your coming soon products
          </>
       ),
       className: "top-12 text-center left-0 right-0 w-full",
@@ -287,11 +279,11 @@ function Features() {
                   )} */}
                   <div className="col-span-6 xl:col-span-5 relative">
                      <img src="/images/item1 (1).png" alt="" />
-                     <div className="absolute bottom-12 right-8">
+                     <div className="absolute bottom-14 xl:right-10 right-4">
                         <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4">
                            Smart Product Filters
                         </h2>
-                        <p className="2xl:text-base text-md tracking-normal max-w-[300px]">
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal xl:max-w-[300px] max-w-[270px]">
                            Filtering products is fast, convenient and smart by
                            auto tags entry & multiple product attributes
                         </p>
@@ -303,11 +295,11 @@ function Features() {
                         src="/images/item2 (1).png"
                         alt=""
                      />
-                     <div className="absolute top-12 right-8">
+                     <div className="absolute top-16 right-8">
                         <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4">
                            Smart Product Filters
                         </h2>
-                        <p className="2xl:text-base text-md tracking-normal max-w-[300px]">
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[300px]">
                            Filtering products is fast, convenient and smart by
                            auto tags entry & multiple product attributes
                         </p>
@@ -339,6 +331,91 @@ function Features() {
                               </div>
                            ))}
                         </div>
+                     </div>
+                  </div>
+                  <div className="col-span-6 xl:col-span-4 relative">
+                     <img src="/images/item3 (2).png" alt="" />
+                     <div className="absolute bottom-12 px-2 flex flex-col items-center w-full">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center">
+                           Product Variant Swatches
+                        </h2>
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[340px] text-center">
+                           Swatch products with multiple attributes at once in
+                           products, collections, homepage, etc.
+                        </p>
+                     </div>
+                  </div>
+                  <div className="col-span-6 xl:col-span-4 relative">
+                     <img src="/images/item4 (1).png" alt="" />
+                     <div className="absolute top-12 px-2 flex flex-col items-center w-full">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center max-w-[250px] mx-auto">
+                           Cart Drawer With Free Shipping Goal
+                        </h2>
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[355px] text-center">
+                           Improve shopping convenience & sales with mini cart
+                           showing free shipping notification
+                        </p>
+                     </div>
+                  </div>
+                  <div className="col-span-6 xl:col-span-4 relative">
+                     <img src="/images/item5 (1).png" alt="" />
+                     <div className="absolute bottom-12 px-2 w-full">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center">
+                           Frequently Bought Together
+                        </h2>
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[360px] mx-auto text-center">
+                           Encourage average order value by showing frequently
+                           bought together products
+                        </p>
+                     </div>
+                  </div>
+                  <div className="col-span-6 relative">
+                     <img className="w-full" src="/images/item6.png" alt="" />
+                     <div className="absolute bottom-14 left-12 w-full">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4">
+                           Video Thumbnail & 3D
+                        </h2>
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[460px]">
+                           Stunning product multi-media such as video, 3D models
+                           improve conversion rate & reduce returns
+                        </p>
+                     </div>
+                  </div>
+                  <div className="col-span-6 relative">
+                     <img className="w-full" src="/images/item7.png" alt="" />
+                     <div className="absolute top-[103px] left-14 w-full">
+                        <h3 className="text-8xl font-medium text-white max-w-[290px]">
+                           Increase
+                           <div className="text-lenear bg-one-stop inline-block relative">
+                              <span className="w-full h-0.5 bg-one-stop absolute bottom-0.5" />
+                              FOMO & Trust
+                           </div>
+                           For Any Single Product
+                        </h3>
+                     </div>
+                  </div>
+                  <div className="xl:col-span-7 col-span-6 relative">
+                     <img className="w-full" src="/images/item8.png" alt="" />
+                     <div className="absolute top-14 px-2 w-full">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center">
+                           Sticky Add To Cart
+                        </h2>
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[360px] mx-auto text-center">
+                           Persistent add-to-cart bar for easy and quick product
+                           purchase
+                        </p>
+                     </div>
+                  </div>
+                  <div className="xl:col-span-5 col-span-6 relative">
+                     <img className="w-full" src="/images/item9.png" alt="" />
+                     <div className="absolute top-14 px-2 w-full">
+                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center">
+                           Pre Order
+                        </h2>
+                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[290px] mx-auto text-center">
+                           Make it easier for customers to pre-order your coming
+                           soon products
+                        </p>
                      </div>
                   </div>
                </div>

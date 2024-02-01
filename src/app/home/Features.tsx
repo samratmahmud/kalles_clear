@@ -277,31 +277,35 @@ function Features() {
                         </div>
                      )
                   )} */}
-                  <div className="col-span-6 xl:col-span-5 relative">
-                     <img src="/images/item1 (1).png" alt="" />
-                     <div className="absolute bottom-14 xl:right-10 right-4">
-                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4">
+                  <div className="col-span-12 md:col-span-6 xl:col-span-5 relative md:min-h-[380px]">
+                     <img
+                        className="w-full"
+                        src="/images/item1 (1).png"
+                        alt=""
+                     />
+                     <div className="absolute xl:bottom-14 lg:bottom-10 bottom-8 xl:right-10right-4 right-[5%] lg:right-[8%]">
+                        <h2 className="2xl:text-3xl md:text-lg text-sm font-medium text-white mb-4 text-center lg:text-left">
                            Smart Product Filters
                         </h2>
-                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal xl:max-w-[300px] max-w-[270px]">
+                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal xl:max-w-[300px] md:max-w-[270px] max-w-[220px] text-center lg:text-left">
                            Filtering products is fast, convenient and smart by
                            auto tags entry & multiple product attributes
                         </p>
                      </div>
                   </div>
-                  <div className="col-span-6 xl:col-span-7 relative">
+                  <div className="col-span-12 md:col-span-6 xl:col-span-7 relative min-h-[300px]">
                      <img
                         className="w-full"
                         src="/images/item2 (1).png"
                         alt=""
                      />
-                     <div className="absolute top-16 right-8">
-                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4">
-                           Smart Product Filters
+                     <div className="absolute lg:top-16 md:bottom-10 bottom-5 md:right-8 w-full md:w-auto">
+                        <h2 className="2xl:text-3xl md:text-lg text-md font-medium text-white mb-4 text-center md:text-left">
+                           Pre-purchase upsell
                         </h2>
-                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[300px]">
-                           Filtering products is fast, convenient and smart by
-                           auto tags entry & multiple product attributes
+                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal md:max-w-[300px] max-w-[220px] mx-auto md:ml-0 text-center md:text-left">
+                           Upsell and cross-sell easily on product pages with
+                           related items
                         </p>
                         <div className="py-5 hidden xl:block">
                            {size.map(({colorBg, sizes}, index) => (
@@ -333,7 +337,7 @@ function Features() {
                         </div>
                      </div>
                   </div>
-                  <div className="col-span-6 xl:col-span-4 relative">
+                  <div className="col-span-12 md:col-span-6 xl:col-span-4 relative">
                      <img src="/images/item3 (2).png" alt="" />
                      <div className="absolute bottom-12 px-2 flex flex-col items-center w-full">
                         <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center">

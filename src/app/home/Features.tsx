@@ -287,7 +287,7 @@ function Features() {
                         <h2 className="2xl:text-3xl md:text-lg text-sm font-medium text-white mb-4 text-center lg:text-left">
                            Smart Product Filters
                         </h2>
-                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal xl:max-w-[300px] md:max-w-[270px] max-w-[220px] text-center lg:text-left">
+                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal 2xl:max-w-[300px] md:max-w-[260px] max-w-[220px] text-center lg:text-left">
                            Filtering products is fast, convenient and smart by
                            auto tags entry & multiple product attributes
                         </p>
@@ -299,11 +299,11 @@ function Features() {
                         src="/images/item2 (1).png"
                         alt=""
                      />
-                     <div className="absolute lg:top-16 md:bottom-10 bottom-5 md:right-8 w-full md:w-auto">
+                     <div className="absolute xl:top-12 md:bottom-7 bottom-5 2xl:right-8 xl:right-4 left-0 xl:left-auto w-full md:w-auto">
                         <h2 className="2xl:text-3xl md:text-lg text-md font-medium text-white mb-4 text-center md:text-left">
                            Pre-purchase upsell
                         </h2>
-                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal md:max-w-[300px] max-w-[220px] mx-auto md:ml-0 text-center md:text-left">
+                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal 2xl:max-w-[275px] md:max-w-[240px] max-w-[220px] mx-auto md:ml-0 text-center md:text-left">
                            Upsell and cross-sell easily on product pages with
                            related items
                         </p>
@@ -339,35 +339,43 @@ function Features() {
                   </div>
                   <div className="col-span-12 md:col-span-6 xl:col-span-4 relative">
                      <img src="/images/item3 (2).png" alt="" />
-                     <div className="absolute bottom-12 px-2 flex flex-col items-center w-full">
-                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center">
+                     <div className="absolute lg:bottom-12 bottom-7 px-2 flex flex-col items-center w-full">
+                        <h2 className="2xl:text-3xl md:text-lg text-md font-medium text-white mb-4 text-center">
                            Product Variant Swatches
                         </h2>
-                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[340px] text-center">
+                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal 2xl:max-w-[340px] md:max-w-[300px] max-w-[250px] text-center">
                            Swatch products with multiple attributes at once in
                            products, collections, homepage, etc.
                         </p>
                      </div>
                   </div>
-                  <div className="col-span-6 xl:col-span-4 relative">
-                     <img src="/images/item4 (1).png" alt="" />
-                     <div className="absolute top-12 px-2 flex flex-col items-center w-full">
-                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center max-w-[250px] mx-auto">
+                  <div className="col-span-12 md:col-span-6 xl:col-span-4 relative">
+                     <img
+                        className="w-full"
+                        src="/images/item4 (1).png"
+                        alt=""
+                     />
+                     <div className="absolute md:top-12 top-8 px-2 flex flex-col items-center w-full">
+                        <h2 className="2xl:text-3xl md:text-lg text-md font-medium text-white mb-4 text-center 2xl:max-w-[250px] md:max-w-[200px] max-w-[150px] mx-auto">
                            Cart Drawer With Free Shipping Goal
                         </h2>
-                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[355px] text-center">
+                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal 2xl:max-w-[355px] md:max-w-[315px] max-w-[270px] text-center">
                            Improve shopping convenience & sales with mini cart
                            showing free shipping notification
                         </p>
                      </div>
                   </div>
-                  <div className="col-span-6 xl:col-span-4 relative">
-                     <img src="/images/item5 (1).png" alt="" />
-                     <div className="absolute bottom-12 px-2 w-full">
-                        <h2 className="2xl:text-3xl text-lg font-medium text-white mb-4 text-center">
+                  <div className="col-span-12 md:col-span-6 xl:col-span-4 relative">
+                     <img
+                        className="w-full"
+                        src="/images/item5 (1).png"
+                        alt=""
+                     />
+                     <div className="absolute lg:bottom-12 bottom-8 px-2 w-full">
+                        <h2 className="2xl:text-3xl md:text-lg text-md font-medium text-white mb-4 text-center">
                            Frequently Bought Together
                         </h2>
-                        <p className="2xl:text-[16px] text-[14px] leading-[1.2] tracking-normal max-w-[360px] mx-auto text-center">
+                        <p className="2xl:text-[16px] md:text-[14px] text-sm leading-[1.2] tracking-normal 2xl:max-w-[360px] md:max-w-[320px] max-w-[270px] mx-auto text-center">
                            Encourage average order value by showing frequently
                            bought together products
                         </p>

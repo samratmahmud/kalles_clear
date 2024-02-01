@@ -12,7 +12,7 @@ function Responsive() {
                      <h2 className="text-11xl sm:text-14xl md:text-20xl lg:text-18xl xl:text-21xl 4xl:text-19xl bg-clean-bg font-medium stroke-text">
                         Clean
                      </h2>
-                     <div className="border-[10px] rounded-full border-dotted border-red-800 animate-spin relative z-0">
+                     <div className=" border-[6px] sm:border-[10px] rounded-full border-dotted border-red-800 animate-spin relative z-0">
                         <span className="bg-one-stop xl:w-64 lg:w-56 md:w-48 sm:w-40 w-28 aspect-square rounded-full absolute -top-[15%] -left-[15%] blur-[50px] -z-10" />
                         <img
                            className="xl:w-48 lg:w-44 md:w-40 sm:w-32 w-20 p-2 rounded-full aspect-square"

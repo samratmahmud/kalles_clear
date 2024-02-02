@@ -23,9 +23,9 @@ export default function Home() {
          {/* <MasonaryCards /> */}
          {/* <Responsive /> */}
          {/* <Features /> */}
-         <Advanced />
+         {/* <Advanced /> */}
          <FeaturesCards />
-         {/* <EcomRise /> */}
+         <EcomRise />
          {/* <PackageBuilt /> */}
          {/* <SpecialDeal /> */}
          {/* <Performance /> */}

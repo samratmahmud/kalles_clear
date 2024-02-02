@@ -63,8 +63,8 @@ const cardsGroup = [
       thumbnail: "/images/6.png",
       describtiton: (
          <>
-            Win back customers with exit intent popup showing discounts &
-            recommend products
+            Win back customers with exit intent popup showing{" "}
+            <br className="hidden md:block" /> discounts & recommend products
          </>
       ),
       className: "md:bottom-8 bottom-2 left-0 right-0 text-center",
@@ -73,7 +73,9 @@ const cardsGroup = [
    {
       title: (
          <>
-            Multiple Currencies <br /> & Languages
+            <p className="max-w-[400px] md:max-w-60 mx-auto">
+               Multiple Currencies & Languages
+            </p>
          </>
       ),
       thumbnail: "/images/18.jpeg",
@@ -82,9 +84,9 @@ const cardsGroup = [
             Smoothly switching between multiple <br /> currencies and languages
          </>
       ),
-      className: "bottom-8 left-0 right-0 text-center",
+      className: "md:bottom-8 bottom-5 left-0 right-0 text-center",
       classNames:
-         "md:col-span-4 col-span-12 bg-gray-950 rounded-2xl min-h-[330px]",
+         "lg::col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl min-h-[330px]",
    },
    {
       fontsA: "500+",
@@ -92,8 +94,9 @@ const cardsGroup = [
       thumbnail: "/images/10.png",
       describtiton: <>Freely use any fonts with Kalles huge font library</>,
       btn: "Font Install Service by Fontify",
-      className: "bottom-8 left-0 right-0 text-center",
-      classNames: "md:col-span-4 col-span-12 bg-gray-950 rounded-2xl",
+      className: "md:bottom-8 bottom-3 left-0 right-0 text-center",
+      classNames:
+         "lg:col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
    },
    {
       title: "Size Chart",
@@ -101,8 +104,9 @@ const cardsGroup = [
       describtiton: (
          <>Clean size chart helps customers purchase with confidence</>
       ),
-      className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-4 bg-gray-950 rounded-2xl",
+      className: "md:bottom-8 bottom-4 left-0 right-0 text-center",
+      classNames:
+         "lg:col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
    },
    {
       title: "Stunning Lookbook",
@@ -110,8 +114,9 @@ const cardsGroup = [
       describtiton: (
          <>Showcase your items in the most eye-catching way with Lookbook</>
       ),
-      className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-6 bg-gray-950 rounded-2xl",
+      className: "md:bottom-8 bottom-4 left-0 right-0 text-center",
+      classNames:
+         "md:col-span-6 col-span-12 bg-gray-950 rounded-2xl min-h-[300px]",
    },
    {
       title: "Quickview",
@@ -122,8 +127,8 @@ const cardsGroup = [
             pages
          </>
       ),
-      className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-6",
+      className: "md:bottom-8 bottom-5 left-0 right-0 text-center",
+      classNames: "md:col-span-6 col-span-12",
    },
 ];
 
@@ -131,10 +136,10 @@ function FeaturesCards() {
    return (
       <section>
          <div className="container">
-            <div className="max-w-[1700px] mx-auto mb-56 relative">
+            <div className="max-w-[1700px] mx-auto mb-16 sm:mb-20 md:mb-28 lg:mb-36 xl:mb-44 2xl:mb-56 relative">
                <span className="bg-primary w-80 aspect-square absolute -bottom-60 left-1/4 -translate-x-1/4 blur-[250px]" />
                <div className="grid grid-cols-12 gap-7 relative">
-                  <span className="bg-primary w-96 aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[220px]" />
+                  <span className="bg-primary w-96 aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[220px] hidden md:block" />
                   {cardsGroup.map(
                      (
                         {
@@ -160,7 +165,7 @@ function FeaturesCards() {
                            <div className={`absolute ${className}`}>
                               <div className="w-full md:px-4 px-2">
                                  {fontsA && (
-                                    <div className="text-13xl text-lenear bg-one-stop inline-block font-medium">
+                                    <div className="lg:text-13xl text-9xl text-lenear bg-one-stop inline-block font-medium mb-2">
                                        {fontsA}
                                     </div>
                                  )}
@@ -171,7 +176,7 @@ function FeaturesCards() {
                                     {describtiton}
                                  </p>
                                  {btn && (
-                                    <div className="text-md bg-features-btn inline-block py-2 px-10 mt-6 rounded-lg text-white font-medium">
+                                    <div className="text-md bg-features-btn inline-block py-2.5 px-10 mt-6 rounded-lg text-white font-medium">
                                        {btn}
                                     </div>
                                  )}

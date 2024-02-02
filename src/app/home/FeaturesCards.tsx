@@ -126,58 +126,60 @@ const cardsGroup = [
 function FeaturesCards() {
    return (
       <section>
-         <div className="container-width mb-56 relative">
-            <span className="bg-primary w-80 aspect-square absolute -bottom-60 left-1/4 -translate-x-1/4 blur-[250px]" />
-            <div className="grid grid-cols-12 gap-7 relative">
-               <span className="bg-primary w-96 aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[220px]" />
-               {cardsGroup.map(
-                  (
-                     {
-                        title,
-                        thumbnail,
-                        describtiton,
-                        className,
-                        classNames,
-                        btn,
-                        fontsA,
-                     },
-                     index
-                  ) => (
-                     <div
-                        key={index}
-                        className={`relative group cursor-pointer ${classNames}`}
-                     >
-                        <img className="opacity-50" src={thumbnail} alt="" />
-                        <div className={`absolute ${className}`}>
-                           <div className="w-full px-12">
-                              {fontsA && (
-                                 <div className="text-13xl text-lenear bg-one-stop inline-block font-medium">
-                                    {fontsA}
-                                 </div>
-                              )}
-                              <h3 className="text-3xl font-medium text-white mb-2">
-                                 {title}
-                              </h3>
-                              <p className="text-base tracking-normal">
-                                 {describtiton}
-                              </p>
-                              {btn && (
-                                 <div className="text-md bg-features-btn inline-block py-2 px-10 mt-6 rounded-lg text-white font-medium">
-                                    {btn}
-                                 </div>
-                              )}
+         <div className="container">
+            <div className="max-w-[1700px] mx-auto mb-56 relative">
+               <span className="bg-primary w-80 aspect-square absolute -bottom-60 left-1/4 -translate-x-1/4 blur-[250px]" />
+               <div className="grid grid-cols-12 gap-7 relative">
+                  <span className="bg-primary w-96 aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[220px]" />
+                  {cardsGroup.map(
+                     (
+                        {
+                           title,
+                           thumbnail,
+                           describtiton,
+                           className,
+                           classNames,
+                           btn,
+                           fontsA,
+                        },
+                        index
+                     ) => (
+                        <div
+                           key={index}
+                           className={`relative group cursor-pointer ${classNames}`}
+                        >
+                           <img className="opacity-50" src={thumbnail} alt="" />
+                           <div className={`absolute ${className}`}>
+                              <div className="w-full px-12">
+                                 {fontsA && (
+                                    <div className="text-13xl text-lenear bg-one-stop inline-block font-medium">
+                                       {fontsA}
+                                    </div>
+                                 )}
+                                 <h3 className="text-3xl font-medium text-white mb-2">
+                                    {title}
+                                 </h3>
+                                 <p className="text-base tracking-normal">
+                                    {describtiton}
+                                 </p>
+                                 {btn && (
+                                    <div className="text-md bg-features-btn inline-block py-2 px-10 mt-6 rounded-lg text-white font-medium">
+                                       {btn}
+                                    </div>
+                                 )}
+                              </div>
+                           </div>
+                           <div className="absolute top-7 right-[5%] border border-gray-700 border-opacity-50 px-1 py-2 rounded-md opacity-0 group-hover:opacity-100 duration-300">
+                              <img
+                                 className="w-6 h-4"
+                                 src="/images/icons8-arrow-right-50.png"
+                                 alt=""
+                              />
                            </div>
                         </div>
-                        <div className="absolute top-7 right-[5%] border border-gray-700 border-opacity-50 px-1 py-2 rounded-md opacity-0 group-hover:opacity-100 duration-300">
-                           <img
-                              className="w-6 h-4"
-                              src="/images/icons8-arrow-right-50.png"
-                              alt=""
-                           />
-                        </div>
-                     </div>
-                  )
-               )}
+                     )
+                  )}
+               </div>
             </div>
          </div>
       </section>

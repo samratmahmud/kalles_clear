@@ -21,10 +21,10 @@ export default function Home() {
          {/* <Demos /> */}
          {/* <PagesGroup /> */}
          {/* <MasonaryCards /> */}
-         <Responsive />
-         <Features />
-         {/* <Advanced /> */}
-         {/* <FeaturesCards /> */}
+         {/* <Responsive /> */}
+         {/* <Features /> */}
+         <Advanced />
+         <FeaturesCards />
          {/* <EcomRise /> */}
          {/* <PackageBuilt /> */}
          {/* <SpecialDeal /> */}

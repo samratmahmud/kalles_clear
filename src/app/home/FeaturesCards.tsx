@@ -12,15 +12,17 @@ const cardsGroup = [
             with clean bottom navigation
          </>
       ),
-      className: "bottom-12 left-0 right-0 text-center",
-      classNames: "col-span-4 bg-gray-800 rounded-2xl",
+      className: "md:bottom-10 bottom-7 left-0 right-0 text-center",
+      classNames:
+         "lg:col-span-4 md:col-span-6 col-span-12 bg-gray-800 rounded-2xl min-h-[400px]",
    },
    {
       title: "Popup & Sidebar Search",
       thumbnail: "/images/2.png",
       describtiton: `Dynamic ways to filter a product, enhance shopping convenience`,
-      className: "top-10 left-0 right-0 text-center",
-      classNames: "col-span-8 bg-gray-800 rounded-2xl",
+      className: "lg:top-10 bottom-8 left-0 right-0 text-center",
+      classNames:
+         "lg:col-span-8 md:col-span-6 col-span-12 bg-gray-800 rounded-2xl min-h-[400px]",
    },
    {
       title: "Stunning Lookbook",
@@ -29,7 +31,8 @@ const cardsGroup = [
          <>Showcase your items in the most eye-catching way with Lookbook</>
       ),
       className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-6 bg-gray-800 rounded-2xl",
+      classNames:
+         "md:col-span-6 col-span-12 bg-gray-800 rounded-2xl min-h-[320px]",
    },
    {
       title: "Quickview",
@@ -40,8 +43,8 @@ const cardsGroup = [
             pages
          </>
       ),
-      className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-6",
+      className: "md:bottom-8 bottom-2 left-0 right-0 text-center",
+      classNames: "md:col-span-6 col-span-12",
    },
    {
       title: "Compare, Wishlist",
@@ -52,20 +55,20 @@ const cardsGroup = [
             Wishlist
          </>
       ),
-      className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-6 bg-gray-950 rounded-2xl",
+      className: "md:bottom-8 bottom-2 left-0 right-0 text-center",
+      classNames: "md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
    },
    {
       title: "Exit Intent Popup",
       thumbnail: "/images/6.png",
       describtiton: (
          <>
-            Win back customers with exit intent popup showing <br />
-            discounts & recommend products
+            Win back customers with exit intent popup showing discounts &
+            recommend products
          </>
       ),
-      className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-6 bg-gray-950 rounded-2xl",
+      className: "md:bottom-8 bottom-2 left-0 right-0 text-center",
+      classNames: "md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
    },
    {
       title: (
@@ -80,7 +83,8 @@ const cardsGroup = [
          </>
       ),
       className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-4 bg-gray-950 rounded-2xl",
+      classNames:
+         "md:col-span-4 col-span-12 bg-gray-950 rounded-2xl min-h-[330px]",
    },
    {
       fontsA: "500+",
@@ -89,7 +93,7 @@ const cardsGroup = [
       describtiton: <>Freely use any fonts with Kalles huge font library</>,
       btn: "Font Install Service by Fontify",
       className: "bottom-8 left-0 right-0 text-center",
-      classNames: "col-span-4 bg-gray-950 rounded-2xl",
+      classNames: "md:col-span-4 col-span-12 bg-gray-950 rounded-2xl",
    },
    {
       title: "Size Chart",
@@ -148,18 +152,22 @@ function FeaturesCards() {
                            key={index}
                            className={`relative group cursor-pointer ${classNames}`}
                         >
-                           <img className="opacity-50" src={thumbnail} alt="" />
+                           <img
+                              className="w-full opacity-30 xl:opacity-100"
+                              src={thumbnail}
+                              alt=""
+                           />
                            <div className={`absolute ${className}`}>
-                              <div className="w-full px-12">
+                              <div className="w-full md:px-4 px-2">
                                  {fontsA && (
                                     <div className="text-13xl text-lenear bg-one-stop inline-block font-medium">
                                        {fontsA}
                                     </div>
                                  )}
-                                 <h3 className="text-3xl font-medium text-white mb-2">
+                                 <h3 className="xl:text-3xl text-lg font-medium text-white mb-4">
                                     {title}
                                  </h3>
-                                 <p className="text-base tracking-normal">
+                                 <p className="xl:text-base text-md tracking-normal leading-[1.22] xl:leading-[1.2]">
                                     {describtiton}
                                  </p>
                                  {btn && (

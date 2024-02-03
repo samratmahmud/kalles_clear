@@ -5,7 +5,8 @@ const updateItems = [
    {
       text: (
          <>
-            Import new demos by a click, forge <br /> the traditional way
+            Import new demos by a click, forge{" "}
+            <br className="hidden lg:block" /> the traditional way
          </>
       ),
    },
@@ -19,7 +20,8 @@ const updateItems = [
    {
       text: (
          <>
-            Enjoy advanced theme functions: Compare, <br /> Wishlist, Countdown
+            Enjoy advanced theme functions: Compare,{" "}
+            <br className="hidden lg:block" /> Wishlist, Countdown
          </>
       ),
    },
@@ -38,21 +40,27 @@ function EcomRise() {
    return (
       <section>
          <div className="container">
-            <div className="mb-56 relative z-0">
+            <div className="mb-10 sm:mb-14 md:mb-20 lg:mb-28 xl:m-40 2xl:mb-56 relative z-0">
                <span className="max-w-[732px] aspect-square w-full bg-one-stop absolute top-1/2 -translate-y-1/3 left-0 4xl:left-[45%] rounded-full blur-[250px] -z-10" />
-               <div className="pl-[8%] grid 4xl:grid-cols-5 grid-cols-4">
-                  <div className="col-span-2 mt-12">
-                     <h3 className="text-10xl font-medium bg-one-stop text-lenear inline-block">
-                        EcomRise
-                     </h3>
-                     <h2 className="text-10xl font-medium text-white mb-16">
-                        One Click Import Demos <br /> & Update Theme
+               <div className="xl:pl-[8%] grid 2xl:grid-cols-9 xl:grid-cols-8 gap-6">
+                  <div className="col-span-4 xl:mt-12">
+                     <h2 className="text-xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl 3xl:text-10xl font-medium text-white mb-6 md:mb-10 lg:mb-12 xl:mb-16">
+                        <span className="bg-one-stop text-lenear inline-block">
+                           EcomRise
+                        </span>{" "}
+                        <br className="hidden lg:block" />
+                        One Click Import Demos{" "}
+                        <br className="hidden lg:block" /> & Update Theme
                      </h2>
-                     <div className="flex flex-col gap-10 mb-16 max-w-[590px]">
+
+                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-10 mb-6 md:mb-8 lg:mb-10 xl:mb-12 2xl:mb-16 max-w-[590px]">
                         {updateItems.map(({text}, index) => (
-                           <div key={index} className="flex items-start gap-4">
+                           <div
+                              key={index}
+                              className="flex items-start md:gap-4 gap-2.5"
+                           >
                               <img src="/images/egroup-images.svg" alt="" />
-                              <div className="text-xl tracking-normal text-white">
+                              <div className="text-sm md:text-lg 3xl:text-xl -tracking-[-0.30px] text-white">
                                  {text}
                               </div>
                            </div>
@@ -66,7 +74,7 @@ function EcomRise() {
                         />
                      </div>
                   </div>
-                  <div className="4xl:col-span-3 col-span-2">
+                  <div className="2xl:col-span-5 col-span-4">
                      <img className="w-full" src="/images/2 (1).png" alt="" />
                   </div>
                </div>

@@ -86,7 +86,7 @@ const cardsGroup = [
       ),
       className: "md:bottom-8 bottom-5 left-0 right-0 text-center",
       classNames:
-         "lg::col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl min-h-[330px]",
+         "3xl:col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl min-h-[330px]",
    },
    {
       fontsA: "500+",
@@ -96,7 +96,7 @@ const cardsGroup = [
       btn: "Font Install Service by Fontify",
       className: "md:bottom-8 bottom-3 left-0 right-0 text-center",
       classNames:
-         "lg:col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
+         "3xl:col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
    },
    {
       title: "Size Chart",
@@ -106,7 +106,7 @@ const cardsGroup = [
       ),
       className: "md:bottom-8 bottom-4 left-0 right-0 text-center",
       classNames:
-         "lg:col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
+         "3xl:col-span-4 md:col-span-6 col-span-12 bg-gray-950 rounded-2xl",
    },
    {
       title: "Stunning Lookbook",

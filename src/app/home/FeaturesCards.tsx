@@ -162,21 +162,38 @@ function FeaturesCards() {
                               src={thumbnail}
                               alt=""
                            />
-                           <div className={`absolute ${className}`}>
+                           <div
+                              className={`absolute overflow-hidden ${className}`}
+                           >
                               <div className="w-full md:px-4 px-2">
                                  {fontsA && (
-                                    <div className="lg:text-13xl text-9xl text-lenear bg-one-stop inline-block font-medium mb-2">
+                                    <div
+                                       data-aos="fade-up"
+                                       className="lg:text-13xl text-9xl text-lenear bg-one-stop inline-block font-medium mb-2"
+                                    >
                                        {fontsA}
                                     </div>
                                  )}
-                                 <h3 className="xl:text-3xl text-lg font-medium text-white mb-4">
+                                 <h3
+                                    data-aos="fade-up"
+                                    data-aos-delay="200"
+                                    className="xl:text-3xl text-lg font-medium text-white mb-4"
+                                 >
                                     {title}
                                  </h3>
-                                 <p className="xl:text-base text-md tracking-normal leading-[1.22] xl:leading-[1.2]">
+                                 <p
+                                    data-aos="fade-up"
+                                    data-aos-delay="400"
+                                    className="xl:text-base text-md tracking-normal leading-[1.22] xl:leading-[1.2]"
+                                 >
                                     {describtiton}
                                  </p>
                                  {btn && (
-                                    <div className="text-md bg-features-btn inline-block py-2.5 px-10 mt-6 rounded-lg text-white font-medium">
+                                    <div
+                                       data-aos="fade-up"
+                                       data-aos-delay="600"
+                                       className="text-md bg-features-btn inline-block py-2.5 px-10 mt-6 rounded-lg text-white font-medium"
+                                    >
                                        {btn}
                                     </div>
                                  )}

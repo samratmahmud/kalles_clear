@@ -39,8 +39,8 @@ const updateItems = [
 function EcomRise() {
    return (
       <section>
-         <div className="container">
-            <div className="mb-10 sm:mb-14 md:mb-20 lg:mb-28 xl:m-40 2xl:mb-56 relative z-0">
+         <div className="max-w-[1920px] mx-auto px-4 xl:px-0">
+            <div className="mb-10 sm:mb-14 md:mb-20 lg:mb-28 xl:mb-40 2xl:mb-56 relative z-0">
                <span className="max-w-[732px] aspect-square w-full bg-one-stop absolute top-1/2 -translate-y-1/3 left-0 4xl:left-[45%] rounded-full blur-[250px] -z-10" />
                <div className="xl:pl-[8%] grid 2xl:grid-cols-9 xl:grid-cols-8 gap-6">
                   <div className="col-span-4 xl:mt-12">
@@ -75,7 +75,16 @@ function EcomRise() {
                      </div>
                   </div>
                   <div className="2xl:col-span-5 col-span-4">
-                     <img className="w-full" src="/images/2 (1).png" alt="" />
+                     <div className="relative">
+                        <div className="absolute sm:top-[44%] top-[38%] 4xl:-left-[13%] 2xl:-left-[17%] xl:-left-[25%] lg:-left-[10%] md:-left-[15%] sm:-left-[22%] -left-[35%]">
+                           <img src="/images/arrow.svg" alt="" />
+                        </div>
+                        <img
+                           className="w-full"
+                           src="/images/2 (1).png"
+                           alt=""
+                        />
+                     </div>
                   </div>
                </div>
             </div>

@@ -24,10 +24,10 @@ export default function Home() {
          {/* <Responsive /> */}
          {/* <Features /> */}
          {/* <Advanced /> */}
-         <FeaturesCards />
-         <EcomRise />
-         {/* <PackageBuilt /> */}
-         {/* <SpecialDeal /> */}
+         {/* <FeaturesCards /> */}
+         {/* <EcomRise /> */}
+         <PackageBuilt />
+         <SpecialDeal />
          {/* <Performance /> */}
          {/* <Experience /> */}
       </main>

@@ -221,8 +221,6 @@ function PackageBuilt() {
                                     {btn.map(({titleB, value}, index) => (
                                        <div
                                           key={index}
-                                          data-aos="fade-up"
-                                          data-aos-delay={`${index * 200}`}
                                           className=" flex flex-col gap-2 items-center justify-center bg-feature-btn rounded-2xl md:h-24 md:py-4 py-2.5 2xl:px-10 px-4"
                                        >
                                           <div className="2xl:text-3xl md:text-lg text-md text-white leading-[1.4] font-medium">
@@ -247,7 +245,11 @@ function PackageBuilt() {
                      )}
                   </div>
                </div>
-               <div className="md:text-md text-sm tracking-normal text-center text-gray-400">
+               <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  className="md:text-md text-sm tracking-normal text-center text-gray-400"
+               >
                   *Note: These features on Kalles meet the standard needs of a
                   store. <br className="hidden md:block" />
                   If merchants want advanced solutions, we recommend you install

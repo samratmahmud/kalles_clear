@@ -26,10 +26,10 @@ export default function Home() {
          {/* <Advanced /> */}
          {/* <FeaturesCards /> */}
          {/* <EcomRise /> */}
-         <PackageBuilt />
-         <SpecialDeal />
+         {/* <PackageBuilt /> */}
+         {/* <SpecialDeal /> */}
          {/* <Performance /> */}
-         {/* <Experience /> */}
+         <Experience />
       </main>
    );
 }

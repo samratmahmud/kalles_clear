@@ -21,7 +21,8 @@
     "react-modern-drawer": "^1.2.2",
     "react-responsive-masonry": "^2.1.7",
     "react-scroll-parallax": "^3.4.5",
-    "simplebar-react": "^3.2.4"
+    "simplebar-react": "^3.2.4",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

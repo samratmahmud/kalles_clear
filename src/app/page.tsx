@@ -15,6 +15,7 @@ import Experience from "./home/Experience";
 import ExclusiveDeals from "./home/ExclusiveDeals";
 import Explore from "./home/Explore";
 import Agency from "./home/Agency";
+import Support from "./home/Support ";
 
 export default function Home() {
    return (
@@ -36,6 +37,7 @@ export default function Home() {
          {/* <ExclusiveDeals /> */}
          <Explore />
          <Agency />
+         <Support />
       </main>
    );
 }

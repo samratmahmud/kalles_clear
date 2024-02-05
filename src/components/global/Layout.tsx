@@ -6,6 +6,7 @@ import {ParallaxProvider} from "react-scroll-parallax";
 import UpBotton from "./UpBotton";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "./footer/Footer";
 
 interface layoutProps {
    children: ReactNode;
@@ -27,6 +28,7 @@ function Layout(props: layoutProps) {
             <Navbar />
             <UpBotton />
             {children}
+            <Footer />
          </main>
       </ParallaxProvider>
    );

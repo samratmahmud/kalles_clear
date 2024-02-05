@@ -155,7 +155,8 @@ const contentTwo = [
 function Explore() {
    return (
       <section>
-         <div className="mb-[200px]">
+         <div className="mb-[200px] relative z-0">
+            <div className="bg-blue-300 max-w-[416px] aspect-square w-full rounded-full blur-[300px] absolute -z-10 top-0 left-[50%] translate-x-[-50%]" />
             <div className="flex flex-col items-center mb-20">
                <h3 className="text-5xl font-medium text-lenear bg-one-stop tex-tlenear inline-block mb-3">
                   See Kalles in real live?
@@ -164,7 +165,7 @@ function Explore() {
                   Explore websites built by Kalles
                </h2>
             </div>
-            <div>
+            <div className="flex flex-col gap-6">
                <Marquee speed={60} pauseOnClick={true}>
                   {contentOne.map(
                      ({thumbnail, title, describtion, href}, index) => (

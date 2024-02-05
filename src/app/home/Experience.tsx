@@ -1,5 +1,23 @@
-import Link from "next/link";
 import React from "react";
+
+const demoVideo = [
+   {
+      title: "Menu Mobile",
+      video: "/images/menu_mobile.mp4",
+   },
+   {
+      title: "Filters Collection",
+      video: "/images/filters.mp4",
+   },
+   {
+      title: "Add to cart",
+      video: "/images/atc.mp4",
+   },
+   {
+      title: "Check out",
+      video: "/images/checkout.mp4",
+   },
+];
 
 function Experience() {
    return (
@@ -21,9 +39,23 @@ function Experience() {
                      smooth designs.
                   </p>
                </div>
-               <div>
-                  <video src="/images/menu_mobile.mp4" autoPlay></video>
+               <div className="flex justify-between gap-3">
+                  {demoVideo.map(({title, video}, index) => (
+                     <div key={index} className="w-[calc(25%-12px)]">
+                        <div className="bg-exclusive-tab border-2 border-transparent rounded-2xl mb-4">
+                           <video
+                              className="w-full bg-video-bg p-4 rounded-2xl  relative z-10"
+                              src={video}
+                              autoPlay
+                           />
+                        </div>
+                        <div className="text-xl font-medium text-white text-center leading-[1.4]">
+                           {title}
+                        </div>
+                     </div>
+                  ))}
                </div>
+               <div></div>
             </div>
          </div>
       </section>

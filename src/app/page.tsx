@@ -14,6 +14,7 @@ import Performance from "./home/Performance";
 import Experience from "./home/Experience";
 import ExclusiveDeals from "./home/ExclusiveDeals";
 import Explore from "./home/Explore";
+import Agency from "./home/Agency";
 
 export default function Home() {
    return (
@@ -31,9 +32,10 @@ export default function Home() {
          {/* <PackageBuilt /> */}
          {/* <SpecialDeal /> */}
          {/* <Performance /> */}
-         <Experience />
-         <ExclusiveDeals />
+         {/* <Experience /> */}
+         {/* <ExclusiveDeals /> */}
          <Explore />
+         <Agency />
       </main>
    );
 }

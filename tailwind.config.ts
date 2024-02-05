@@ -111,6 +111,8 @@ const config: Config = {
          "demos-btn":
             "linear-gradient(41deg, #00BAD4 7.72%, #2194FF 55.76%,#A05DFE 93.63%)",
          "exclusive-tab": "linear-gradient(110deg, #202020 0%, #101010 100%)",
+         "video-bg":
+            "linear-gradient(180deg, #1A1A1A 20%, rgba(0, 0, 0, 10) 100%)",
       },
       container: {
          center: true,

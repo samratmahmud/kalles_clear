@@ -110,6 +110,7 @@ const config: Config = {
             "linear-gradient(to right,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(125, 185, 232, 0) 100%)",
          "demos-btn":
             "linear-gradient(41deg, #00BAD4 7.72%, #2194FF 55.76%,#A05DFE 93.63%)",
+         "exclusive-tab": "linear-gradient(110deg, #202020 0%, #101010 100%)",
       },
       container: {
          center: true,

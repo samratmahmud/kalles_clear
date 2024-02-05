@@ -67,7 +67,7 @@ function Performance() {
                         </div>
                      </div>
                   </div>
-                  <div className="bg-gray-800 rounded-2xl md:max-h-[760px] max-h-[550px] overflow-hidden">
+                  <div className="bg-gray-800 rounded-2xl 2xl:max-h-none md:max-h-[750px] max-h-[550px] overflow-hidden">
                      <div className="2xl:py-14 2xl:px-12 lg:py-11 lg:px-10 p-[30px]">
                         <h3
                            data-aos="fade-up"
@@ -127,7 +127,7 @@ function Performance() {
                         <div
                            data-aos="fade-up"
                            data-aos-delay="400"
-                           className="bg-slate-600/30 border border-slate-300/30 p-4 max-w-[95%] mx-auto rounded-2xl mb-4"
+                           className="bg-slate-600/30 border border-slate-300/30 md:p-4 p-2 max-w-[95%] mx-auto rounded-2xl md:mb-4 mb-2.5"
                         >
                            <h4 className="text-sm tracking-normal text-slate-300/50 mb-2">
                               yourstore.com
@@ -156,7 +156,7 @@ function Performance() {
                         <div
                            data-aos="fade-up"
                            data-aos-delay="500"
-                           className="bg-slate-600/30 border border-slate-300/30 p-4 max-w-[95%] mx-auto rounded-2xl"
+                           className="bg-slate-600/30 border border-slate-300/30 md:p-4 p-2 max-w-[95%] mx-auto rounded-2xl"
                         >
                            <SkeletonTheme
                               baseColor="#48494B"

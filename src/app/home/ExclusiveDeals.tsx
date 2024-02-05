@@ -1,0 +1,210 @@
+"use client";
+import Buttons from "@/components/common/Buttons";
+import React, {useState} from "react";
+
+const dealsitem = [
+   {
+      icon: "/images/1 (4).png",
+      name: "EComposer Page Builder - Free Partner Plan (save $150/year)",
+      dealCrad: [
+         {
+            thumbnail:
+               "https://themes.the4.co/kalles-5/assets/images/partner/1.webp",
+            Title: "EComposer Page Builder - Free Standard Plan 6 Months (Save $114)",
+            describtion: `Build any page type or section with
+            intuitive drag-drop editor. 300+
+            templates available and 20+ boost
+            sales extensions.`,
+            list: [
+               <>
+                  <strong>How to redeem:</strong> Buy Kalles then install
+                  EComposer and chat with in-app support mention your offer.
+               </>,
+               "Who to apply: Only new users",
+            ],
+         },
+      ],
+   },
+   {
+      icon: "/images/2 (3).png",
+      name: "Shopify 45-days free trial.",
+      dealCrad: [
+         {
+            thumbnail:
+               "https://themes.the4.co/kalles-5/assets/images/partner/6.webp",
+            Title: "Sign up Shopify for only $1 in 3 months",
+            describtion: `As a Shopify commerce coach, The4 invites you to create new Shopify account with the exclusive offer. Limited time & slots only so hurry up!
+
+            `,
+         },
+      ],
+   },
+   {
+      icon: "/images/3 (1).png",
+      name: "The4 - Get 7% cashback to your PayPal",
+      dealCrad: [
+         {
+            thumbnail:
+               "https://themes.the4.co/kalles-5/assets/images/partner/2.webp",
+            Title: "The4 - Get 7% cashback to your PayPal",
+            describtion: `The4 premium themes are used by 40k Shopify merchants, rated 5.0/5 over 3000 reviews.`,
+            list: [
+               <>
+                  <strong>How to claim:</strong> Users buy from 7 licenses of
+                  any The4 theme can get 7% cashback, contact
+                  the4studio.net@gmail.com to claim deal.
+               </>,
+               "Who to apply: Current and new users",
+            ],
+         },
+      ],
+   },
+   {
+      icon: "https://themes.the4.co/kalles-5/assets/images/partner/icon/7.webp",
+      name: "Fontify: Google & Custom Fonts",
+      dealCrad: [
+         {
+            thumbnail:
+               "https://themes.the4.co/kalles-5/assets/images/partner/7.webp",
+            Title: "Fontify- Free upload 15 first custom fonts",
+            describtion: `The most popular font changer for Shopify store (change any Goolge & Custom fonts)`,
+            list: [
+               <>
+                  <strong>How to redeem:</strong> Install Fontify and chat with
+                  support mention Fontify+Kalles to redeem your offer
+               </>,
+               "Who to apply: New users only",
+            ],
+         },
+      ],
+   },
+   {
+      icon: "	https://themes.the4.co/kalles-5/assets/images/partner/icon/8.webp",
+      name: "Avada Trust Badges Sale Pop‑up",
+      dealCrad: [
+         {
+            thumbnail:
+               "https://themes.the4.co/kalles-5/assets/images/partner/8.webp",
+            Title: "AVADA Marketing automation - 20% in First 2 months all paid plans",
+            describtion: `Marketing Automation in multi-channels: email, SMS, WhatsApp, web push. Reach your customers personally and make them happy to buy with appealing follow-up messages.`,
+            list: [
+               <>
+                  <strong>How to redeem:</strong> Use code THE420 at
+                  subscription page
+               </>,
+               "Who to apply: New shops only (shops that never upgrade before)",
+            ],
+         },
+      ],
+   },
+   {
+      icon: "/images/6 (1).png",
+      name: "FlashSearch - Get 20% OFF on all Paid plans",
+      dealCrad: [
+         {
+            thumbnail:
+               "https://themes.the4.co/kalles-5/assets/images/partner/5.webp",
+            Title: "FlashSearch - Get 20% OFF on all Paid plans",
+            describtion: `FlashSearch helps you optimize and increase user experience by quickly searching for products that match your keywords or sometimes those products are prioritized by yourself.`,
+            list: [
+               <>
+                  <strong>How to redeem:</strong> Just click to the link below.
+               </>,
+               "Who to apply: New users",
+            ],
+         },
+      ],
+   },
+];
+
+function ExclusiveDeals() {
+   const [tab, setTab] = useState(0);
+   return (
+      <section>
+         <div className="container">
+            <div className="max-w-[1600px] mx-auto mb-32">
+               <div className="bg-features-build w-full rounded-t-3xl border-t border-x-2 border-transparent">
+                  <div className="p-12 mt-0.5 bg-black rounded-t-3xl">
+                     <div className="flex justify-between gap-6 bg-demos-card p-4 rounded-2xl">
+                        <div>
+                           {dealsitem[tab].dealCrad?.map(
+                              (
+                                 {thumbnail, Title, describtion, list}: any,
+                                 index
+                              ) => (
+                                 <div key={index} className="max-w-[600px]">
+                                    <div className="mb-6">
+                                       <img
+                                          className="rounded-xl max-h-[338px] w-full"
+                                          src={thumbnail}
+                                          alt=""
+                                       />
+                                    </div>
+                                    <h3 className="text-3xl font-medium mb-4 text-white px-4">
+                                       {Title}
+                                    </h3>
+                                    <div className="px-4 mb-10">
+                                       <p className="mb-4">{describtion}</p>
+                                       {list && (
+                                          <ul className="flex flex-col gap-3 list-disc pl-4">
+                                             {list.map(
+                                                (item: any, index: number) => (
+                                                   <li key={index}>{item}</li>
+                                                )
+                                             )}
+                                          </ul>
+                                       )}
+                                    </div>
+                                    <div className="flex gap-6 px-4">
+                                       <Buttons
+                                          href="/"
+                                          name="Claim Your Deal"
+                                       />
+                                       <Buttons
+                                          href="/"
+                                          name="Buy Kalles Now"
+                                          varient="outlined"
+                                       />
+                                    </div>
+                                 </div>
+                              )
+                           )}
+                        </div>
+                        <div className="max-w-[720px] mt-10">
+                           <h2 className="text-10xl font-medium text-white max-w-[440px] mb-10">
+                              Exclusive deals from{" "}
+                              <span className="bg-one-stop text-lenear">
+                                 our partners
+                              </span>
+                           </h2>
+                           <div className="grid grid-cols-2 gap-6">
+                              {dealsitem.map(({icon, name}, index) => (
+                                 <div
+                                    key={index}
+                                    onClick={() => setTab(index)}
+                                    className={`flex gap-6 items-center p-6 rounded-3xl cursor-pointer  hover:bg-exclusive-tab duration-300 ${
+                                       index === tab ? "bg-exclusive-tab" : ""
+                                    }`}
+                                 >
+                                    <img
+                                       className="max-w-16 rounded-xl"
+                                       src={icon}
+                                       alt=""
+                                    />
+                                    <p className="text-white leading-[1.4] tracking-[0.09px]">
+                                       {name}
+                                    </p>
+                                 </div>
+                              ))}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   );
+}
+
+export default ExclusiveDeals;

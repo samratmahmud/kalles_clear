@@ -12,6 +12,8 @@ import SpecialDeal from "./home/SpecialDeal";
 import Header from "./home/header/Header";
 import Performance from "./home/Performance";
 import Experience from "./home/Experience";
+import ExclusiveDeals from "./home/ExclusiveDeals";
+import Explore from "./home/Explore";
 
 export default function Home() {
    return (
@@ -30,6 +32,8 @@ export default function Home() {
          {/* <SpecialDeal /> */}
          {/* <Performance /> */}
          <Experience />
+         <ExclusiveDeals />
+         <Explore />
       </main>
    );
 }

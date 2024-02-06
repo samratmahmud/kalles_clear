@@ -122,34 +122,41 @@ function ExclusiveDeals() {
    return (
       <section>
          <div className="container">
-            <div className="max-w-[1600px] mx-auto mb-32">
-               <div className="bg-features-build w-full rounded-t-3xl border-t border-x-2 border-transparent">
-                  <div className="p-12 mt-0.5 bg-black rounded-t-3xl">
-                     <div className="flex justify-between gap-6 bg-demos-card p-4 rounded-2xl">
-                        <div>
+            <div className="max-w-[1600px] mx-auto 2xl:mb-32 xl:mb-24 lg:mb-20 md:mb-16 mb-10">
+               <div className="2xl:bg-features-build w-full 2xl:rounded-t-3xl 2xl:border-t 2xl:border-x-2 border-transparent">
+                  <div className="3xl:p-12 2xl:p-5 2xl:mt-0.5 bg-black rounded-t-3xl">
+                     <div className="flex xl:flex-row flex-col-reverse justify-between gap-5 bg-demos-card p-4 rounded-2xl">
+                        <div className="w-full xl:max-w-[600px]">
                            {dealsitem[tab].dealCrad?.map(
                               (
                                  {thumbnail, Title, describtion, list}: any,
                                  index
                               ) => (
-                                 <div key={index} className="max-w-[600px]">
+                                 <div key={index} className="">
                                     <div className="mb-6">
                                        <img
-                                          className="rounded-xl max-h-[338px] w-full"
+                                          className="rounded-xl xl:max-h-[338px] w-full"
                                           src={thumbnail}
                                           alt=""
                                        />
                                     </div>
-                                    <h3 className="text-3xl font-medium mb-4 text-white px-4">
+                                    <h3 className="md:text-3xl text-lg font-medium mb-4 text-white md:px-4 px-1.5">
                                        {Title}
                                     </h3>
-                                    <div className="px-4 mb-10">
-                                       <p className="mb-4">{describtion}</p>
+                                    <div className="md:px-4 px-1.5 lg:mb-10 md:mb-8 mb-5">
+                                       <p className="mb-4 text-md md:text-base">
+                                          {describtion}
+                                       </p>
                                        {list && (
                                           <ul className="flex flex-col gap-3 list-disc pl-4">
                                              {list.map(
                                                 (item: any, index: number) => (
-                                                   <li key={index}>{item}</li>
+                                                   <li
+                                                      key={index}
+                                                      className="text-md md:text-base"
+                                                   >
+                                                      {item}
+                                                   </li>
                                                 )
                                              )}
                                           </ul>
@@ -170,19 +177,19 @@ function ExclusiveDeals() {
                               )
                            )}
                         </div>
-                        <div className="max-w-[720px] mt-10">
-                           <h2 className="text-10xl font-medium text-white max-w-[440px] mb-10">
+                        <div className="xl:max-w-[720px] w-full xl:mt-10 mt-5">
+                           <h2 className="text-xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl 3xl:text-10xl tracking-[-0.96px] font-medium text-white lg:max-w-[440px] text-center lg:text-left mb-10">
                               Exclusive deals from{" "}
                               <span className="bg-one-stop text-lenear">
                                  our partners
                               </span>
                            </h2>
-                           <div className="grid grid-cols-2 gap-6">
+                           <div className="xl:grid 2xl:grid-cols-2 flex flex-wrap justify-center xl:gap-6 gap-4">
                               {dealsitem.map(({icon, name}, index) => (
                                  <div
                                     key={index}
                                     onClick={() => setTab(index)}
-                                    className={`flex gap-6 items-center p-6 rounded-3xl cursor-pointer  hover:bg-exclusive-tab duration-300 ${
+                                    className={`flex gap-6 items-center 2xl:p-6 p-4 rounded-3xl cursor-pointer max-w-[307px] 2xl:max-w-none hover:bg-exclusive-tab duration-300 ${
                                        index === tab ? "bg-exclusive-tab" : ""
                                     }`}
                                  >
@@ -191,7 +198,7 @@ function ExclusiveDeals() {
                                        src={icon}
                                        alt=""
                                     />
-                                    <p className="text-white leading-[1.4] tracking-[0.09px]">
+                                    <p className="2xl:text-base text-md text-white leading-[1.4] !tracking-[0.09px] hidden xl:block">
                                        {name}
                                     </p>
                                  </div>

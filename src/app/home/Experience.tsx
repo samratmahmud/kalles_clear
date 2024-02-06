@@ -23,25 +23,25 @@ function Experience() {
    return (
       <section>
          <div className="container">
-            <div className="max-w-[1700px] mx-auto relative mb-32">
+            <div className="max-w-[1700px] mx-auto relative 2xl:mb-32 xl:mb-24 lg:mb-20 md:mb-14 mb-10">
                <span className="bg-one-stop max-w-[440px] w-full aspect-square absolute top-0 right-0 -translate-x-1/2 -translate-y-1/2 blur-[220px] rounded-full" />
-               <div className="flex flex-col items-center mb-14">
-                  <h3 className="text-5xl font-medium text-lenear bg-one-stop mb-3">
+               <div className="flex flex-col items-center mb-7 md:mb-10 lg:mb-12 xl:mb-14">
+                  <h3 className="2xl:text-5xl lg:text-3xl sm:text-xl text-md font-medium text-lenear bg-one-stop mb-3">
                      Ensure your website
                   </h3>
-                  <h2 className="text-16xl font-medium tracking-[-2.4px] text-white mb-10">
+                  <h2 className="text-3xl sm:text-8xl md:text-10xl lg:text-12xl xl:text-13xl 2xl:text-16xl font-medium md:!tracking-[-2.4px] text-center text-white xl:mb-10 lg:mb-8 md:mb-6 mb-3">
                      with Mobile-first Experience
                   </h2>
                   <p className="text-center text-md md:text-base">
                      Responsive on all devices and specially optimized for
-                     mobile. <br />
+                     mobile. <br className="hidden lg:block" />
                      Convert 80% of mobile visitors into customers with Kalles
                      smooth designs.
                   </p>
                </div>
-               <div className="flex justify-between gap-3">
+               <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
                   {demoVideo.map(({title, video}, index) => (
-                     <div key={index} className="w-[calc(25%-12px)]">
+                     <div key={index} className="lg:w-[calc(25%-12px)">
                         <div className="bg-exclusive-tab border-2 border-transparent rounded-2xl mb-4">
                            <video
                               className="w-full bg-video-bg p-4 rounded-2xl  relative z-10"
@@ -49,7 +49,7 @@ function Experience() {
                               autoPlay
                            />
                         </div>
-                        <div className="text-xl font-medium text-white text-center leading-[1.4]">
+                        <div className="lg:text-xl sm:text-base text-md font-medium text-white text-center leading-[1.4]">
                            {title}
                         </div>
                      </div>

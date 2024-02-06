@@ -37,7 +37,7 @@ export default function Home() {
          {/* <ExclusiveDeals /> */}
          <Explore />
          <Agency />
-         <Support />
+         {/* <Support /> */}
       </main>
    );
 }

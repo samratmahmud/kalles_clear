@@ -1,52 +1,72 @@
 "use client";
+import Link from "next/link";
 import React from "react";
+
+const agencyBtn = [
+   {
+      name: "Chris Foster",
+      path: "/",
+   },
+   {
+      name: "Tyler Wisniewski",
+      nameS: ". Ceo of Yoga Junkie Fitness",
+      path: "/",
+   },
+];
 
 function Agency() {
    const [open, setOpen] = React.useState(false);
    return (
       <section>
          <div className="container">
-            <div className="max-w-[1240px] mx-auto bg-commerce-bg rounded-3xl mb-80">
-               <div className="py-20 flex flex-col items-center">
-                  <div className="mb-10">
+            <div className="max-w-[1240px] mx-auto bg-commerce-bg rounded-3xl 3xl:mb-80 2xl:mb-64 xl:mb-48 lg:mb-36 md:mb-24 sm:mb-20 mb-16">
+               <div className="lg:py-20 md:p-12 py-10 px-4 flex flex-col items-center">
+                  <div className="lg:mb-10 md:mb-8 mb-5">
                      <img
-                        className="rounded-full"
+                        className="rounded-full w-16 aspect-square md:w-20"
                         src="/images/1 (2).jpeg"
                         alt=""
                      />
                   </div>
-                  <h2 className="text-5xl font-medium text-white max-w-[800px] text-center mb-14">
+                  <h2 className="lg:text-5xl md:text-3xl text-base font-medium text-white max-w-[800px] text-center xl:mb-14 lg:mb-11 md:mb-9 mb-7">
                      "Kalles by The4 helps you create a beautiful website. Plus,
                      their amazing support team is with you every step of the
                      way"
                   </h2>
-                  <div className="flex gap-6">
-                     <div className="relative inline-block overflow-hidden rounded-lg bg-slate-600/30 border border-white/20 cursor-pointer">
-                        <div className="bg-btn-mb w-64 h-full animation-light absolute top-0" />
-                        <p className="py-2.5 px-4 text-base font-medium">
-                           Chris Foster
-                        </p>
-                     </div>
-                     <div className="relative inline-block overflow-hidden rounded-lg bg-slate-600/30 border border-white/20 cursor-pointer">
-                        <div className="bg-btn-mb w-64 h-full animation-light absolute top-0" />
-                        <p className="py-2.5 px-4 text-base font-medium text-white">
-                           Tyler Wisniewski . Ceo of Yoga Junkie Fitness
-                        </p>
-                     </div>
-                     <div
+                  <div className="flex flex-wrap justify-center gap-6">
+                     {agencyBtn.map(({name, nameS, path}, index) => (
+                        <Link
+                           href={path}
+                           key={index}
+                           className="relative inline-block overflow-hidden rounded-lg bg-slate-600/30 border border-white/20 cursor-pointer group"
+                        >
+                           <div className="bg-btn-mb w-64 h-full animation-light absolute top-0" />
+                           <p className="py-2.5 px-4 hover:text-white duration-300 font-medium flex gap-1">
+                              {name}
+                              <span className="hidden lg:block">{nameS}</span>
+                           </p>
+                        </Link>
+                     ))}
+                     <Link
+                        href="/"
                         className={`relative inline-block overflow-hidden rounded-lg bg-slate-600/30 border border-white/20 cursor-pointer group whitespace-nowrap`}
                      >
                         <div className="bg-btn-mb w-64 h-full animation-light absolute top-0" />
                         <p
                            onMouseEnter={() => setOpen(true)}
                            onMouseLeave={() => setOpen(false)}
-                           className={`py-2.5 px-4 text-base font-medium overflow-hidden duration-500 ${
-                              !open ? "max-w-[180px]" : "max-w-[500px]"
+                           className={`py-2.5 px-4 font-medium duration-500 ease-linear flex gap-1 ${
+                              !open
+                                 ? "max-w-[180px]"
+                                 : "xl:max-w-[500px] max-w-[180px] text-white"
                            }`}
                         >
-                           Cristian Batrincea . Founder of Creative Agency
+                           Cristian Batrincea{" "}
+                           <span className="hidden xl:block">
+                              <span>.</span> Founder of Creative Agency
+                           </span>
                         </p>
-                     </div>
+                     </Link>
                   </div>
                </div>
             </div>

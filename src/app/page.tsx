@@ -35,9 +35,9 @@ export default function Home() {
          {/* <Performance /> */}
          {/* <Experience /> */}
          {/* <ExclusiveDeals /> */}
-         <Explore />
+         {/* <Explore /> */}
          <Agency />
-         {/* <Support /> */}
+         <Support />
       </main>
    );
 }

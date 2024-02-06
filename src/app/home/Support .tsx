@@ -11,13 +11,14 @@ function Support() {
    return (
       <section>
          <div className="container">
-            <div className="flex justify-between gap-8 max-w-[1630px] mx-auto mb-52">
+            <div className="flex lg:flex-row flex-col justify-between gap-8 max-w-[1630px] mx-auto mb-52">
                <div className="max-w-[652px]">
-                  <h3 className="text-xl font-medium bg-one-stop text-lenear inline-block uppercase mb-6">
+                  <h3 className="md:text-xl sm:text-base text-md font-medium bg-one-stop text-lenear inline-block uppercase md:mb-6 mb-4">
                      CUSTOMER SATISFACTION GUARANTEED
                   </h3>
-                  <h2 className="text-10xl font-medium text-white mb-6">
-                     Efficient Help, <br /> Every Step of the Way.
+                  <h2 className="text-xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl 3xl:text-10xl tracking-[-0.96px] font-medium text-white md:mb-6 mb-4">
+                     Efficient Help, <br className="lg:block hidden" /> Every
+                     Step of the Way.
                   </h2>
                   <p className="mb-14">
                      Get the support you need from our ticket center, Facebook

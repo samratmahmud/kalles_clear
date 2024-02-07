@@ -5,7 +5,7 @@ import React from "react";
 function Footer() {
    return (
       <section>
-         <div className="max-w-[1630px] mx-auto relative z-0 px-4">
+         <div className="max-w-[1630px] mx-auto relative z-0 overflow-hidden px-4">
             <div className="bg-newP max-w-[557px] aspect-square w-full rounded-full blur-[350px] absolute -z-10 bottom-0 left-[50%] translate-x-[-50%]" />
             <div
                className="2xl:mb-32 xl:mb-24 lg:mb-20 md:mb-14 sm:mb-10 mb-8 bg-cover bg-no-repeat"

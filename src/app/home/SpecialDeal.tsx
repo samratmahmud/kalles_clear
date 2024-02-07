@@ -70,15 +70,17 @@ function SpecialDeal() {
                      </div>
                   </div>
                </div>
-               <div className="relative">
-                  <div className="absolute 2xl:top-[50%] top-[47%] 2xl:-left-[14%] xl:-left-[19%] sm:-left-[10%] -left-[10%]">
-                     <img
-                        className="max-w-20"
-                        src="/images/orange-arrow.svg"
-                        alt=""
-                     />
+               <div aria-label="wrapper">
+                  <div className="relative">
+                     <div className="absolute top-[50%] 2xl:-left-[14%] xl:-left-[19%] lg:-left-[9%] md:-left-[13%] sm:-left-[6%] -left-[11%]">
+                        <img
+                           className="max-w-20 md:max-w-none"
+                           src="/images/orange-arrow.svg"
+                           alt=""
+                        />
+                     </div>
+                     <img className="w-full" src="/images/1 (2).png" alt="" />
                   </div>
-                  <img className="w-full" src="/images/1 (2).png" alt="" />
                </div>
             </div>
          </div>

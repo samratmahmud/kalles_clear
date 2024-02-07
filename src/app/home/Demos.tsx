@@ -586,7 +586,10 @@ function Demos() {
       <section>
          <div id="Demos" className="container">
             <div className="max-w-[1700px] mx-auto mb-8 sm:mb-10 md:mb-14 lg:mb-20 xl:mb-28">
-               <h2 className="text-white font-medium flex md:flex-row flex-col items-center md:gap-8 gap-3 justify-center lg:mb-10 md:mb-8 mb-5">
+               <h2
+                  data-aos="fade-up"
+                  className="text-white font-medium flex md:flex-row flex-col items-center md:gap-8 gap-3 justify-center lg:mb-10 md:mb-8 mb-5"
+               >
                   <span className="text-10xl sm:text-13xl md:text-[90px] lg:text-[96px] xl:text-17xl font-medium text-lenear bg-50+ inline-block">
                      50+
                   </span>
@@ -596,6 +599,7 @@ function Demos() {
                </h2>
                <p
                   data-aos="fade-up"
+                  data-aos-delay="150"
                   className="md:text-base text-md text-center xl:mb-16 lg:mb-12 md:mb-10 mb-8 max-w-[900px] mx-auto"
                >
                   All home pages, inner pages and elements are included with the
@@ -646,7 +650,7 @@ function Demos() {
                                     alt=""
                                  />
 
-                                 <div className="flex justify-center absolute z-20 left-0 right-0 bottom-14 duration-300 delay-100 xl:-translate-x-3/4 -translate-x-0 group-hover:translate-x-0">
+                                 <div className="flex justify-center absolute z-20 left-0 right-0 lg:bottom-14 md:bottom-11 bottom-7 duration-300 delay-100 xl:-translate-x-3/4 -translate-x-0 group-hover:translate-x-0">
                                     <div className="inline-block bg-demos-btn sm:[background-image:none] relative z-40 rounded-lg">
                                        <Buttons
                                           size="small"
@@ -669,12 +673,12 @@ function Demos() {
                                     {title}
                                  </h3>
                                  {hot && (
-                                    <p className="text-sm font-medium py-0.5 px-2 rounded-full bg-newP text-white">
+                                    <p className="md:text-sm text-xs font-medium md:py-0.5 py-1 px-2 rounded-full bg-newP text-white">
                                        {hot}
                                     </p>
                                  )}
                                  {newP && (
-                                    <p className="text-sm font-medium py-0.5 px-2 rounded-full bg-newP text-white">
+                                    <p className="md:text-sm text-xs font-medium md:py-0.5 py-1 px-2 rounded-full bg-newP text-white">
                                        {newP}
                                     </p>
                                  )}

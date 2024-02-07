@@ -14,13 +14,13 @@ function Performance() {
                      <div className="bg-gray-black border border-transparent rounded-2xl">
                         <div className="bg-black 2xl:py-14 2xl:px-12 lg:py-11 lg:px-10 p-[30px] rounded-2xl relative z-10">
                            <h3
-                              data-aos="fade-right"
+                              data-aos="fade-down-right"
                               className="text-white lg:text-3xl md:text-lg text-md tracking-normal font-medium text-center mb-4"
                            >
                               Skyrocket Revenue To Next Level
                            </h3>
                            <p
-                              data-aos="fade-up-right"
+                              data-aos="fade-up"
                               data-aos-delay="200"
                               className="text-center text-sm md:text-md lg:text-base !leading-[1.2]"
                            >
@@ -49,13 +49,13 @@ function Performance() {
                      <div className="bg-gray-black border border-transparent rounded-2xl w-full">
                         <div className="bg-black 2xl:py-14 2xl:px-12 lg:py-11 lg:px-10 p-[30px] rounded-2xl">
                            <h3
-                              data-aos="fade-right"
+                              data-aos="fade-down-right"
                               className="text-white lg:text-3xl md:text-lg text-md tracking-normal font-medium text-center mb-4"
                            >
                               Lightning-fast Loading Speed
                            </h3>
                            <p
-                              data-aos="fade-up-right"
+                              data-aos="fade-up"
                               data-aos-delay="200"
                               className="text-center text-sm md:text-md lg:text-base !leading-[1.2]"
                            >

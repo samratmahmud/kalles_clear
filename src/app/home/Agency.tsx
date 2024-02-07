@@ -23,12 +23,17 @@ function Agency() {
                <div className="lg:py-20 md:p-12 py-10 px-4 flex flex-col items-center">
                   <div className="lg:mb-10 md:mb-8 mb-5">
                      <img
+                        data-aos="fade-up"
                         className="rounded-full w-16 aspect-square md:w-20"
                         src="/images/1 (2).jpeg"
                         alt=""
                      />
                   </div>
-                  <h2 className="lg:text-5xl md:text-3xl text-base font-medium text-white max-w-[800px] text-center xl:mb-14 lg:mb-11 md:mb-9 mb-7">
+                  <h2
+                     data-aos="fade-up"
+                     data-aos-delay="150"
+                     className="lg:text-5xl md:text-3xl text-base font-medium text-white max-w-[800px] text-center xl:mb-14 lg:mb-11 md:mb-9 mb-7"
+                  >
                      "Kalles by The4 helps you create a beautiful website. Plus,
                      their amazing support team is with you every step of the
                      way"
@@ -38,6 +43,8 @@ function Agency() {
                         <Link
                            href={path}
                            key={index}
+                           data-aos="fade-up"
+                           data-aos-delay={index * 200}
                            className="relative inline-block overflow-hidden rounded-lg bg-slate-600/30 border border-white/20 cursor-pointer group"
                         >
                            <div className="bg-btn-mb w-64 h-full animation-light absolute top-0" />
@@ -48,6 +55,8 @@ function Agency() {
                         </Link>
                      ))}
                      <Link
+                        data-aos="fade-up"
+                        data-aos-delay="500"
                         href="/"
                         className={`relative inline-block overflow-hidden rounded-lg bg-slate-600/30 border border-white/20 cursor-pointer group whitespace-nowrap`}
                      >

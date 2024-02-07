@@ -133,22 +133,31 @@ function ExclusiveDeals() {
                                  index
                               ) => (
                                  <div key={index} className="">
-                                    <div className="mb-6">
+                                    <div data-aos="zoom-in" className="mb-6">
                                        <img
                                           className="rounded-xl xl:max-h-[338px] w-full"
                                           src={thumbnail}
                                           alt=""
                                        />
                                     </div>
-                                    <h3 className="md:text-3xl text-lg font-medium mb-4 text-white md:px-4 px-1.5">
+                                    <h3
+                                       data-aos="fade-down-left"
+                                       className="md:text-3xl text-lg font-medium mb-4 text-white md:px-4 px-1.5"
+                                    >
                                        {Title}
                                     </h3>
-                                    <div className="md:px-4 px-1.5 lg:mb-10 md:mb-8 mb-5">
+                                    <div
+                                       data-aos="fade-up"
+                                       className="md:px-4 px-1.5 lg:mb-10 md:mb-8 mb-5"
+                                    >
                                        <p className="mb-4 text-md md:text-base">
                                           {describtion}
                                        </p>
                                        {list && (
-                                          <ul className="flex flex-col gap-3 list-disc pl-4">
+                                          <ul
+                                             data-aos="fade-up"
+                                             className="flex flex-col gap-3 list-disc pl-4"
+                                          >
                                              {list.map(
                                                 (item: any, index: number) => (
                                                    <li
@@ -162,16 +171,20 @@ function ExclusiveDeals() {
                                           </ul>
                                        )}
                                     </div>
-                                    <div className="flex gap-6 px-4">
-                                       <Buttons
-                                          href="/"
-                                          name="Claim Your Deal"
-                                       />
-                                       <Buttons
-                                          href="/"
-                                          name="Buy Kalles Now"
-                                          varient="outlined"
-                                       />
+                                    <div className="flex items-center gap-6 px-4">
+                                       <div data-aos="fade-down-right">
+                                          <Buttons
+                                             href="/"
+                                             name="Claim Your Deal"
+                                          />
+                                       </div>
+                                       <div data-aos="fade-up-left">
+                                          <Buttons
+                                             href="/"
+                                             name="Buy Kalles Now"
+                                             varient="outlined"
+                                          />
+                                       </div>
                                     </div>
                                  </div>
                               )

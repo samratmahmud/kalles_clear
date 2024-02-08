@@ -37,9 +37,9 @@ function MasonaryCards() {
       <section>
          <div className="container">
             <div className="relative mb-8 md:mb-12 lg:mb-20 xl:mb-32 2xl:mb-44 max-w-[1700px] mx-auto">
-               <div className="sticky top-28 flex justify-center mb-28 sm:mb-36 md:mb-40 lg:mb-48 xl:mb-52 2xl:mb-56">
+               <div className="sticky top-28 z-10 flex justify-center mb-28 sm:mb-36 md:mb-40 lg:mb-48 xl:mb-52 2xl:mb-56">
                   <div className="backdrop-blur-md inline-block rounded-3xl bg-black/65 w-full md:w-auto">
-                     <h2 className="flex gap-8 items-center text-3xl md:text-6xl lg:text-7xl xl:text-9xl 2xl:text-10xl text-white font-medium justify-center py-5 md:py-7 px-7 md:px-12 lg:px-24 max-w-[784px] mx-auto">
+                     <h2 className="flex gap-8 items-center text-3xl md:text-6xl lg:text-7xl xl:text-9xl 2xl:text-10xl text-white font-medium justify-center py-5 md:py-7 px-7 md:px-12 lg:px-24 max-w-[784px] h-40 mx-auto">
                         <span className="text-10xl sm:text-13xl md:text-[90px] lg:text-[96px] xl:text-18xl font-medium md:tracking-[-6.4px] bg-50+ text-lenear">
                            25+
                         </span>

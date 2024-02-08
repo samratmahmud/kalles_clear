@@ -6,7 +6,7 @@ function Responsive() {
    return (
       <section>
          <div className="container">
-            <div className="max-w-[1700px] mx-auto mb-[90px] md:mb-28 lg:mb-36 xl:mb-44 2xl:mb-44">
+            <div className="max-w-[1700px] mx-auto mb-16 md:mb-24 lg:mb-32 xl:mb-36 2xl:mb-44">
                <Parallax translateX={[-20, 20]}>
                   <div className="flex gap-6 items-center justify-between">
                      <h2 className="text-11xl sm:text-14xl md:text-20xl lg:text-18xl xl:text-21xl 4xl:text-19xl bg-clean-bg font-medium stroke-text">

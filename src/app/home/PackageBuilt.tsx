@@ -185,7 +185,7 @@ function PackageBuilt() {
                                           {describtion.map((item, index) => (
                                              <div
                                                 key={index}
-                                                className="text-gray-400 first:text-white last:text-green-500 2xl:text-base md:text-md text-xs text-center first:text-left even:bg-gray-800 group-first:rounded-t-2xl group-last:rounded-b-2xl 2xl:py-[23px] py-6 md:py-5 lg:py-4 xl:group-first:pt-12 lg:group-first:pt-10 group-first:pt-8 border-b border-gray-300/20"
+                                                className="table-data-design"
                                              >
                                                 {item}
                                              </div>
@@ -203,7 +203,7 @@ function PackageBuilt() {
                                              {describtion.map((item, index) => (
                                                 <div
                                                    key={index}
-                                                   className="text-gray-400 first:text-white last:text-green-500 2xl:text-base md:text-md text-xs text-center first:text-left even:bg-gray-800 group-first:rounded-t-2xl group-last:rounded-b-2xl 2xl:py-[23px] py-6 md:py-5 lg:py-4 xl:group-last:pb-12 lg:group-last:pb-10 group-last:pb-8 border-b border-gray-300/20 group-last:border-b-0"
+                                                   className="table-data-design"
                                                 >
                                                    {item}
                                                 </div>
@@ -215,17 +215,23 @@ function PackageBuilt() {
                                  {btn.map(({titleB, value}, index) => (
                                     <div
                                        key={index}
-                                       className="flex flex-col lg:gap-2 gap-1.5 items-center justify-center bg-feature-btn rounded-2xl py-2.5
-                                        md:py-4 2xl:px-10 lg:px-7 px-3 lg:mx-8 md:mx-6 mx-4"
+                                       className="max-w-[85%] mx-auto w-full group relative z-0"
                                     >
-                                       <div className="2xl:text-3xl md:text-lg text-sm text-white leading-[1.34] font-medium">
-                                          {value}
-                                       </div>
-                                       {titleB && (
-                                          <div className="text-xs md:text-md 2xl:text-base text-white font-medium">
-                                             {titleB}
+                                       <div className="group-last:bg-newP absolute -top-0.5 px-20 -z-20 blur-md w-full h-full" />
+
+                                       <div
+                                          className="flex flex-col lg:gap-2 gap-1.5 items-center justify-center bg-feature-btn rounded-2xl py-2.5
+                                     md:py-4 2xl:px-10 lg:px-7 px-3 h-full"
+                                       >
+                                          <div className="2xl:text-3xl md:text-lg text-sm text-white leading-[1.34] font-medium">
+                                             {value}
                                           </div>
-                                       )}
+                                          {titleB && (
+                                             <div className="text-xs md:text-md 2xl:text-base text-white font-medium">
+                                                {titleB}
+                                             </div>
+                                          )}
+                                       </div>
                                     </div>
                                  ))}
                               </div>

@@ -79,6 +79,7 @@ function EcomRise() {
                            href="/"
                            name="Install EcomRise Free"
                            icon="/images/icons8-download-64.png"
+                           target="_blank"
                         />
                      </div>
                   </div>

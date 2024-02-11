@@ -2,6 +2,17 @@ import Buttons from "@/components/common/Buttons";
 import Link from "next/link";
 import React from "react";
 
+const footerLink = [
+   {
+      name: "Privacy Policy",
+      path: "/",
+   },
+   {
+      name: "Return Policy",
+      path: "/",
+   },
+];
+
 function Footer() {
    return (
       <section>
@@ -40,7 +51,7 @@ function Footer() {
                </div>
                <div className="flex items-center gap-6 justify-center">
                   <div data-aos="fade-down-right">
-                     <Buttons href="/" name="Get Kalles Now" />
+                     <Buttons href="/" name="Get Kalles Now" target="_blank" />
                   </div>
                   <div data-aos="fade-up-left">
                      <Buttons
@@ -48,6 +59,7 @@ function Footer() {
                         name="Install EComposer"
                         varient="outlined"
                         icon="/images/1 (4).png"
+                        target="_blank"
                      />
                   </div>
                </div>
@@ -57,18 +69,16 @@ function Footer() {
                   © 2024 Kalles. All rights reserved.
                </div>
                <div className="flex md:gap-8 gap-3">
-                  <Link
-                     href="/"
-                     className="text-white hover:text-primary duration-300 font-medium underline"
-                  >
-                     Privacy Policy
-                  </Link>
-                  <Link
-                     href="/"
-                     className="text-white hover:text-primary duration-300 font-medium underline"
-                  >
-                     Return Policy
-                  </Link>
+                  {footerLink.map(({name, path}, index) => (
+                     <Link
+                        key={index}
+                        href={path}
+                        className="text-white hover:text-primary duration-300 font-medium underline"
+                        target="_blank"
+                     >
+                        {name}
+                     </Link>
+                  ))}
                </div>
             </div>
          </div>

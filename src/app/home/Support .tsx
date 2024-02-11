@@ -86,7 +86,11 @@ function Support() {
                      </div>
                   </div>
                   <div data-aos="fade-up-left" className="flex">
-                     <Buttons href="/" name="See Real Reviews" />
+                     <Buttons
+                        href="/"
+                        name="See Real Reviews"
+                        target="_blank"
+                     />
                   </div>
                </div>
                <div data-aos="fade-up">

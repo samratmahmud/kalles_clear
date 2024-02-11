@@ -176,6 +176,7 @@ function ExclusiveDeals() {
                                           <Buttons
                                              href="/"
                                              name="Claim Your Deal"
+                                             target="_blank"
                                           />
                                        </div>
                                        <div data-aos="fade-up-left">
@@ -183,6 +184,7 @@ function ExclusiveDeals() {
                                              href="/"
                                              name="Buy Kalles Now"
                                              varient="outlined"
+                                             target="_blank"
                                           />
                                        </div>
                                     </div>
@@ -202,7 +204,7 @@ function ExclusiveDeals() {
                                  <div
                                     key={index}
                                     onClick={() => setTab(index)}
-                                    className={`flex gap-6 items-center 2xl:p-6 p-4 rounded-3xl cursor-pointer max-w-[307px] 2xl:max-w-none hover:bg-exclusive-tab duration-300 ${
+                                    className={`flex gap-6 items-center 3xl:p-6 2xl:p-5 p-4 rounded-3xl cursor-pointer max-w-[307px] 2xl:max-w-none hover:bg-exclusive-tab duration-300 ${
                                        index === tab ? "bg-exclusive-tab" : ""
                                     }`}
                                  >

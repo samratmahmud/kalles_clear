@@ -15,6 +15,10 @@ html {
    scroll-behavior: smooth;
 }
 
+.table-data-design {
+   @apply text-xs md:text-md 2xl:text-base text-gray-400 first:text-white last:text-green-500 text-center first:text-left even:bg-gray-800 group-first:rounded-t-2xl group-last:rounded-b-2xl 2xl:py-[23px] py-6 md:py-5 lg:py-4 xl:group-first:pt-12 lg:group-first:pt-10 group-first:pt-12 xl:group-last:pb-10 lg:group-last:pb-8 group-last:pb-6 border-b border-gray-300/20 group-last:border-b-0;
+}
+
 .animate-spin {
    animation-duration: 10s;
 }

@@ -203,6 +203,7 @@ function PremiumFeatures() {
                            href="/"
                            name="Start Free Trial"
                            size="small"
+                           target="_blank"
                         />
                      </div>
                   </div>

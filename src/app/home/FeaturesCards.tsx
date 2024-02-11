@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import Masonry from "react-responsive-masonry";
 
@@ -189,13 +190,15 @@ function FeaturesCards() {
                                     {describtiton}
                                  </p>
                                  {btn && (
-                                    <div
+                                    <Link
+                                       href="/"
                                        data-aos="fade-up"
                                        data-aos-delay="600"
                                        className="text-md bg-features-btn inline-block py-2.5 px-10 mt-6 rounded-lg text-white font-medium"
+                                       target="_blank"
                                     >
                                        {btn}
-                                    </div>
+                                    </Link>
                                  )}
                               </div>
                            </div>

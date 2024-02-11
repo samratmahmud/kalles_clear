@@ -40,6 +40,7 @@ function SpecialDeal() {
                            href="/"
                            name="Try Live Demo"
                            icon="/images/icons8-trolley-64.png"
+                           target="_blank"
                         />
                      </div>
                      <div data-aos="fade-up-left" className="flex">
@@ -48,6 +49,7 @@ function SpecialDeal() {
                            name="Install EComposer Free"
                            icon="/images/icons8-pallet-50.png"
                            varient="outlined"
+                           target="_blank"
                         />
                      </div>
                   </div>

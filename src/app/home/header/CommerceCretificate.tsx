@@ -78,7 +78,7 @@ function CommerceCretificate() {
                >
                   <span className="relative z-0 group">
                      <img src={logo} alt="" />
-                     <span className="group-hover:bg-buttonS3 bg-transparent blur-lg rounded-full w-16 h-16 xl:flex items-center hidden justify-center absolute -top-4 -left-4 -z-10" />
+                     <span className="group-hover:bg-buttonS3 bg-transparent blur-xl rounded-full w-16 h-16 xl:flex items-center hidden justify-center absolute -top-4 -left-4 -z-10" />
                   </span>
                   <p className="xl:block hidden text-xs opacity-0 absolute -bottom-6 text-gray-300/60 whitespace-nowrap group-hover:opacity-100 duration-500">
                      {name}

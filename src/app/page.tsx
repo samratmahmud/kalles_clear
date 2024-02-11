@@ -21,21 +21,21 @@ export default function Home() {
    return (
       <main className="pb-0.5 overflow-hidden">
          <Header />
-         <PremiumFeatures />
-         <Demos />
-         <PagesGroup />
-         <MasonaryCards />
-         <Responsive />
-         <Features />
-         <Advanced />
-         <FeaturesCards />
-         <EcomRise />
-         <PackageBuilt />
-         <SpecialDeal />
-         <Performance />
-         <Experience />
-         <ExclusiveDeals />
-         <Explore />
+         {/* <PremiumFeatures /> */}
+         {/* <Demos /> */}
+         {/* <PagesGroup /> */}
+         {/* <MasonaryCards /> */}
+         {/* <Responsive /> */}
+         {/* <Features /> */}
+         {/* <Advanced /> */}
+         {/* <FeaturesCards /> */}
+         {/* <EcomRise /> */}
+         {/* <PackageBuilt /> */}
+         {/* <SpecialDeal /> */}
+         {/* <Performance /> */}
+         {/* <Experience /> */}
+         {/* <ExclusiveDeals /> */}
+         {/* <Explore /> */}
          <Agency />
          <Support />
       </main>

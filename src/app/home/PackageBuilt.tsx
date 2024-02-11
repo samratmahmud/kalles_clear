@@ -1,71 +1,108 @@
 "use client";
+import {title} from "process";
 import React, {useState} from "react";
 
 const builsPackages = [
    {
-      title: "Shopify Features",
-      content: [
-         "Bundles & Discounts",
-         "Smart Product Filters",
-         "Advanced Mega Menu",
-         "Cart drawer with free shipping goal",
-         "Frequently Bought Together",
-         "In-cart recommendations",
-         "Video Thumbnail & 3D",
-         "Countdown Timer",
-         "Trust Badges",
-         "Sales Popup",
-         "Sticky Add To Cart",
-         "Mobile Bottom Navigation",
-         "Stunning Lookbook",
-         "Quickview",
-         "Compare, Wishlist",
-         "Exit Intent Popup",
-         "Inactive Tab & Cart Count",
-         "Store Location Page",
-         "Multiple Currencies & Languages",
-         "Size Chart",
-         "Back to stock notification",
-         "AJAX Infinite Loading",
-         "Pickup Availability",
-         "Pre Orde",
+      title: [
+         "Shopify Features",
+         "Shopify App Cost",
+         "Conversion Increase",
+         "Kalles",
+      ],
+      contant: [
+         {
+            describtion: ["Bundles & Discounts", "$180", "0.7%", "free"],
+         },
+         {
+            describtion: ["Smart Product Filters", "$240", "0.3%", "free"],
+         },
+         {
+            describtion: ["Advanced Mega Menu", "$120", "0.35%", "free"],
+         },
+         {
+            describtion: [
+               "Cart drawer with free shipping goal",
+               "$200",
+               "0.4%",
+               "free",
+            ],
+         },
+         {
+            describtion: [
+               "Frequently Bought Together",
+               "$150",
+               "0.65%",
+               "free",
+            ],
+         },
+         {
+            describtion: ["In-cart recommendations", "$144", "0.57%", "free"],
+         },
+         {
+            describtion: ["Video Thumbnail & 3D", "$120", "0.2%", "free"],
+         },
+         {
+            describtion: ["Countdown Timer", "$84", "0.55%", "free"],
+         },
+         {
+            describtion: ["Trust Badges", "$25", "0.19%", "free"],
+         },
+         {
+            describtion: ["Sales Popup", "$79", "0.27%", "free"],
+         },
+         {
+            describtion: ["Sticky Add To Cart", "$45", "0.3%", "free"],
+         },
+         {
+            describtion: ["Mobile Bottom Navigation", "$30", "0.24%", "free"],
+         },
+         {
+            describtion: ["Stunning Lookbook", "$160", "0.2%", "free"],
+         },
+         {
+            describtion: ["Quickview", "$79", "0.5%", "free"],
+         },
+         {
+            describtion: ["Compare, Wishlist", "$80", "0.4%", "free"],
+         },
+         {
+            describtion: ["Exit Intent Popup", "$180", "0.45%", "free"],
+         },
+         {
+            describtion: ["Inactive Tab & Cart Count", "$50", "0.32%", "free"],
+         },
+         {
+            describtion: ["Store Location Page", "$39", "0.12%", "free"],
+         },
+         {
+            describtion: [
+               "Multiple Currencies & Languages",
+               "$79",
+               "0.41%",
+               "free",
+            ],
+         },
+         {
+            describtion: ["Size Chart", "$69", "0.21%", "free"],
+         },
+         {
+            describtion: ["Back to stock notification", "$90", "0.23%", "free"],
+         },
+         {
+            describtion: ["AJAX Infinite Loading", "$30", "0.12%", "free"],
+         },
+         {
+            describtion: ["Pickup Availability", "$30", "0.12%", "free"],
+         },
+         {
+            describtion: ["Pre Order", "$45", "0.21%", "free"],
+         },
       ],
       btn: [
          {
             value: "Total",
-            titleB: "",
          },
-      ],
-   },
-   {
-      title: "Shopify App Cost",
-      content: [
-         "$180",
-         "$240",
-         "$120",
-         "$200",
-         "$150",
-         "$144",
-         "$120",
-         "$84",
-         "$25",
-         "$79",
-         "$45",
-         "$30",
-         "$160",
-         "$79",
-         "$80",
-         "$180",
-         "$50",
-         "$39",
-         "$79",
-         "$69",
-         "$90",
-         "$30",
-         "$30",
-         "$45",
-      ],
-      btn: [
          {
             titleB: "Extra cost",
             value: (
@@ -74,37 +111,6 @@ const builsPackages = [
                </>
             ),
          },
-      ],
-   },
-   {
-      title: "Conversion Increase",
-      content: [
-         "0.7%",
-         "0.3%",
-         "0.35%",
-         "0.4%",
-         "0.65%",
-         "0.57%",
-         "0.2%",
-         "0.55%",
-         "0.19%",
-         "0.27%",
-         "0.3%",
-         "0.24%",
-         "0.2%",
-         "0.%",
-         "0.5%",
-         "0.4%",
-         "0.45%",
-         "0.32%",
-         "0.12%",
-         "0.41%",
-         "0.21%",
-         "0.23%",
-         "0.12%",
-         "0.21%",
-      ],
-      btn: [
          {
             titleB: "Expected CR increase",
             value: (
@@ -113,38 +119,6 @@ const builsPackages = [
                </>
             ),
          },
-      ],
-   },
-   {
-      title: "Kalles",
-      className: "text-lenear bg-free",
-      content: [
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-         "Free",
-      ],
-      btn: [
          {
             titleB: "One time payment",
             value: (
@@ -187,59 +161,79 @@ function PackageBuilt() {
                   className="bg-features-build rounded-t-3xl w-full border-t border-x-2 border-transparent lg:mb-8 md:mb-8 mb-4 relative "
                >
                   <div className="bg-black rounded-t-3xl xl:p-12 lg:p-9 px-2.5  py-6 mt-[2px] w-full overflow-x-auto">
-                     <div className="grid grid-cols-4 min-w-[700px] md:min-w-[1120px] xl:min-w-[1300px]">
-                        {builsPackages.map(
-                           ({title, content, className, btn}, index) => (
-                              <div key={index} className="group">
-                                 <div className="2xl:text-3xl md:text-lg text-md font-medium text-white flex justify-center 2xl:mb-12 mb-6">
-                                    {title}
-                                 </div>
-                                 <div className="flex flex-col group-even:bg-gray-800 rounded-2xl 2xl:py-8 py-4">
-                                    {content.slice(0, 9).map((items, index) => (
-                                       <div className="py-6 border-b border-gray-400/20 last:border-b-0 flex flex-col items-center justify-center  group-first:items-start 2xl:mx-8 mx-2.5 2xl:h-[70px] md:h-16 h-[60px]">
-                                          <div
-                                             key={index}
-                                             className={`text-gray-400 group-first:text-white 2xl:text-base md:text-md text-xs ${className}`}
-                                          >
-                                             {items}
-                                          </div>
-                                       </div>
-                                    ))}
-                                    {open &&
-                                       content.slice(9).map((items, index) => (
-                                          <div className="py-6 border-b border-gray-400/20 last:border-b-0 flex flex-col items-center justify-center  group-first:items-start 2xl:mx-8 mx-2.5 2xl:h-[70px] md:h-16 h-[60px]">
-                                             <div
-                                                key={index}
-                                                className={`text-gray-400 group-first:text-white 2xl:text-base md:text-md text-xs ${className}`}
-                                             >
-                                                {items}
-                                             </div>
-                                          </div>
-                                       ))}
-                                 </div>
-                                 <div className="py-2.5 sm:py-5 md:py-8 md:mx-5 mx-3">
-                                    {btn.map(({titleB, value}, index) => (
+                     <div className="gridgrid-cols-4 min-w-[700px] md:min-w-[1120px] xl:min-w-[1300px]">
+                        {builsPackages.map(({title, contant, btn}, index) => (
+                           <div key={index}>
+                              <div className="grid grid-cols-4">
+                                 {title.map((items, index) => (
+                                    <div
+                                       key={index}
+                                       className="2xl:text-3xl md:text-lg text-md font-medium text-white text-center 2xl:mb-12 mb-6"
+                                    >
+                                       {items}
+                                    </div>
+                                 ))}
+                              </div>
+                              <div className="">
+                                 {contant
+                                    .slice(0, 9)
+                                    .map(({describtion}, index) => (
                                        <div
                                           key={index}
-                                          className=" flex flex-col gap-2 items-center justify-center bg-feature-btn rounded-2xl md:h-24 md:py-4 py-2.5 2xl:px-10 px-4"
+                                          className="grid grid-cols-4 gap-4 group"
                                        >
-                                          <div className="2xl:text-3xl md:text-lg text-md text-white leading-[1.4] font-medium">
-                                             {value}
-                                          </div>
-                                          {titleB && (
-                                             <div className="text-xs md:text-md 2xl:text-base text-white font-medium">
-                                                {titleB}
+                                          {describtion.map((item, index) => (
+                                             <div
+                                                key={index}
+                                                className="text-gray-400 first:text-white last:text-green-500 2xl:text-base md:text-md text-xs text-center first:text-left even:bg-gray-800 group-first:rounded-t-2xl group-last:rounded-b-2xl 2xl:py-[23px] py-6 md:py-5 lg:py-4 xl:group-first:pt-12 lg:group-first:pt-10 group-first:pt-8 border-b border-gray-300/20"
+                                             >
+                                                {item}
                                              </div>
-                                          )}
+                                          ))}
                                        </div>
                                     ))}
-                                 </div>
+                                 {open &&
+                                    contant
+                                       .slice(9)
+                                       .map(({describtion}, index) => (
+                                          <div
+                                             key={index}
+                                             className="grid grid-cols-4 gap-4 group"
+                                          >
+                                             {describtion.map((item, index) => (
+                                                <div
+                                                   key={index}
+                                                   className="text-gray-400 first:text-white last:text-green-500 2xl:text-base md:text-md text-xs text-center first:text-left even:bg-gray-800 group-first:rounded-t-2xl group-last:rounded-b-2xl 2xl:py-[23px] py-6 md:py-5 lg:py-4 xl:group-last:pb-12 lg:group-last:pb-10 group-last:pb-8 border-b border-gray-300/20 group-last:border-b-0"
+                                                >
+                                                   {item}
+                                                </div>
+                                             ))}
+                                          </div>
+                                       ))}
                               </div>
-                           )
-                        )}
+                              <div className="grid grid-cols-4 py-2.5 sm:py-5 md:py-8">
+                                 {btn.map(({titleB, value}, index) => (
+                                    <div
+                                       key={index}
+                                       className="flex flex-col lg:gap-2 gap-1.5 items-center justify-center bg-feature-btn rounded-2xl py-2.5
+                                        md:py-4 2xl:px-10 lg:px-7 px-3 lg:mx-8 md:mx-6 mx-4"
+                                    >
+                                       <div className="2xl:text-3xl md:text-lg text-sm text-white leading-[1.34] font-medium">
+                                          {value}
+                                       </div>
+                                       {titleB && (
+                                          <div className="text-xs md:text-md 2xl:text-base text-white font-medium">
+                                             {titleB}
+                                          </div>
+                                       )}
+                                    </div>
+                                 ))}
+                              </div>
+                           </div>
+                        ))}
                      </div>
                      {!open && (
-                        <div className="flex justify-center absolute md:bottom-[21%] sm:bottom-[17%] bottom-[14%] left-1/2 -translate-x-1/2 text-white font-medium underline hover:text-primary duration-300 bg-black/40">
+                        <div className="flex justify-center absolute bottom-[24%] sm:bottom-[27%] md:bottom-[29%] lg:bottom-[32%] 2xl:bottom-[25%] left-1/2 -translate-x-1/2 text-white font-medium underline hover:text-primary duration-300 bg-black/40">
                            <button onClick={toggle}>View More</button>
                         </div>
                      )}

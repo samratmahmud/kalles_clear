@@ -16,22 +16,20 @@ import ExclusiveDeals from "./home/ExclusiveDeals";
 import Explore from "./home/Explore";
 import Agency from "./home/Agency";
 import Support from "./home/Support ";
-import Test from "./home/Test";
 
 export default function Home() {
    return (
       <main className="pb-0.5 overflow-hidden">
          <Header />
-         {/* <Test /> */}
-         <PremiumFeatures />
-         <Demos />
-         <PagesGroup />
-         <MasonaryCards />
-         <Responsive />
-         <Features />
-         <Advanced />
-         <FeaturesCards />
-         <EcomRise />
+         {/* <PremiumFeatures /> */}
+         {/* <Demos /> */}
+         {/* <PagesGroup /> */}
+         {/* <MasonaryCards /> */}
+         {/* <Responsive /> */}
+         {/* <Features /> */}
+         {/* <Advanced /> */}
+         {/* <FeaturesCards /> */}
+         {/* <EcomRise /> */}
          <PackageBuilt />
          <SpecialDeal />
          <Performance />

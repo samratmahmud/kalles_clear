@@ -30,8 +30,14 @@ function Footer() {
                   data-aos-delay="100"
                   className="text-center xl:mb-16 lg:mb-12 md:mb-10 mb-8"
                >
-                  <strong className="text-white">4.99/5.00</strong> based on{" "}
-                  <strong className="text-white">1600+</strong> reviews
+                  <span className="text-white md:text-xl text-md font-medium">
+                     4.99/5.00
+                  </span>{" "}
+                  based on{" "}
+                  <span className="text-white md:text-xl text-md font-medium">
+                     1600+
+                  </span>{" "}
+                  reviews
                </p>
                <div
                   data-aos="fade-up"
@@ -64,21 +70,23 @@ function Footer() {
                   </div>
                </div>
             </div>
-            <div className="lg:py-10 py-[30px] flex lg:flex-row flex-col items-center justify-between gap-4">
-               <div className="text-white font-medium leading-[1.4]">
-                  © 2024 Kalles. All rights reserved.
-               </div>
-               <div className="flex md:gap-8 gap-3">
-                  {footerLink.map(({name, path}, index) => (
-                     <Link
-                        key={index}
-                        href={path}
-                        className="text-white hover:text-primary duration-300 font-medium underline"
-                        target="_blank"
-                     >
-                        {name}
-                     </Link>
-                  ))}
+            <div className="container">
+               <div className="lg:py-10 py-[30px] flex lg:flex-row flex-col items-center justify-between gap-4">
+                  <div className="text-white font-medium leading-[1.4]">
+                     © 2024 Kalles. All rights reserved.
+                  </div>
+                  <div className="flex md:gap-8 gap-3">
+                     {footerLink.map(({name, path}, index) => (
+                        <Link
+                           key={index}
+                           href={path}
+                           className="text-white hover:text-primary duration-300 font-medium underline"
+                           target="_blank"
+                        >
+                           {name}
+                        </Link>
+                     ))}
+                  </div>
                </div>
             </div>
          </div>

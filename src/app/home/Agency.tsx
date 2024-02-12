@@ -59,8 +59,8 @@ function Agency() {
    return (
       <section>
          <div className="container">
-            <div className="max-w-[1240px] mx-auto bg-commerce-bg rounded-3xl 3xl:mb-80 2xl:mb-64 xl:mb-48 lg:mb-36 md:mb-24 sm:mb-20 mb-16">
-               <div className="lg:py-20 md:p-12 py-10 px-4 flex flex-col items-center">
+            <div className="max-w-[1240px] mx-auto bg-commerce-bg rounded-3xl 3xl:mb-60 2xl:mb-48 xl:mb-40 lg:mb-32 md:mb-24 sm:mb-20 mb-16">
+               <div className="lg:py-20 md:p-11 py-10 px-4 flex flex-col items-center">
                   <div>
                      {agencyBtn[tab].agencyTitle?.map(
                         ({thumbanil, title}, index) => (
@@ -79,7 +79,7 @@ function Agency() {
                               <h2
                                  data-aos="fade-up"
                                  data-aos-delay="150"
-                                 className="xl:text-5xl lg:text-4xl md:text-3xl text-base font-medium text-white max-w-[950px]  text-center xl:mb-14 lg:mb-11 md:mb-9 mb-7"
+                                 className="xl:text-5xl lg:text-4xl md:text-3xl text-base font-medium text-white max-w-[950px]  text-center tracking-normal xl:mb-14 lg:mb-11 md:mb-9 mb-7"
                               >
                                  {title}
                               </h2>

@@ -54,7 +54,7 @@ function Features() {
                         All{" "}
                         <span className="text-lenear bg-one-stop underline relative">
                            Boost Sales
-                           <span className="bg-one-stop h-0.5 w-full absolute bottom-2 left-0" />
+                           <span className="bg-one-stop h-0.5 w-full absolute bottom-1 md:bottom-2 left-0" />
                         </span>{" "}
                         Features
                         <br /> in One Theme

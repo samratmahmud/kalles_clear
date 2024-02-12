@@ -20,14 +20,16 @@ function AgencyItem(props: agencyItemProps) {
       >
          <div className="bg-btn-mb w-64 h-full animation-light absolute top-0" />
          <p
-            className={`py-2.5 px-4 hover:text-white duration-300 font-medium flex gap-1 ${
+            className={`py-2.5 px-4 hover:text-white duration-500 font-medium flex gap-1 ${
                isActive ? "text-white" : ""
             }`}
          >
             {name}
             <span
                className={`hidden lg:block duration-500 ease-linear overflow-hidden whitespace-nowrap ${
-                  !open && !isActive ? "max-w-0" : "xl:max-w-[500px] max-w-0"
+                  !isActive
+                     ? `${open ? "max-w-[500px]" : "max-w-0"}`
+                     : "xl:max-w-[500px] max-w-0"
                }`}
             >
                {nameS}

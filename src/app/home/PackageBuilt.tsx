@@ -239,7 +239,7 @@ function PackageBuilt() {
                         ))}
                      </div>
                      {!open && (
-                        <div className="flex justify-center absolute bottom-[24%] sm:bottom-[27%] md:bottom-[29%] lg:bottom-[32%] 2xl:bottom-[25%] left-1/2 -translate-x-1/2 text-white font-medium underline hover:text-primary duration-300 bg-black/40">
+                        <div className="flex justify-center absolute bottom-[17%] sm:bottom-[20%] md:bottom-[24%] lg:bottom-[27%] 2xl:bottom-[24%] left-1/2 -translate-x-1/2 text-white font-medium underline hover:text-primary duration-300 bg-black/40">
                            <button onClick={toggle}>View More</button>
                         </div>
                      )}

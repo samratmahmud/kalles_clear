@@ -286,7 +286,7 @@ function PagesGroup() {
    return (
       <section>
          <div className="container">
-            <div className="max-w-[1700px] mx-auto mb-28 sm:mb-32 md:mb-40 lg:mb-48 xl:mb56 2xl:mb-64">
+            <div className="max-w-[1700px] mx-auto mb-20 sm:mb-24 md:mb-32 lg:mb-40 xl:mb-48 2xl:mb-56">
                <div className="flex xl:flex-row flex-col gap-7 justify-between">
                   <div className="xl:w-[30%] md:flex flex-row xl:flex-col gap-6 overflow-x-scroll lg:overflow-clip pb-4 hidden">
                      {pagesItems.map(({name, path}, index) => (

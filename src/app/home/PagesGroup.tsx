@@ -336,6 +336,7 @@ function PagesGroup() {
                                           <Link
                                              key={index}
                                              href={href}
+                                             id={id}
                                              className="px-4 pt-4 border-t border-x border-slate-800 rounded-2xl"
                                           >
                                              <div className="flex gap-1 mb-3">

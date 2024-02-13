@@ -13,7 +13,7 @@ import Header from "./home/header/Header";
 import Performance from "./home/Performance";
 import Experience from "./home/Experience";
 import ExclusiveDeals from "./home/ExclusiveDeals";
-import Explore from "./home/Explore";
+import Explore from "./home/explore/Explore";
 import Agency from "./home/Agency";
 import Support from "./home/Support ";
 

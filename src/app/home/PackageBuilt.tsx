@@ -150,7 +150,7 @@ function PackageBuilt() {
                   <h2
                      data-aos="fade-up"
                      data-aos-delay="100"
-                     className="text-5xl sm:text-8xl md:text-10xl lg:text-12xl xl:text-13xl 2xl:text-16xl font-medium !tracking-[-2.4px] text-center text-white"
+                     className="text-5xl sm:text-8xl md:text-10xl lg:text-12xl xl:text-13xl 2xl:text-16xl font-medium md:!tracking-[-2.4px] text-center text-white"
                   >
                      with Kalles built-in features
                   </h2>
@@ -160,7 +160,7 @@ function PackageBuilt() {
                   data-aos-delay="150"
                   className="bg-features-build rounded-t-3xl w-full border-t border-x-2 border-transparent lg:mb-8 md:mb-8 mb-4 relative "
                >
-                  <div className="bg-black rounded-t-3xl xl:p-12 lg:p-9 px-2.5  py-6 mt-[2px] w-full overflow-x-auto">
+                  <div className="bg-black rounded-t-3xl xl:p-12 lg:p-9 px-3  py-6 mt-[2px] w-full overflow-x-auto">
                      <div className="gridgrid-cols-4 min-w-[700px] md:min-w-[1120px] xl:min-w-[1300px]">
                         {builsPackages.map(({title, contant, btn}, index) => (
                            <div key={index}>
@@ -211,13 +211,13 @@ function PackageBuilt() {
                                           </div>
                                        ))}
                               </div>
-                              <div className="grid grid-cols-4 py-2.5 sm:py-5 md:py-8">
+                              <div className="grid grid-cols-4 py-4 sm:py-6 md:py-8">
                                  {btn.map(({titleB, value}, index) => (
                                     <div
                                        key={index}
                                        className="max-w-[85%] mx-auto w-full group relative z-0"
                                     >
-                                       <div className="group-last:bg-newP absolute -top-0.5 px-20 -z-20 blur-md w-full h-full" />
+                                       <div className="group-last:bg-newP absolute sm:-top-0.5 -z-20 blur-md w-full h-full" />
 
                                        <div
                                           className="flex flex-col lg:gap-2 gap-1.5 items-center justify-center bg-feature-btn rounded-2xl py-2.5
